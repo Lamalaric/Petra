@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="FR"> 
+<head> 
+	<title>Petra</title>
+	<meta name="author" content="Amalaric Le Forestier" />
+	<!-- <link rel="icon" href="images/alf.ico" /> -->
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="script.js" ></script>
+</head>
+
+
+<body class="container-c">
+	<div id="progress"></div> 							<!-- Barre de progression -->
+
+	<header>
+		<nav>											<!-- Menu de navigation -->
+			<span id="logo_MCN"></span>
+			<ul class="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="histoire.html">Petra</a></li>
+				<li><a href="visiter.html">À visiter</a></li>
+				<li><a href="galerie.html">Galerie d'image</a></li>
+				<li><a href="informations.html">Informations pratiques</a></li>
+				<li><a class="page-actuelle" href="contact.html">Contact</a></li>
+			</ul>
+			<span id="logo_UPEM"></span>
+		</nav>
+	</header>
+
+
+	<section>
+		<h1>Nous contacter</h1>
+		<article class="auteurs">
+			<p>Ce site web a été créer dans le cadre de notre projet tutoré, pour notre première année de DUT informatique. Nous sommes une équipe de 5 étudiants, que des bg, à travailler sur ce site de crackhead.</p>
+			<div class="amalaric">
+				<img class="amalaric-img" src="images/Amalaric.jpg" alt="Amalaric">
+				<p>Amalaric Le Forestier</p>
+				<p class="taff">Chef de projet<br>Lead developpeur</p>
+			</div>
+			<div class="bastien">
+				<img class="bastien-img" src="images/Bastien.jpg" alt="Bastien">
+				<p>Bastien Corgnac</p>
+				<p class="taff">Lead recherches<br>Developpeur<br>Soutien</p>
+			</div>
+			<div class="quentin">
+				<img class="quentin-img" src="images/Quentin.jpg" alt="Quentin">
+				<p>Quentin Martins</p>
+				<p class="taff">Recherches<br>Developpeur</p>
+			</div>
+			<div class="dylan">
+				<img class="dylan-img" src="images/Dylan.jpg" alt="Dylan">
+				<p>Dylan Chalier</p>
+				<p class="taff">Recherches<br>Concepteur</p>
+			</div>
+			<div class="ivan">
+				<img class="ivan-img" src="images/Ivan.jpg" alt="Ivan">
+				<p>Ivan Bernard</p>
+				<p class="taff"></p>
+			</div>
+		</article>
+
+		<h1>Formulaire</h1>
+		<article class="formulaire">
+			<form>
+				<p>Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons très heureux de vous répondre, et ce dans les plus brefs délais.</p>
+				<label for="prenom">Prénom</label>
+				<input class="input-prenom" type="text" name="prenom" id="prenom" autocomplete="test">
+				<label for="nom">&emsp;Nom</label>
+				<input class="input-nom" type="text" name="nom" id="nom">
+				<br><br>
+				<label for="mail">Mail</label>
+				<input class="input-mail" type="text" name="mail" id="mail">
+				<br>
+				<p class="warning-mail">*Il ne sera utilisé seulement afin de pouvoir vous répondre.</p>
+				<br><br>
+				<label for="titre">Titre</label>
+				<input class="input-titre" type="text" name="titre" id="titre" required>
+				<br><br>
+				<textarea rows="10" cols="100" required></textarea>
+				<br>
+				<input class="submit-button" type="submit" name="Submit">
+			</form>
+		</article>
+	</section>
+
+
+	<div id="goto_top">								<!-- Retour haut de page -->
+		<a href="#"><img src="images/fleche_haut.jpg" alt="Flèche retour haut de page" /></a>
+	</div>
+
+
+	<footer>										<!-- Footer -->
+        <div class="partenaires">
+            <div class="f-logoMCN"></div>
+            <div class="f-logoUPEM"></div>
+            <div class="f-logoUNESCO"></div>   
+        </div>
+	</footer>
+
+
+</body>
+</html>
