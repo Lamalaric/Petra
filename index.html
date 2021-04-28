@@ -3,7 +3,7 @@
 <head> 
 	<title>Petra</title>
 	<meta name="author" content="Amalaric Le Forestier" />
-	<!-- <link rel="icon" href="images/alf.ico" /> -->
+	<link rel="icon" href="images/logo.ico" />
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<script type="text/javascript" src="script.js" ></script>
@@ -15,75 +15,74 @@
 	<header>
 		<nav>											<!-- Menu de navigation -->
 			<span id="logo_MCN"></span>
-			<ul class="menu">
-				<li><a class="page-actuelle" href="index.html">Accueil</a></li>
-				<li><a href="histoire.html">Histoire</a></li>
-				<li><a href="visiter.html">À visiter</a></li>
-				<li><a href="galerie.html">Galerie d'image</a></li>
-				<li><a href="informations.html">Informations pratiques</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+			<a class="page-actuelle" href="index.html"><span>Accueil</span></a>
+			<a href="histoire.html"><span>Histoire</span></a>
+			<a href="visiter.html"><span>À visiter</span></a>
+			<a href="galerie.html"><span>Galerie d'image</span></a>
+			<a href="informations.html"><span>Informations pratiques</span></a>
+			<a href="contact.html"><span>Contact</span></a>
 			<span id="logo_UPEM"></span>
 		</nav>
 	</header>
 
+	<main>
+		<div class="a1">							<!-- Grande image -->		
+			<h1>Petra, une cité nabatéenne</h1>
+		</div>
 
-	<section class="a1">							<!-- Grande image -->		
-		<h1>Petra, une cité nabatéenne</h1>
-	</section>
+		<article>
+			<section class="a2">					<!-- Introduction -->
+				<div>
+					<span id="image1_1"></span>
+				</div>
+				<div id="texte_image1_1">
+					<span id="texte1_1">
+						<p>Petra est une cité antique du sud de l’actuelle Jordanie.<br>
+	                    Son attraction mondiale en a fait l’un des principaux pôle touristique de Jordanie. Fondé en -1200 par les Édomites, elle fut par la suite occupée par les Nabatéens à partir du VIe siècle avant JC qui la firent prospérer grâce à sa position stratégique sur la route des caravanes en provenance de l’Orient. Aujourd’hui classée au patrimoine mondial de l’Unesco, elle est considérée comme l’un des plus beaux sites troglodytiques du monde.</p>
+					</span>
+				</div>
+			</section>
 
-	<section class="a2">
+			<section class="a3">					<!-- Accès rapide -->
+				<div id="virgule-titre"><h2>Accès rapide</h2></div>
+				<div class="boutons">
+					<a href="histoire.html"><span id="bouton_1"><p id="test">Histoire</p></span></a>
+					<a href="histoire.html"><span id="bouton_2"><p id="test">Architecture</p></span></a>
+					<a href="informations.html"><span id="bouton_3"><p id="test">Se loger</p></span></a>
+				</div>
+			</section>	
+
+			<section class="a4">					<!-- Images -->
+				<div id="virgule-titre"><h2>Images à la une</h2></div>
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="container-see-more"><a href="galerie.html" class="see_more">Voir plus</a></div>
+			</section>
+																		
+
+			<div id="goto_top">						<!-- Retour haut de page -->
+				<a href="#"><img src="images/fleche_haut.jpg" alt="Flèche retour haut de page" /></a>
+			</div>
+		</article>
+			
+	</main>
 		
-		<aside>
-			<span id="image1_1"></span>
-		</aside>
-		<article>									<!-- Introduction -->
-			<div id="texte_image1_1">
-				<span id="texte1_1">
-					<p>Pétra est une cité antique du sud de l’actuelle Jordanie. <br>
-                    Son attraction mondiale en a fait l’un des principaux pôle touristique de Jordanie. Fondé en -1200 par les Édomites, elle fut par la suite occupée par les Nabatéens à partir du VIe siècle avant JC qui la firent prospérer grâce à sa position stratégique sur la route des caravanes en provenance de l’Orient. Aujourd’hui classée au patrimoine mondial de l’Unesco, elle est considérée comme l’un des plus beaux sites troglodytiques du monde.</p>
-				</span>
-			</div>
-		</article>
-	</section>
-
-	<section class="a3">
-		<h1>Accès rapide</h1>
-		<article>									<!-- Accès rapide -->
-			<div class="boutons">
-
-				<span id="bouton_1"><p id="test">Histoire</p></span>
-				<span id="bouton_2"><p id="test">Architecture</p></span>
-				<span id="bouton_3"><p id="test">Tarifs</p></span>
-			</div>
-		</article>
-	</section>	
-
-	<section class="a4">
-		<article>									<!-- Images -->
-			<span id="img1"></span>
-			<span id="img2"></span>
-			<span id="img3"></span>
-			<span id="img4"></span>
-			<span id="img5"></span>
-			<span id="img6"></span>
-			<span id="img7"></span>
-			<span id="img8"></span>
-		</article>
-
-		<span><p id="see_more">Voir plus</p></span>
-	</section>
-																
-
-	<div id="goto_top">							<!-- Retour haut de page -->
-		<a href="#"><img src="images/fleche_haut.jpg" alt="Flèche retour haut de page" /></a>
-	</div>
 
 	<footer>										<!-- Footer -->
         <div class="partenaires">
             <div class="f-logoMCN"></div>
             <div class="f-logoUPEM"></div>
-            <div class="f-logoUNESCO"></div>   
+            <div class="f-logoUNESCO"></div>
+            <div class="f-logoIDEA"></div>
+            <div class="f-logoANR"></div>
         </div>
 	</footer>
 
