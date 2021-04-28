@@ -67,6 +67,7 @@ p, label {
 footer {
 	background-color: #505050;
 	grid-column: 1/3;
+	margin-top: 100px;
 }
 footer .partenaires {
 	padding: 10px 50px;
@@ -440,56 +441,77 @@ main #virgule-ss-titre h3 {
 
 
 /* PAGE VISITER.HTML */
-.container-v {
+.container-v main div > .text-plus-title::-webkit-scrollbar {
+    width: 10px;
+}
+.container-v main div > .text-plus-title::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.container-v main div > .text-plus-title::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.container-v main .text-plus-title {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	height: 290px;
+}
+
+.container-v main {
 	display: grid;
-	grid-template-columns: 18% auto 18%;
-	grid-template-rows: 79px auto auto;
+	grid-template-columns: 15% auto 15%;
 }
-.container-v section {
-	grid-column: 2; grid-row: 2;
-	border-top: 0;
+.container-v main h1 {
+	grid-column: 2;
+	margin: 100px 0 75px 0;
 }
-.container-v h1 { margin: 0 0 75px 0; }
-.container-v h3 { margin-block-start: 1.5em; font-size: 25px; }
-.container-v p { text-align: justify; margin-right: 50px; }
-.container-v section article > div {
+.container-v main h3 {
+	margin-block-start: 1.5em;
+	font-size: 25px;
+}
+.container-v main p {
+	font-size: 23px;
+	text-align: justify;
+	line-height: 25px;
+	margin-right: 50px;
+}
+.container-v main > div {
+	grid-column: 2;
 	margin: 50px 0;
 	background-color: #505050;
 	border: 2px solid black;
 	border-radius: 8px;
-	height: 240px;
+	height: 305px;
 }
-.container-v section article div > div { border-right: 2px solid black; margin-right: 50px; height: auto; }
-
-.container-v .kazneh { height: 305px; }
-
-.container-v .kazneh-img {
-	background-image: url(images/kazneh.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+.container-v main div > div:first-child {
+	margin-right: 50px;
+	border-right: 2px solid black;
+}
+.container-v main .image {
+	background-repeat: no-repeat;
     width: 364px; height: 305px;
     float: left;
 }
-.container-v .ad-deir-img {
-	background-image: url(images/accueil.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 364px; height: 240px;
-    float: left;
+
+.container-v main .kazneh-img {
+	background-image: url(images/al_kazneh.jpg);
+    background-size: 125%;
+    
 }
-.container-v .theatre-img {
+.container-v main .ad-deir-img {
+	background-image: url(images/kazneh.png);
+    background-size: 100%;
+}
+.container-v main .theatre-img {
 	background-image: url(images/image3.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 364px; height: 240px;
-    float: left;
+    background-size: 112%;
 }
-.container-v .aqueducs-img {
+.container-v main .aqueducs-img {
 	background-image: url(images/aqueducs.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 364px; height: 240px;
-    float: left;
+    background-size: 125%;
 }
 
 /*PAGE GALERIE D'IMAGE*/
@@ -616,7 +638,7 @@ main #virgule-ss-titre h3 {
 }
 
 
-.container-v footer, .container-g footer, .container-if footer, .container-c footer {
+.container-g footer, .container-if footer, .container-c footer {
 	background-color: #333333;
 	grid-column: 1 / 4;
 	margin-top: 100px;
