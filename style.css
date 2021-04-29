@@ -566,10 +566,11 @@ main #virgule-ss-titre h3 {
 
 
 /*PAGE INFORMATIONS*/
-.container-if main #virgule-titre, #virgule-titre > h2 {
+.container-if main #virgule-titre, .container-if main #virgule-titre > h2 {
 	font-size: 60px !important;
 	font-weight: normal;
 	grid-column: 2/3;
+	padding-top: 0;
 }
 .container-if main #virgule-ss-titre {
 	background-position: 0% -4%;
