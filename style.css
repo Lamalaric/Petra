@@ -104,6 +104,7 @@ nav {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	font-size: 25px;
 	width: 100%;
+	height: 79px;
 	border-width: 10px;
 	border-bottom: 1px solid black;
 	position: fixed;
@@ -350,12 +351,19 @@ main #virgule-ss-titre h3 {
 
 /* PAGE HISTOIRE.HTML */
 .sommaire {
+	width: 450px;
 	grid-column: 1; grid-row: 3;
 	background-color: #505050;
 	border: 4px solid #b94503;
 	border-radius: 8px;
-	margin: 18px;
+	margin: 18px auto;
+	padding: 10px;
 	transition-duration: 0.3s;
+}
+.sommaire h3 {
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
 }
 .sommaire li {
 	font-family: Cicle Gordita;
@@ -573,8 +581,8 @@ main #virgule-ss-titre h3 {
 	padding-top: 0;
 }
 .container-if main #virgule-ss-titre {
-	background-position: 0% -4%;
-	width: 540px; height: 100px;
+	background-position: 0% -3%;
+	width: 645px; height: 100px;
 	margin: 0;
 }
 .container-if main #virgule-ss-titre h3 {
@@ -602,44 +610,114 @@ main #virgule-ss-titre h3 {
 	padding: 200px;
 	text-shadow: black 0.1em 0.1em 0.2em
 }
-.container-if main .map {
+main .map {
 	background-color: #505050;
 	grid-column: 2/3;
 	width: 100%; height: 600px;
 	margin-top: 100px;
 }
-.container-if main .map iframe {
+.map iframe {
 	width: 100%; height: 100%;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.container-if .autre {
+.divers {
+	grid-column: 2/3;
+	display: flex;
+	justify-content: space-between;
+}
+.divers .diplo {
+	text-align: justify;
+}
+.divers > div {
+	width: 45%;
+}
+.trad-mo p {
+	padding-left: 40px;
+}
+.conv-monnaie {
+	background-color: #505050;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	width: 100%; height: 175px;
+	margin: 25px auto 0 auto;
+	border: 2px solid #ea5c0d;
+	border-radius: 10px;
+}
+.conv-monnaie:hover {
+	transition-duration: 0.3s;
+	border-color: #f7af3e;
+}
+.conv-monnaie form {
+	width: 100%; height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+form .mini-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.conv-monnaie input[type=text], input[type=submit] {
+	font-family: Cicle fina;
+	font-size: 20px;
+	border: 1px solid black;
+	width: auto; height: 25px;
+	padding: 10px;
+}
+.conv-monnaie input[type=submit] {
+	background-color: white;
+	font-size: 20px;
+	width: auto; height: auto;
+	margin: 0 auto;
+	padding: 9px 14px;
+	border-radius: 7px;
+}
+.conv-monnaie input::placeholder {
+	font-family: Cicle gordita;
+	font-weight: bold;
+}
+.conv-monnaie span {
+	background-image: url('images/double-fleche.png');
+	background-size: 99%;
+	background-repeat: no-repeat;
+	width: 75px; height: 75px;
+}
+.conv-monnaie p {
+	color: red;
+	text-align: center;
+}
+.autre {
 	grid-column: 2/3;
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
 }
-.container-if .autre > div {
+.autre > div {
 	width: 47%;
 }
-.container-if .etoiles {
+.etoiles {
 	width: 200px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
 }
-.container-if .etoiles > span {
+.etoiles > span {
 	background-image: url(images/etoiles.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 40px; height: 40px;
 	margin: 50px 0;
 }
-.container-if .container-hotel, .container-resto {
+.hotel > p, .resto > p {
+	text-align: justify;
+}
+.container-hotel, .container-resto {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.container-if .container-hotel > div:not(.etoiles), .container-resto > div:not(.etoiles) {
+.container-hotel > div:not(.etoiles), .container-resto > div:not(.etoiles) {
 	background-color: #505050;
 	width: 400px; height: auto;
 	margin-bottom: 30px;
@@ -653,7 +731,7 @@ main #virgule-ss-titre h3 {
 	background-repeat: no-repeat;
 	border-bottom: 2px solid black;
 }
-.container-if .container-hotel h3, .container-resto h3 {
+.container-hotel h3, .container-resto h3 {
 	font-size: 30px;
 	font-weight: normal;
 	text-align: center;
@@ -669,83 +747,102 @@ main #virgule-ss-titre h3 {
 	font-family: Cicle Fina;
 	font-size: 23px;
 }
-.container-if .container-hotel p, .container-resto p {
+.container-hotel p, .container-resto p {
 	padding-left: 20px !important;
 }
-.container-if .container-hotel a, .container-resto a {
+.container-hotel a, .container-resto a, .divers a {
 	color: white;
 	text-decoration: underline #f7af3e;
 }
-.container-if .hotel1 {
+.hotel1 {
 	background-image: url("images/hotel-image1.jpg");
 }
-.container-if .hotel2 {
+.hotel2 {
 	background-image: url("images/hotel-image2.jpg");
 }
-.container-if .resto1 {
+.resto1 {
 	background-image: url("images/resto-image1.jpg");
 }
 
 
 /*PAGE CONTACT*/
-.container-c {
+.container-c main {
 	display: grid;
 	grid-template-columns: 15% auto 15%;
-	grid-template-rows: 79px auto;
 }
-.container-c h1 { margin-bottom: 75px; }
-.container-c section {
-	grid-column: 2; grid-row: 2;
-	border-top: 0;
+.container-c .container-staff, .container-form {
+	grid-column: 2/3;
 }
-.container-c section .auteurs {
-	display: inline-flex;
+.container-c .auteurs {
+	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 }
-.container-c section .auteurs div {
-	margin: 50px 25px 0 25px;
+.container-c .auteurs > div {
+	margin: 50px 25px 0 25px
 	width: 200px; height: auto;
 }
-.container-c section .auteurs div img {
+.container-c .auteurs div img {
 	width: 200px; height: 200px;
 	border-radius: 100px;
 }
-.container-c section .auteurs div p {
+.reseaux {
+	display: flex;
+	justify-content: space-evenly;
+}
+.reseaux span {
+}
+.reseaux a {
+	width: 25px; height: 25px;
+	background-size: 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline;
+}
+.linkedin {
+	background-image: url('images/linkedin.png');
+	width: 25px; height: 25px;
+}
+.github {
+	background-image: url('images/github.png');
+}
+.instagram {
+	background-image: url('images/instagram.png');
+}
+.container-c .auteurs div p {
 	margin-top: 10px;
+	margin-bottom: 10px;
 	text-align: center;
 }
-.container-c section .taff {
+.container-c .role {
 	padding-top: 5px;
 	border-top: 2px solid black;
 }
 
-.container-c section .formulaire {
+.formulaire {
 	background-color: #505050;
+	width: 750px;
 	border: 2px solid #f7af3e;
 	border-radius: 5px;
+	margin: 40px auto 0 auto;
 	padding: 20px;
 }
-.container-c section .formulaire form p:first-child { padding-bottom: 15px; }
-.container-c section .formulaire form input {
-	height: 20px;
+.formulaire form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.formulaire input, textarea {
+	font-family: Cicle fina;
+	font-size: 20px;
+	width: 80%; height: 35px;
+	margin: 10px; padding: 5px;
 	border-radius: 5px;
 }
-.container-c section .formulaire .input-prenom {
-	max-width: 12ch;
+.container-form .formulaire form textarea {
+	height: 300px;
 }
-.container-c section .formulaire .input-nom {
-	max-width: 20ch;
-}
-.container-c section .formulaire .warning-mail {
-	font-size: 12.5px;
-}
-.container-c section .formulaire text-area {
-	max-width: 50%;
-	max-height: 500px;
-}
-.container-c section .formulaire .submit-button {
-	display: block;
-	margin: 50px auto 0 auto;
+.formulaire input[type=submit] {
+	border-style: none;
 	width: 100px; height: 35px;
 }
