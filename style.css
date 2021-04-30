@@ -770,27 +770,60 @@ form .mini-flex {
 	display: grid;
 	grid-template-columns: 15% auto 15%;
 }
-.container-c .container-staff, .container-form {
+.container-staff .deux-ss-titre {
+	margin-top: 75px !important;
+}
+.container-staff, .container-form {
 	grid-column: 2/3;
 }
-.container-c .auteurs {
+.auteurs {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.container-c .auteurs > div {
-	margin: 50px 25px 0 25px
+.auteurs > div {
+	margin: 50px 25px 0 25px;
 	width: 200px; height: auto;
 }
-.container-c .auteurs div img {
+.auteurs div div {
+	background-size: 100%;
 	width: 200px; height: 200px;
 	border-radius: 100px;
+}
+.auteurs .img-ama {
+	background-image: url('images/Amalaric.jpg');
+}
+.auteurs .img-ama:hover {
+	background-image: url('images/Amalaric_petra.jpg');
+}
+.auteurs .img-bastou {
+	background-image: url('images/Bastien.jpg');
+}
+.auteurs .img-bastou:hover {
+	background-image: url('images/Bastien_petra.jpg');
+}
+.auteurs .img-dydy {
+	background-image: url('images/Dylan.jpg');
+}
+.auteurs .img-dydy:hover {
+	background-image: url('images/Dylan_petra.jpg');
+}
+.auteurs .img-quent {
+	background-image: url('images/Quentin.jpg');
+}
+.auteurs .img-quent:hover {
+	background-image: url('images/Quentin.png');
+}
+.auteurs .img-ivan {
+	background-image: url('images/ivan2.webp');
+}
+.auteurs .img-ivan:hover {
+	background-image: url('images/Ivan.JPG');
+	background-position: 0 28px;
 }
 .reseaux {
 	display: flex;
 	justify-content: space-evenly;
-}
-.reseaux span {
 }
 .reseaux a {
 	width: 25px; height: 25px;
@@ -809,12 +842,12 @@ form .mini-flex {
 .instagram {
 	background-image: url('images/instagram.png');
 }
-.container-c .auteurs div p {
+.auteurs div p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 }
-.container-c .role {
+.role {
 	padding-top: 5px;
 	border-top: 2px solid black;
 }
