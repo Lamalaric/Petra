@@ -20,67 +20,75 @@
 			<a href="histoire.html"><span>Histoire</span></a>
 			<a href="visiter.html"><span>À visiter</span></a>
 			<a href="galerie.html"><span>Galerie d'image</span></a>
-			<a href="informations.html"><span>Informations pratiques</span></a>
+			<a href="informations.php"><span>Informations pratiques</span></a>
 			<a class="page-actuelle" href="contact.html"><span>Contact</span></a>
 			<span id="logo_UPEM"></span>
 		</nav>
 	</header>
 
 
-	<section>
-		<h1>Nous contacter</h1>
-		<article class="auteurs">
-			<p>Ce site web a été créer dans le cadre de notre projet tutoré, pour notre première année de DUT informatique. Nous sommes une équipe de 5 étudiants, que des bg, à travailler sur ce site de crackhead.</p>
-			<div class="amalaric">
-				<img class="amalaric-img" src="images/Amalaric.jpg" alt="Amalaric">
-				<p>Amalaric Le Forestier</p>
-				<p class="taff">Chef de projet<br>Lead developpeur</p>
+	<main>
+		<div class="container-staff">
+			<div id="virgule-titre"><h2>À propos de nous</h2></div>
+			<div class="auteurs">
+				<p>Ce site web a été créer dans le cadre de notre projet tutoré, lors de notre première année de DUT informatique. Nous sommes initiallement une équipe de 5 étudiants, ayant comme objectif d'obtenir notre diplôme.</p>
+				<div>
+					<img src="images/Amalaric.jpg" alt="Amalaric">
+					<p>Amalaric Le Forestier</p>
+					<span class="reseaux">
+						<a href="https://www.linkedin.com/in/amalaric-le-forestier-61a513202/" class="linkedin"><span></span></a>
+						<a href="https://github.com/Lamalaric" class="github"><span></span></a>
+						<a href="https://www.instagram.com/lamalaric/" class="instagram"><span></span></a>
+					</span>
+					<p class="role">Chef de projet<br>Lead developpeur</p>
+				</div>
+				<div>
+					<img src="images/Bastien.jpg" alt="Bastien">
+					<p>Bastien Corgnac</p>
+					<span class="reseaux">
+						<a href="https://www.linkedin.com/in/bastien-corgnac/" class="linkedin"><span></span></a>
+						<a href="https://github.com/Bastien-crg" class="github"><span></span></a>
+					</span>
+					<p class="role">Lead recherches<br>Developpeur<br>Soutien</p>
+				</div>
+				<div>
+					<img src="images/Dylan.jpg" alt="Dylan">
+					<p>Dylan Chalier</p>
+					<span class="reseaux">
+						<a href="https://www.linkedin.com/in/dylan-chalier-435080206/" class="linkedin"><span></span></a>
+						<a href="https://github.com/DylanChalier" class="github"><span></span></a>
+					</span>
+					<p class="role">Recherches<br>Concepteur</p>
+				</div>
+				<div>
+					<img src="images/Quentin.jpg" alt="Quentin">
+					<p>Quentin Martins</p>
+					<p class="role">Recherches<br>Developpeur</p>
+				</div>
+				<div>
+					<img src="images/ivan2.webp" alt="Ivan">
+					<p>Ivan Bernard</p>
+					<p class="role"></p>
+				</div>
 			</div>
-			<div class="bastien">
-				<img class="bastien-img" src="images/Bastien.jpg" alt="Bastien">
-				<p>Bastien Corgnac</p>
-				<p class="taff">Lead recherches<br>Developpeur<br>Soutien</p>
-			</div>
-			<div class="quentin">
-				<img class="quentin-img" src="images/Quentin.jpg" alt="Quentin">
-				<p>Quentin Martins</p>
-				<p class="taff">Recherches<br>Developpeur</p>
-			</div>
-			<div class="dylan">
-				<img class="dylan-img" src="images/Dylan.jpg" alt="Dylan">
-				<p>Dylan Chalier</p>
-				<p class="taff">Recherches<br>Concepteur</p>
-			</div>
-			<div class="ivan">
-				<img class="ivan-img" src="images/Ivan.jpg" alt="Ivan">
-				<p>Ivan Bernard</p>
-				<p class="taff"></p>
-			</div>
-		</article>
+		</div>
 
-		<h1>Formulaire</h1>
-		<article class="formulaire">
-			<form>
-				<p>Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons très heureux de vous répondre, et ce dans les plus brefs délais.</p>
-				<label for="prenom">Prénom</label>
-				<input class="input-prenom" type="text" name="prenom" id="prenom" autocomplete="test">
-				<label for="nom">&emsp;Nom</label>
-				<input class="input-nom" type="text" name="nom" id="nom">
-				<br><br>
-				<label for="mail">Mail</label>
-				<input class="input-mail" type="text" name="mail" id="mail">
-				<br>
-				<p class="warning-mail">*Il ne sera utilisé seulement afin de pouvoir vous répondre.</p>
-				<br><br>
-				<label for="titre">Titre</label>
-				<input class="input-titre" type="text" name="titre" id="titre" required>
-				<br><br>
-				<textarea rows="10" cols="100" required></textarea>
-				<br>
-				<input class="submit-button" type="submit" name="Submit">
-			</form>
-		</article>
-	</section>
+		<div class="container-form">
+			<div id="virgule-titre"><h2>Nous contacter</h2></div>
+			<div class="formulaire">
+				<form>
+					<p>Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons ravis de vous répondre.</p>
+					<input type="text" name="prenom" id="prenom" placeholder="Prénom">
+					<input type="text" name="nom" id="nom" placeholder="Nom">
+					<input type="text" name="mail" id="mail" placeholder="Adresse mail">
+					<input type="text" name="titre" id="titre" placeholder="Sujet de votre message" required>
+					<textarea rows="10" cols="100" placeholder="Écrivez votre message ici" required></textarea>
+					<input type="submit" name="Submit">
+				</form>
+			</div>
+		</div>
+			
+	</main>
 
 
 	<div id="goto_top">								<!-- Retour haut de page -->
