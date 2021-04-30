@@ -166,6 +166,7 @@ main #virgule-titre h2 {
 main #virgule-ss-titre {
 	background-image: url(images/virgule_sous_titre.svg);
 	background-size: 100%;
+	background-position: 9px 0px;
 	background-repeat: no-repeat;
 	width: 1200px; height: 140px;
 	margin: 40px 0 0 100px;
@@ -176,7 +177,7 @@ main #virgule-ss-titre h3 {
 	font-size: 40px;
 	text-shadow: none;
 	text-align: left;
-	margin-left: 75px;
+	margin-left: 55px;
 	margin-top: 0;
 }
 
@@ -411,6 +412,9 @@ main #virgule-ss-titre h3 {
 	padding: 200px;
 	text-shadow: black 0.1em 0.1em 0.2em
 }
+.first-title-history {
+	margin-top: 60px !important;
+}
 .container-h main .text-centered {
 	text-align: center;
 }
@@ -586,7 +590,7 @@ main #virgule-ss-titre h3 {
 	margin: 0;
 }
 .container-if main #virgule-ss-titre h3 {
-	margin-left: 30px;
+	margin-left: 25px;
 }
 
 .container-if main {
@@ -619,6 +623,11 @@ main .map {
 .map iframe {
 	width: 100%; height: 100%;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.texte-horaires {
+	grid-column: 2/3;
+	text-align: center;
+	margin-bottom: 35px;
 }
 .divers {
 	grid-column: 2/3;
