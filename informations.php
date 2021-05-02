@@ -38,6 +38,7 @@
 		</div>
 
 		<div id="virgule-titre"><h2>Divers</h2></div>
+		<br><p class="texte-horaires">Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.</p><br>
 		<div class="divers">
 			<div class="diplo">
 				<div id="virgule-ss-titre"><h3>Recommandations diplomatiques</h3></div>
