@@ -112,6 +112,10 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 }
+nav span {
+	width: 14.28%;
+	text-align: center;
+}
 nav a {
 	font-family: Dyno regular;
 	text-shadow: 0px 0px #b94503;
@@ -119,7 +123,7 @@ nav a {
 	color: #ea5c0d;
 	display: inline-block;
 	text-align: center;
-	padding: 10px 35px;
+	/*padding: 10px 35px;*/
 }
 nav .page-actuelle {
 	text-shadow: 1px 1px black;
@@ -128,12 +132,12 @@ nav .page-actuelle {
 }
 
 #logo_MCN {
-	background-image: url(images/logo_mcn.png);
+	background-image: url(images/logo2.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 0% 50%;
 	display: inline;
-	height: 79px; width: 230px;
+	height: 79px; width: 200px;
 }
 #logo_UPEM {
 	background-image: url(images/logo_upem.png);
@@ -173,6 +177,7 @@ main #virgule-ss-titre {
 	display: block;
 }
 main #virgule-ss-titre h3 {
+	color: #f7af3e;
 	font-weight: normal;
 	font-size: 40px;
 	text-shadow: none;
@@ -391,6 +396,7 @@ main #virgule-ss-titre h3 {
 .container-h p {
 	font-size: 25px;
 	line-height: 35px;
+	text-align: justify;
 }
 .container-h img {
 	width: 450px;
@@ -498,6 +504,7 @@ main #virgule-ss-titre h3 {
 	margin-right: 50px;
 }
 .container-v main > div:not(.big-picture) {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	grid-column: 2;
 	margin: 50px 0;
 	background-color: #505050;
@@ -728,14 +735,14 @@ form .mini-flex {
 }
 .container-hotel > div:not(.etoiles), .container-resto > div:not(.etoiles) {
 	background-color: #505050;
-	width: 400px; height: auto;
+	width: 515px; height: auto;
 	margin-bottom: 30px;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	border: 2px solid black;
 	border-radius: 5px;
 }
 .container-if .image {
-	width: 400px; height: 267px;
+	width: 515px; height: 340px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	border-bottom: 2px solid black;
