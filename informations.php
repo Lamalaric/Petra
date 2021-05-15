@@ -1,32 +1,10 @@
-<!DOCTYPE html> 
-<html lang="FR"> 
-<head> 
-	<title>Petra</title>
-	<meta name="author" content="Amalaric Le Forestier" />
-	<link rel="icon" href="images/logo.ico" />
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<script src="script.js" ></script>
-</head>
+<?php
+	$page = "informations";
+	include("header.inc.php");
+?>
 
 
 <body class="container-if">
-	<div id="progress"></div> 							<!-- Barre de progression -->
-
-	<header>
-		<nav>											<!-- Menu de navigation -->
-			<span id="logo_MCN"></span>
-			<a href="index.html"><span>Accueil</span></a>
-			<a href="histoire.html"><span>Histoire</span></a>
-			<a href="visiter.html"><span>À visiter</span></a>
-			<a href="galerie.html"><span>Galerie d'image</span></a>
-			<a class="page-actuelle" href="informations.php"><span>Informations pratiques</span></a>
-			<a href="contact.html"><span>Contact</span></a>
-			<span id="logo_UPEM"></span>
-		</nav>
-	</header>
-
-
 	<main>
 		<div class="big-picture">
 			<h1>Informations pratiques</h1>
@@ -37,8 +15,8 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8577.923890256112!2d35.44819378417468!3d30.323710785533354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016eeb79d3cf39%3A0xa40550ba81476059!2sKhazneh!5e1!3m2!1sfr!2sfr!4v1619632907599!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 
-		<div id="virgule-titre"><h2>Divers</h2></div>
-		<br><p class="texte-horaires">Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.</p><br>
+		<div id="virgule-titre"><h2>Divers</h2></div><br>
+		<p class="texte-horaires"><?php echo $informations_p[$langue]; ?></p><br>
 		<div class="divers">
 			<div class="diplo">
 				<div id="virgule-ss-titre"><h3>Recommandations diplomatiques</h3></div>
@@ -324,7 +302,7 @@
 						<h4>Avis tripadvisor :</h4>
 						<p>
 							4.5/5 (1656 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6419189-Reviews-The_Cave_Bar-Petra_Wadi_Musa_Ma_an_Governorate.html" target="_blank">cliquez ici</a>
+							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6419189-Reviews-The_Cave_Bar-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
@@ -348,7 +326,7 @@
 						<h4>Avis tripadvisor :</h4>
 						<p>
 							4.5/5 (1930 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d2720550-Reviews-My_Mom_s_Recipe_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.html" target="_blank">cliquez ici</a>
+							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d2720550-Reviews-My_Mom_s_Recipe_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
@@ -368,7 +346,7 @@
 						<h4>Avis tripadvisor :</h4>
 						<p>
 							4.5/5 (141 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d17531880-Reviews-Petra_Night_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.html" target="_blank">cliquez ici</a>
+							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d17531880-Reviews-Petra_Night_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
@@ -387,7 +365,7 @@
 						<h4>Avis tripadvisor :</h4>
 						<p>
 							4/5 (383 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d1570869-Reviews-Al_Qantarah-Petra_Wadi_Musa_Ma_an_Governorate.html" target="_blank">cliquez ici</a>
+							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d1570869-Reviews-Al_Qantarah-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
@@ -406,7 +384,7 @@
 						<h4>Avis tripadvisor :</h4>
 						<p>
 							4/5 (1043 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6363999-Reviews-Red_cave-Petra_Wadi_Musa_Ma_an_Governorate.html" target="_blank">cliquez ici</a>
+							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6363999-Reviews-Red_cave-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
@@ -428,7 +406,7 @@
 						<h4>Avis tripadvisor :</h4>
 						<p>
 							5/5 (223 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d19113202-Reviews-Jordan_Heart_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.html" target="_blank">cliquez ici</a>
+							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d19113202-Reviews-Jordan_Heart_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
@@ -443,21 +421,8 @@
 	</main>
 
 
-	<div id="goto_top">								<!-- Retour haut de page -->
-		<a href="#"><img src="images/fleche_haut.jpg" alt="Flèche retour haut de page" /></a>
-	</div>
-
-
-	<footer>										<!-- Footer -->
-        <div class="partenaires">
-            <div class="f-logoMCN"></div>
-            <div class="f-logoUPEM"></div>
-            <div class="f-logoUNESCO"></div>
-            <div class="f-logoIDEA"></div>
-            <div class="f-logoANR"></div>
-        </div>
-	</footer>
-
-
+	<?php
+		include("footer.inc.php");
+	?>
 </body>
 </html>

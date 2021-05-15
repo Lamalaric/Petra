@@ -57,8 +57,67 @@ h2 {
 h3 {
 	font-family: Dyno regular; 
 }
-p, label {
+p, ul, li, a, label {
 	font-family: Cicle fina;
+}
+
+
+/* BARRE DE NAVIGATION */ 
+nav {
+	background-color: #333333;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	font-size: 25px;
+	width: 100%;
+	height: 100px;
+	border-width: 10px;
+	border-bottom: 1px solid black;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav span {
+	text-align: center;
+}
+nav > a {
+	font-family: Dyno regular;
+	text-shadow: 0px 0px #b94503;
+	text-decoration: none;
+	color: #ea5c0d;
+	width: 14.28%;
+	display: inline-block;
+	text-align: center;
+	margin: auto 30px;
+	transition-duration: 0.3s;
+	padding: 12px 0;
+}
+nav > div {
+	display: inline-flex;
+	align-items: center;
+}
+nav #flag {
+	width: 38px;
+	border: 1px solid #ea5c0d;
+	border-radius: 180px;
+} 
+nav a:hover:not(.page-actuelle) {
+	color: #505050;
+}
+nav .page-actuelle {
+	text-shadow: 1px 1px black;
+	border: 2px solid #b94503;
+	background-color: #505050;
+}
+#logo {
+	width: 80px; height: 80px;
+	margin: 0 20px;
+}
+
+.histoire-deroulant {
+	display: none;
+}
+.histoire:hover ~ .histoire-deroulant {
+	display: block;
 }
 
 
@@ -95,57 +154,6 @@ footer .partenaires .f-logoIDEA {
 footer .partenaires .f-logoANR {
 	background-image: url(images/logo_anr.png);
 	background-size: 44%;
-}
-
-
-/* BARRE DE NAVIGATION */ 
-nav {
-	background-color: #333333;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	font-size: 25px;
-	width: 100%;
-	height: 79px;
-	border-width: 10px;
-	border-bottom: 1px solid black;
-	position: fixed;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-nav span {
-	width: 14.28%;
-	text-align: center;
-}
-nav a {
-	font-family: Dyno regular;
-	text-shadow: 0px 0px #b94503;
-	text-decoration: none;
-	color: #ea5c0d;
-	display: inline-block;
-	text-align: center;
-	/*padding: 10px 35px;*/
-}
-nav .page-actuelle {
-	text-shadow: 1px 1px black;
-	border: 2px solid #b94503;
-	background-color: #505050;
-}
-
-#logo_MCN {
-	background-image: url(images/logo2.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0% 50%;
-	display: inline;
-	height: 79px; width: 200px;
-}
-#logo_UPEM {
-	background-image: url(images/logo_upem.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0% 50%;
-	display: inline;
-	height: 79px; width: 230px;
 }
 
 
@@ -202,7 +210,7 @@ main #virgule-ss-titre h3 {
 	background-size: 100%;
 	background-position: 50% 81%;
 	background-repeat: no-repeat;
-	padding-top: 79px;
+	padding-top: 100px;
 	width: 100%; height: 450px;
 	grid-column: 1/4;
 }
@@ -210,15 +218,12 @@ main #virgule-ss-titre h3 {
 	text-align: center;
 	font-size: 50px;
 	margin: 0 auto;
-	padding: 200px; 
-	text-shadow: black 0.1em 0.1em 0.2em
+	padding: 200px;
+	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /* 2 */
 .a2 {
-	grid-column: 2;
-	background-color: #333333;
-	max-width: 100%;
 	padding: 50px 0;
 }
 .a2 #texte_image1_1 {
@@ -242,48 +247,49 @@ main #virgule-ss-titre h3 {
 }
 
 /* 3 */
-.a3 {
-	grid-column: 2;
-	background-color: #333333;
-	max-width: 100%;
-}
-.a3 a {
-	text-decoration: none;
-}
-.a3 .boutons {
-	justify-content: space-evenly;
-	display: flex;
-	text-align: center;
-}
-.a3 #test {
-	font-size: 40px;
-	font-family: Dyno regular;
-	text-align: center;
-	border: solid;
-	border-radius: 5px;
-	justify-content: center;
-	background-color: #333333;
-	padding-left: 20px;
-	padding-right: 20px;
+.a3 form {
+	width: 100%;
+	background-color: #505050;
 	transition-duration: 0.6s;
-	border-color: #ea5c0d;
-	color: #ea5c0d;	
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 18px 0;
+    margin-bottom: 50px;
 }
-.a3 #test:hover {
-	transition-duration: 0.8s;
-	background-color: #ea5c0d;
-	color: #333333;
-	border-color: #ea5c0d;
+.a3 select, .a3 label, .a3 input {
+	font-family: Cicle fina;
+	font-size: 23px;
 }
-.a3 .boutons p {
-	line-height: 90px;
+.a3	select {
+	padding: 7px 5px;
+	margin-right: 90px;
+}
+.a3 label {
+	padding-left: 30px;
+	margin-right: 20px;
+}
+.a3 input {
+	background-color: #f7af3e;
+	height: auto !important;
+	padding: 7px 5px;
+	border: none;
+}
+.a3 form:hover {
+	border-color: #b94503;
+}
+.a3 iframe {
+	width: 100%;
+}
+.a3 .to-underline {
+	text-decoration: underline #f7af3e;
+	text-align: center;
+}
+.a3 p:not(:first-child) {
+	text-align: center;
 }
 
 /*4*/
 .a4 {
-	grid-column: 2;
-	background-color: #333333;
-	max-width: 100%;
 	padding-bottom: 75px;
 }
 .a4 div {
@@ -357,29 +363,44 @@ main #virgule-ss-titre h3 {
 
 /* PAGE HISTOIRE.HTML */
 .sommaire {
-	width: 450px;
+	width: auto;
 	grid-column: 1; grid-row: 3;
 	background-color: #505050;
-	border: 4px solid #b94503;
+	border: 2px solid black;
 	border-radius: 8px;
 	margin: 18px auto;
 	padding: 10px;
-	transition-duration: 0.3s;
+	transition-duration: 0.6s;
 }
 .sommaire h3 {
 	font-size: 30px;
 	font-weight: normal;
 	text-align: center;
 }
+.sommaire > ul {
+	display: flex;
+	justify-content: space-around;
+}
+.sommaire > ul > li {
+	margin: 0 20px;
+}
+.sommaire .underline {
+	text-decoration: underline;
+	text-decoration-color: #f7af3e;
+}
+.sommaire ul {
+	padding-inline-start: 0;
+}
 .sommaire li {
-	font-family: Cicle Gordita;
+	width: auto;
+	font-size: 25px;
+	list-style-type: none;
 }
 .sommaire a {
 	text-decoration: none;
 	color: white;
 }
 .sommaire:hover {
-	transition-duration: 0.3s;
 	border-color: #f7af3e;
 }
 .sommaire a:hover {
@@ -407,7 +428,7 @@ main #virgule-ss-titre h3 {
 	background-size: 103%;
 	background-position: 64% 73%;
 	background-repeat: no-repeat;
-	padding-top: 79px;
+	padding-top: 100px;
 	width: 100%; height: 450px;
 	grid-column: 1/4;
 }
@@ -417,6 +438,17 @@ main #virgule-ss-titre h3 {
 	margin: 0 auto;
 	padding: 200px;
 	text-shadow: black 0.1em 0.1em 0.2em
+}
+.h3, .h4 {
+	display: none;
+}
+.container-h input {
+	background-color: #f7af3e;
+	width: 100px; height: 20px;
+	border: none;
+}
+.container-h input:checked ~ .h3, .container-h input:checked ~ .h4 {
+	display: block;
 }
 .first-title-history {
 	margin-top: 60px !important;
@@ -461,7 +493,7 @@ main #virgule-ss-titre h3 {
 	background-size: 100%;
 	background-position: 64% 100%;
 	background-repeat: no-repeat;
-	padding-top: 79px;
+	padding-top: 100px;
 	width: 100%; height: 450px;
 	grid-column: 1/4;
 }
@@ -508,9 +540,14 @@ main #virgule-ss-titre h3 {
 	grid-column: 2;
 	margin: 50px 0;
 	background-color: #505050;
+	transition-duration: 0.6s;
 	border: 2px solid black;
 	border-radius: 8px;
 	height: 305px;
+}
+.container-v main > div:not(.big-picture):hover {
+	border-color: #b94503;
+	transition-duration: 0.6s;
 }
 .container-v main div > div:first-child {
 	margin-right: 50px;
@@ -550,7 +587,7 @@ main #virgule-ss-titre h3 {
 	background-size: 100%;
 	background-position: 64% 52%;
 	background-repeat: no-repeat;
-	padding-top: 79px;
+	padding-top: 100px;
 	width: 100%; height: 450px;
 	grid-column: 1/4;
 }
@@ -576,8 +613,28 @@ main #virgule-ss-titre h3 {
 .container-g main div div > img {
 	width: 100%; height: 100%;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	background-size: 100%;
+	object-fit: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	transition: transform .25s, visibility .25s ease-in, opacity .5s;
+}
+.container-g main div div > p {
+	visibility: hidden;
+	opacity: 0;
+	width: 350px;
+	margin: 0; margin-top: 20px;
+	overflow-y: auto;
+	position: absolute;
+	z-index: -5;
+	transition: visibility .5s, opacity .25s linear;
+}
+.container-g main div div img:hover {
+	transform: scale(1.14);
+	opacity: 0.2;
+}
+.container-g main div div img:hover + p {
+	visibility: visible;
+	opacity: 1;
 }
 .container-g main div div > p {
 	text-align: center;
@@ -609,7 +666,7 @@ main #virgule-ss-titre h3 {
 	background-size: 100%;
 	background-position: 64% 68%;
 	background-repeat: no-repeat;
-	padding-top: 79px;
+	padding-top: 100px;
 	width: 100%; height: 450px;
 	grid-column: 1/4;
 }
@@ -886,6 +943,8 @@ form .mini-flex {
 	font-size: 20px;
 	width: 80%; height: 35px;
 	margin: 10px; padding: 5px;
+	box-shadow: inset 0 1px hsla(0, 0%, 0%, 0.1);
+	border: none;
 	border-radius: 5px;
 }
 .container-form .formulaire form textarea {
