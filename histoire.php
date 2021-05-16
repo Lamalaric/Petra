@@ -28,8 +28,8 @@
 			</aside>
 
 			<article class="h2">
-				<div id="virgule-titre" class="first-title-history"><h2 id="histoire"><?php echo $sommaire_1[$langue]; ?></h2></div>            
-				<div id="virgule-ss-titre"><h3 id="antiquite"><?php echo $sommaire_1_1[$langue]; ?></h3></div>
+				<h2 id="histoire"><?php echo $sommaire_1[$langue]; ?></h2>          
+				<h3 id="antiquite"><?php echo $sommaire_1_1[$langue]; ?></h3>
 				<img src="images/image11.jpg" alt="Paysage" class="img1">
 				<p>
 					<?php echo $h2_p[$langue]; ?>
@@ -50,14 +50,14 @@
 			</article>
 
 			<article class="h5">
-				<div id="virgule-ss-titre"><h3 id="moyen-age"><?php echo $h5_h3[$langue]; ?></h3></div>
+				<h3 id="moyen-age"><?php echo $h5_h3[$langue]; ?></h3>
 				<img src="images/moyen_age.jpg" alt="Paysage" class="img3">
 				<p><?php echo $h5_p_1[$langue]; ?></p><br><br>
 				<p class="text-centered"><?php echo $h5_p_2[$langue]; ?></p>
 			</article>
 
 			<article class="h6">
-				<div id="virgule-titre"><h2 id="archeo"><?php echo $h6_h2[$langue]; ?></h2></div>
+				<h2 id="archeo"><?php echo $h6_h2[$langue]; ?></h2>
 				<img src="images/Johann_Ludwig_Burckhardt.png" alt="Johann Ludwig Burckhardt" class="img4">
 				<p>
 					<?php echo $h6_p[$langue]; ?>
@@ -65,7 +65,7 @@
 			</article>
 
 			<article class="h7">
-				<div id="virgule-titre"><h2 id="archi"><?php echo $h7_h2[$langue]; ?></h2></div>
+				<h2 id="archi"><?php echo $h7_h2[$langue]; ?></h2>
 				<p>
 					<?php echo $h7_p[$langue]; ?>
 				</p>
@@ -73,7 +73,7 @@
 			</article>
 
 			<article class="h8">
-				<div id="virgule-titre"><h2 id="culture"><?php echo $h8_h2[$langue]; ?></h2></div>
+				<h2 id="culture"><?php echo $h8_h2[$langue]; ?></h2>
 				<img src="images/image12.png" alt="Paysage" class="img6">
 				<p>
 					<?php echo $h8_p[$langue]; ?>

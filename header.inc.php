@@ -26,20 +26,20 @@
 	$nav_history = array("Histoire", "History");
 	$nav_galery = array("Galerie d'image", "Image gallery");
 	$nav_visit = array("À visiter", "To visit");
-	$nav_infos = array("Informations pratiques", "Practical informations");
-	$nav_contact = array("Contact", "Contact");
+	$nav_infos = array("Infos pratiques", "Practical informations");
+	$nav_contact = array("À propos", "About us");
 
 	/* INDEX */
 	$a1_h1 = array("Petra, une cité nabatéenne", "Petra, a Nabatean city");
 	$introduction = array("Petra est une cité antique du sud de l’actuelle Jordanie.<br>Son attraction mondiale en a fait l’un des principaux pôle touristique de Jordanie. Fondée en -1200 par les Édomites, elle fut par la suite occupée par les Nabatéens à partir du VIe siècle avant JC, qui la firent prospérer grâce à sa position stratégique sur la route des caravanes en provenance de l’Orient. Aujourd’hui classée au patrimoine mondial de l’UNESCO, elle est considérée comme l’un des plus beaux sites troglodytiques du monde.",
 	    "Petra is an ancient city in the south of present-day Jordan.<br>Its worldwide attraction has made it one of Jordan's main tourist poles. Founded in 1200 BC by the Edomites, it was later occupied by the Nabataeans from the 6th century BC who made it prosper thanks to its strategic position on the route of caravans from the East. Today, classified as a UNESCO World Heritage Site, it is considered one of the most beautiful troglodytic sites in the world.");
-	$a3_h2 = array("Parcours", "Courses");
+	$a3_h2 = array("PARCOURS", "COURSES");
 	$a3_p = array("Nous avons sélectionné pour vous les meilleurs parcours à effectuer, tout en nous assurant que vous ne raterez aucun des monuments phare de cette magnifique citée nabatéenne.", "We have selected for you the best routes to take, ensuring that you will not miss any of the highlights of this magnificent Nabatean city.");
 	$a3_label = array("Durée du parcours : ", "Duration of the course : ");
 	$a3_option0 = array("Aucun ", "None ");
 	$a3_option1 = array("Tout afficher ", "Display all ");
 	$a3_input_value = array("Rechercher", "Search");
-	$a4_h2 = array("Images à la une", "Featured images");
+	$a4_h2 = array("IMAGES À LA UNE", "FEATURED IMAGES");
 	$a4_a = array("Voir plus", "See more");
 
 	/* HISTOIRE */
@@ -107,10 +107,6 @@
 	$visiter_4_texte = array("La cité se situe dans une zone très aride. Ainsi plusieurs systèmes de gestion de l’eau furent mis en place. L’eau de la cité provenait essentiellement de la pluie, le sol étant peu perméable, les habitants pouvaient la récupérer aux alentours. Pour l’acheminer, deux aqueducs furent creusé dans la parois le long du Sîq (défilé rocheux menant devant Al Kazneh, l’un alimenté par l’Aïn Moussa (cours d’eau passant non loin), l’autre par les eaux de pluies. Enfin environs 200 citernes permettaient de stocker l’eau à proximiter de la citer.", "The city is located in a very arid area. Thus several systems of water management were set up. The water of the city came essentially from the rain, the ground being not very permeable, the inhabitants could recover it in the surroundings. To convey it, two aqueducts were dug in the wall along the Sîq (rocky gorge leading in front of Al Kazneh), one fed by the Aïn Moussa (a stream passing nearby), the other by rainwater. Finally, about 200 cisterns were used to store water near the cistern.");
 	$var = array("", "");
 
-	/* INFORMATIONS */
-	$informations_p = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.", "trad anglais");
-
-
 
 
 	// Header + nav
@@ -125,46 +121,59 @@
 	</head>
 
 	<header>
-		<nav>											<!-- Menu de navigation -->';
-			// Pour appliquer un style différent à la page où l'on se trouve
-			if ($page == "index") {
-				echo '<a href="index.php?lang='.$langue.'" class="page-actuelle"><span>'.$nav_home[$langue].'</span></a>';
-			} else {
-				echo '<a href="index.php?lang='.$langue.'"><span>'.$nav_home[$langue].'</span></a>';
-			}
-			if ($page == "histoire") {
-				echo '<a href="histoire.php?lang='.$langue.'" class="page-actuelle"><span>'.$nav_history[$langue].'</span></a>';
-			} else {
-				echo '<a href="histoire.php?lang='.$langue.'"><span>'.$nav_history[$langue].'</span></a>';
-			}
-			if ($page == "galerie") {
-				echo '<a href="galerie.php?lang='.$langue.'" class="page-actuelle"><span>'.$nav_galery[$langue].'</span></a>';
-			} else {
-				echo '<a href="galerie.php?lang='.$langue.'"><span>'.$nav_galery[$langue].'</span></a>';
-			}
-			echo '
-				<div>
-					<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag"></a>
-					<a href="index.php"><img src="images/logo.png" alt="Logo" id="logo"></img></a>
-					<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag"></a>	
-				</div>
-			';
-			if ($page == "visiter") {
-				echo '<a href="visiter.php?lang='.$langue.'" class="page-actuelle"><span>'.$nav_visit[$langue].'</span></a>';
-			} else {
-				echo '<a href="visiter.php?lang='.$langue.'"><span>'.$nav_visit[$langue].'</span></a>';
-			}
-			if ($page == "informations") {
-				echo '<a href="informations.php?lang='.$langue.'" class="page-actuelle"><span>'.$nav_infos[$langue].'</span></a>';
-			} else {
-				echo '<a href="informations.php?lang='.$langue.'"><span>'.$nav_infos[$langue].'</span></a>';
-			}
-			if ($page == "contact") {
-				echo '<a href="contact.php?lang='.$langue.'" class="page-actuelle"><span>'.$nav_contact[$langue].'</span></a>';
-			} else {
-				echo '<a href="contact.php?lang='.$langue.'"><span>'.$nav_contact[$langue].'</span></a>';
-			}
+		<nav>											<!-- Menu de navigation -->
+			<ul>';
+				// Pour appliquer un style différent à la page où l'on se trouve
+				if ($page == "index") {
+					echo '<li><a href="index.php?lang='.$langue.'" class="page-actuelle">'.$nav_home[$langue].'</a></li>';
+				} else {
+					echo '<li><a href="index.php?lang='.$langue.'">'.$nav_home[$langue].'</a></li>';
+				}
+				if ($page == "histoire") {
+					echo '<li><a href="histoire.php?lang='.$langue.'" class="page-actuelle">'.$nav_history[$langue].'</a></li>';
+				} else {
+					echo '<li><a href="histoire.php?lang='.$langue.'">'.$nav_history[$langue].'</a></li>';
+				}
+				if ($page == "galerie") {
+					echo '<li><a href="galerie.php?lang='.$langue.'" class="page-actuelle">'.$nav_galery[$langue].'</a></li>';
+				} else {
+					echo '<li><a href="galerie.php?lang='.$langue.'">'.$nav_galery[$langue].'</a></li>';
+				}
+				echo '
+				<li>
+					<div>';
+					if ($langue == 0) {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag" class="langue-actuelle"></a>';
+					} else {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag"></a>';
+					}
+					echo '<a href="index.php"><img src="images/logo.png" alt="Logo" id="logo"></img></a>';
+					if ($langue == 1) {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag" class="langue-actuelle"></a>';
+					} else {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag"></a>';
+					}
+				echo '
+					</div>
+				</li>
+				';
+				if ($page == "visiter") {
+					echo '<li><a href="visiter.php?lang='.$langue.'" class="page-actuelle">'.$nav_visit[$langue].'</a></li>';
+				} else {
+					echo '<li><a href="visiter.php?lang='.$langue.'">'.$nav_visit[$langue].'</a></li>';
+				}
+				if ($page == "informations") {
+					echo '<li><a href="informations.php?lang='.$langue.'" class="page-actuelle">'.$nav_infos[$langue].'</a></li>';
+				} else {
+					echo '<li><a href="informations.php?lang='.$langue.'">'.$nav_infos[$langue].'</a></li>';
+				}
+				if ($page == "contact") {
+					echo '<li><a href="contact.php?lang='.$langue.'" class="page-actuelle">'.$nav_contact[$langue].'</a></li>';
+				} else {
+					echo '<li><a href="contact.php?lang='.$langue.'">'.$nav_contact[$langue].'</a></li>';
+				}
 	echo '
+			</ul>
 		</nav>
 	</header>
 

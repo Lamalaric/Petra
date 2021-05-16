@@ -10,16 +10,16 @@
 			<h1>Informations pratiques</h1>
 		</div>
 
-		<div id="virgule-titre"><h2>Plan du site</h2></div>		
+		<h2>Plan du site</h2>
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8577.923890256112!2d35.44819378417468!3d30.323710785533354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016eeb79d3cf39%3A0xa40550ba81476059!2sKhazneh!5e1!3m2!1sfr!2sfr!4v1619632907599!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 
-		<div id="virgule-titre"><h2>Divers</h2></div><br>
-		<p class="texte-horaires"><?php echo $informations_p[$langue]; ?></p><br>
+		<h2>Divers</h2>
+		<p class="texte-horaires">Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.</p>
 		<div class="divers">
 			<div class="diplo">
-				<div id="virgule-ss-titre"><h3>Recommandations diplomatiques</h3></div>
+				<h3>Recommandations diplomatiques</h3>
 				<p>
 					Le Royaume hachémite de Jordanie, pôle de stabilité dans une région traversée par les crises, n’est cependant pas à l’abri de troubles, en particulier du risque terroriste. La Jordanie connaît une menace permanente d’attentats. Cette menace est prise en compte par les autorités jordaniennes qui continuent de se mobiliser pour prévenir le risque terroriste ou infiltrations aux frontières.
 				</p>
@@ -51,7 +51,7 @@
 				<p><u>Sources</u> : <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/#securite">www.diplomatie.gouv.fr</a></p>
 			</div>
 			<div class="trad-mo">
-				<div id="virgule-ss-titre"><h3>Quelques traductions utiles</h3></div>
+				<h3>Quelques traductions utiles</h3>
 				<p>
 					<u>Bonjour/Hello</u> : sabah alkhyr    صباح الخير<br><br>
 					<u>Merci/Thank you</u> : ashkurak    اشكرك<br><br>
@@ -62,9 +62,9 @@
 					<u>Parlez vous anglais/Do you speak english</u> : hal tatakalam al'iinjlizia    هل تتكلم الانجليزية<br><br>
 					<u>Parlez vous français/Do you speak french</u> : hal tatakalam alfaransia    هل تتكلم الفرنسية<br><br>
 				</p>
-				<div id="virgule-ss-titre"><h3>Convertisseur de monnaie</h3></div>
+				<h3 id="convertisseur">Convertisseur de monnaie</h3>
 				<div class="conv-monnaie" id="conv-monnaie">
-					<form method="post" action="informations.php#virgule-ss-titre">				
+					<form method="post" action="informations.php#convertisseur">				
 						<?php
 							error_reporting(0);
 							$eur=$_POST['euro'];
@@ -113,11 +113,11 @@
 			</div>
 		</div>
 
-		<!-- recommandations diplomatiques -->
-		<div id="virgule-titre"><h2>Aux alentours</h2></div>
+		<!-- Recommandations diplomatiques -->
+		<h2>Aux alentours</h2>
 		<div class="autre">
 			<div class="hotel">
-				<div id="virgule-ss-titre"><h3>Hôtels</h3></div>
+				<h3>Hôtels</h3>
 				<p>
 					Besoin de vous loger ? Ne vous en faites pas ! Nous avons séléctionné pour vous les hôtels à proximité, classé par étoiles.
 				</p>
@@ -130,7 +130,7 @@
 						<span></span>
 					</div>
 					<div>
-						<div class="image hotel1"></div>
+						<img src="images/hotel-image1.jpg" alt="Movenpick hotel">
 						<h3>Movenpick Resort Petra</h3>
 						<h4>Les + :</h4>
 						<ul>
@@ -159,7 +159,7 @@
 						<span></span>
 					</div>
 					<div>
-						<div class="image hotel2"></div>
+						<img src="images/hotel-image2.jpg" alt="Petra Guest House hotel">
 						<h3>Petra Guest House</h3>
 						<h4>Les + :</h4>
 						<ul>
@@ -285,13 +285,13 @@
 			</div>
 
 			<div class="resto">
-				<div id="virgule-ss-titre"><h3>Restaurants</h3></div>
+				<h3>Restaurants</h3>
 				<p>
 					Un petit creux ? Pas de soucis, voici une liste de restaurants aux alentours qui sauront vous préparer les meilleures spécialités du coin !
 				</p>
 				<div class="container-resto">
 					<div>
-						<div class="image resto1"></div>
+						<img src="images/resto-image1.jpg" alt="The cave bar restaurant">
 						<h3>The Cave Bar</h3>
 						<p>
 							Restaurant traditionnel.<br>

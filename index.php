@@ -22,7 +22,7 @@
 			</section>
 
 			<section class="a3">					<!-- Parcours -->
-				<div id="virgule-titre"><h2><?php echo $a3_h2[$langue]; ?></h2></div>
+				<h2><?php echo $a3_h2[$langue]; ?></h2>
 				<p><?php echo $a3_p[$langue]; ?></p>
 				<form name="saisie" method="GET" action="#">
 					<label><?php echo $a3_label[$langue]; ?></label>
@@ -160,7 +160,7 @@
 			</section>
 
 			<section class="a4">					<!-- Images -->
-				<div id="virgule-titre"><h2><?php echo $a4_h2[$langue]; ?></h2></div>
+				<h2><?php echo $a4_h2[$langue]; ?></h2>
 				<div>
 					<span></span>
 					<span></span>

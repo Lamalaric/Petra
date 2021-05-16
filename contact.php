@@ -8,7 +8,7 @@
 	<main>
 		<div class="container-staff">
 			<div id="virgule-titre"><h2>À propos de nous</h2></div>
-			<p>Ce site web a été créé dans le cadre de notre projet tutoré, lors de notre première année de DUT informatique. Ce projet étant en partenariat avec l'UNESCO ........</p>
+			<p>Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.</p>
 			<div id="virgule-ss-titre"><h3>Notre groupe</h3></div>
 			<div class="auteurs">
 				<div>
