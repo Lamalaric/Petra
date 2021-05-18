@@ -27,7 +27,7 @@
 /* RETOUR HAUT DE PAGE*/
 body #goto_top{
 	position: fixed;
-	bottom: 25px; right: 25px;
+	bottom: 125px; right: 25px;
 }
 body #goto_top img{
 	border-radius: 20px;
@@ -43,6 +43,15 @@ body {
 	color: white;
 	height: 100%;
 	margin: 0 0 0 0;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #f7af3e;
+}
+
+::selection {
+  color: white;
+  background: #f7af3e;
 }
 h1, h2{
 	font-family: Dyno regular;
@@ -127,37 +136,69 @@ nav li a:hover:not(.page-actuelle) {
 
 /* FOOTER */
 footer {
-	background-color: #505050;
+	background-color: #222222;
+	min-height: 80px;
 	grid-column: 1/4;
 	margin-top: 100px;
+	overflow-x: auto;
 }
 footer .partenaires {
-	padding: 10px 50px;
+	float: left;
 }
-footer .partenaires > div {
+footer .reseaux-site {
+	float: right;
+}
+footer span {
+	grid-column: 1/3;
 	display: inline-block;
 	background-size: 100%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	width: 200px; height: 100px;
+	width: 150px; min-height: 80px;
 }
-footer .partenaires .f-logoMCN {
-	background-image: url(images/logo_mcn.png);
+footer .reseaux-site span {
+	width: 30px; height: 30px;
+	margin: 0 10px;
 }
-footer .partenaires .f-logoUPEM {
-	background-image: url(images/logo_upem.png);
-	margin-left: 25px;
+.f-logoMCN {
+    background-image: url(images/logo_mcn.png);
+    background-position-y: 18px;
+    width: 190px;
 }
-footer .partenaires .f-logoUNESCO {
-	background-image: url(images/logo_unesco.png);
-	background-size: 50%;
+.f-logoUPEM {
+    background-image: url(images/logo_upem.png);
+    background-position-y: 15px;
+    width: 190px;
+    margin-left: 10px;
 }
-footer .partenaires .f-logoIDEA {
-	background-image: url(images/logo_idea.png);
+.f-logoUNESCO {
+    background-image: url(images/logo_unesco.png);
+    background-position: 0px 10px;
+    width: 80px;
+    margin: 0px 14px 0 22px;
 }
-footer .partenaires .f-logoANR {
-	background-image: url(images/logo_anr.png);
-	background-size: 44%;
+.f-logoANR {
+    background-image: url(images/logo_anr.png);
+    background-position-y: 9px;
+    width: 65px;
+}
+.f-logoIDEA {
+    background-image: url(images/logo_idea.png);
+    width: 149px;
+    margin-left: 9px;
+}
+footer .f-logoTWI {
+	background-image: url(images/logo_twitter.png);
+}
+footer .f-logoFB {
+	background-image: url(images/logo_facebook.png);
+}
+footer .f-logoINSTA {
+	background-image: url(images/instagram.png);
+}
+footer .f-logoYTB {
+	background-image: url(images/logo_youtube.png);
+	width: 83px !important;
 }
 
 
@@ -531,6 +572,14 @@ main h3 {
 	height: 290px;
 }
 .container-v main h3 {
+	background-image: inherit;
+	text-transform: none;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 30px !important;
+    margin: 0; padding: 0;
+    color: white;
 	margin-block-start: 1.5em;
 	font-size: 25px;
 }
@@ -650,6 +699,10 @@ main h3 {
 .container-if main * {
 	grid-column: 2/3;
 }
+.container-if .divers h3 {
+	font-size: 1.7em;
+}
+
 .container-if .divers h3,
 .container-if .hotel > h3,
 .container-if .resto > h3 {
@@ -707,8 +760,9 @@ main .map {
 .conv-monnaie {
 	background-color: #505050;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	width: 100%; height: 175px;
+	width: 100%; height: auto;
 	margin: 25px auto 0 auto;
+	padding: 20px 10px;
 	border: 2px solid #ea5c0d;
 	border-radius: 10px;
 }
@@ -728,20 +782,27 @@ form .mini-flex {
 	justify-content: space-evenly;
 	align-items: center;
 }
-.conv-monnaie input[type=text], input[type=submit] {
+.conv-monnaie input[type=text],
+.conv-monnaie select,
+.conv-monnaie input[type=submit] {
 	font-family: Cicle fina;
 	font-size: 20px;
 	border: 1px solid black;
 	width: auto; height: 25px;
 	padding: 10px;
 }
-.conv-monnaie input[type=submit] {
+.conv-monnaie input[type=submit],
+.conv-monnaie select {
 	background-color: white;
 	font-size: 20px;
 	width: auto; height: auto;
 	margin: 0 auto;
 	padding: 9px 14px;
 	border-radius: 7px;
+}
+.conv-monnaie select {
+	margin: 0 auto 20px auto;
+	width: 300px;
 }
 .conv-monnaie input::placeholder {
 	font-family: Cicle gordita;
@@ -845,10 +906,23 @@ form .mini-flex {
 	display: grid;
 	grid-template-columns: 15% auto 15%;
 }
-.container-staff .deux-ss-titre {
-	margin-top: 75px !important;
+.container-c h3 {
+	margin-top: 50px;
 }
-.container-staff, .container-form {
+.container-c h4 {
+	font-size: 22px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: underline #f7af3e;
+	text-align: center;
+}
+.container-c p {
+	text-align: justify;
+}
+.container-staff {
+	margin-top: 175px;
+}
+.container-staff, .container-partenaires ,.container-form {
 	grid-column: 2/3;
 }
 .auteurs {
@@ -926,7 +1000,40 @@ form .mini-flex {
 	padding-top: 5px;
 	border-top: 2px solid black;
 }
-
+.snap_credit {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.snap_credit > div {
+	width: 47%;
+}
+.snap_credit h3 {
+	margin: 0;
+}
+.snap {
+	margin-bottom: 75px;
+}
+.snap img {
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+.container-c .partenaires span {
+	display: inline-block;
+	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	min-height: 80px;
+}
+.container-c .partenaires {
+	display: flex;;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.container-partenaires {
+	margin: 100px 0;
+}
 .formulaire {
 	background-color: #505050;
 	width: 750px;

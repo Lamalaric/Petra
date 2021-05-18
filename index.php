@@ -26,7 +26,7 @@
 				<p><?php echo $a3_p[$langue]; ?></p>
 				<form name="saisie" method="GET" action="#">
 					<label><?php echo $a3_label[$langue]; ?></label>
-          			<select name="choix" >
+          			<select name="choix">
           				<option value="0"><?php echo $a3_option0[$langue]; ?></option>
             			<option value="1">1h30</option>
             			<option value="2">2h</option><br>

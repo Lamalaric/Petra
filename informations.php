@@ -64,48 +64,176 @@
 				</p>
 				<h3 id="convertisseur">Convertisseur de monnaie</h3>
 				<div class="conv-monnaie" id="conv-monnaie">
-					<form method="post" action="informations.php#convertisseur">				
+					<?php 
+						if ($langue == 0) {
+							echo '<form method="post" action="'.$_SERVER["PHP_SELF"].'#convertisseur">';
+						} else {
+							echo '<form method="post" action="'.$_SERVER["PHP_SELF"].'?lang=1#convertisseur">';
+						}
+						
+					?>				
 						<?php
 							error_reporting(0);
-							$eur=$_POST['euro'];
-							$jod=$_POST['jod'];
+							if ($langue == 0) {				// Convertisseur euro --> jod (site fr)
+								$eur=$_POST['euro'];
+								$jod=$_POST['jod'];
 
-							if (!empty($eur) && !empty($jod))
-							{
-								echo '<div class="mini-flex">';
-								echo '<input type="text" name="euro" placeholder="Euro (€)">';
-								echo '<span></span>';
-								echo '<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">';
-								echo '</div>';
-								echo '<input type="submit" name="convertir" value="Convertir">';
-								echo '<p>Veuillez ne renseigner qu\'un seul champ.</p>';
+								if (!empty($eur) && !empty($jod))
+								{
+									echo '<div class="mini-flex">';
+									echo '<input type="text" name="euro" placeholder="Euro (€)">';
+									echo '<span></span>';
+									echo '<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">';
+									echo '</div>';
+									echo '<input type="submit" name="convertir" value="Convertir">';
+									echo '<p>Veuillez ne renseigner qu\'un seul champ.</p>';
+								}
+								elseif (empty($eur) && !empty($jod))
+								{
+									echo '<div class="mini-flex">';
+									echo '<input type="text" name="euro" placeholder="'.$jod*1.16.' €">';
+									echo '<span></span>';
+									echo '<input type="text" name="jod" placeholder="'.$jod.' JOD">';
+									echo '</div>';
+									echo '<input type="submit" name="convertir" value="Convertir">';
+								}
+								elseif (!empty($eur) && empty($jod))
+								{
+									echo '<div class="mini-flex">';
+									echo '<input type="text" name="euro" placeholder="'.$eur.' €">';
+									echo '<span></span>';
+									echo '<input type="text" name="jod" placeholder="'.$eur*0.86.' JOD">';
+									echo '</div>';
+									echo '<input type="submit" name="convertir" value="Convertir">';
+								}
+					  			else
+								{
+									echo '<div class="mini-flex">';
+									echo '<input type="text" name="euro" placeholder="Euro (€)">';
+									echo '<span></span>';
+									echo '<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">';
+									echo '</div>';
+									echo '<input type="submit" name="convertir" value="Convertir">';
+								}
 							}
-							elseif (empty($eur) && !empty($jod))
-							{
-								echo '<div class="mini-flex">';
-								echo '<input type="text" name="euro" placeholder="'.$jod*1.16.' €">';
-								echo '<span></span>';
-								echo '<input type="text" name="jod" placeholder="'.$jod.' JOD">';
-								echo '</div>';
-								echo '<input type="submit" name="convertir" value="Convertir">';
-							}
-							elseif (!empty($eur) && empty($jod))
-							{
-								echo '<div class="mini-flex">';
-								echo '<input type="text" name="euro" placeholder="'.$eur.' €">';
-								echo '<span></span>';
-								echo '<input type="text" name="jod" placeholder="'.$eur*0.86.' JOD">';
-								echo '</div>';
-								echo '<input type="submit" name="convertir" value="Convertir">';
-							}
-							else
-							{
-								echo '<div class="mini-flex">';
-								echo '<input type="text" name="euro" placeholder="Euro (€)">';
-								echo '<span></span>';
-								echo '<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">';
-								echo '</div>';
-								echo '<input type="submit" name="convertir" value="Convertir">';
+
+							if ($langue == 1) {				// Convertisseur dollars/livre --> jod (site en)
+								$dol=$_POST['dol'];
+								$liv=$_POST['liv'];
+								$jod=$_POST['jod'];
+								echo '
+								<select name="monnaie">
+									<option value="dol" selected>Dollars ($)</option>
+									<option value="liv">Pound (£)</option>
+								</select>
+								';
+								if (isset($_POST["monnaie"])) {			// Si on choisit de convertir en dollars
+									if ($_POST["monnaie"] == "dol") {
+										
+										if (!empty($dol) && !empty($jod))
+										{
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="dol" placeholder="Dollars ($)">
+												<span></span>
+												<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											<p>Please only fill one field.</p>
+											';
+										}
+										elseif (empty($dol) && !empty($jod))
+										{
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="dol" placeholder="'.$jod*1.41.' $">
+												<span></span>
+												<input type="text" name="jod" placeholder="'.$jod.' JOD">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											';
+										}
+										elseif (!empty($dol) && empty($jod))
+										{
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="dol" placeholder="'.$dol.' $">
+												<span></span>
+												<input type="text" name="jod" placeholder="'.$dol*0.71.' JOD">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											';
+										} else {
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="dol" placeholder="Dollars ($)">
+												<span></span>
+												<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											';
+										}
+									}
+								}
+								if (isset($_POST["monnaie"])) {			// Si on choisit de convertir en livre sterling
+									if ($_POST["monnaie"] == "liv") {
+										if (!empty($liv) && !empty($jod))
+										{
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="liv" placeholder="Pound (£)">
+												<span></span>
+												<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											<p>Please only fill one field.</p>
+											';
+										}
+										elseif (empty($liv) && !empty($jod))
+										{
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="liv" placeholder="'.$jod.' £">
+												<span></span>
+												<input type="text" name="jod" placeholder="'.$jod.' JOD">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											';
+										}
+										elseif (!empty($liv) && empty($jod))
+										{
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="liv" placeholder="'.$liv.' £">
+												<span></span>
+												<input type="text" name="jod" placeholder="'.$liv.' JOD">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											';
+										} else {
+											echo '
+											<div class="mini-flex">
+												<input type="text" name="liv" placeholder="Pound (£)">
+												<span></span>
+												<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">
+											</div>
+											<input type="submit" name="convertir" value="Convert">
+											';
+										}
+									}
+								}
+
+								else
+								{
+									echo '
+									<div class="mini-flex">
+										<input type="text" name="dol" placeholder="Chose a currency">
+										<span></span>
+										<input type="text" name="jod" placeholder="Dinar jordanien (JOD)">
+									</div>
+									<input type="submit" name="convertir" value="Convert">
+									';
+								}
 							}
 						?>
 					</form>

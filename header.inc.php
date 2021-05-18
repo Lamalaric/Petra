@@ -112,7 +112,7 @@
 	// Header + nav
 	echo '
 	<head> 
-		<title>Petra</title>
+		<title>Petra - Médiation Culturelle et Numérique</title>
 		<meta name="author" content="Amalaric Le Forestier" />
 		<link rel="icon" href="images/logo.ico" />
 		<meta charset="utf-8" />

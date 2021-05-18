@@ -7,9 +7,9 @@
 <body class="container-c">
 	<main>
 		<div class="container-staff">
-			<div id="virgule-titre"><h2>À propos de nous</h2></div>
+			<h2>À propos de nous</h2>
 			<p>Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.</p>
-			<div id="virgule-ss-titre"><h3>Notre groupe</h3></div>
+			<h3>Notre groupe</h3>
 			<div class="auteurs">
 				<div>
 					<div class="img-ama"></div>
@@ -39,14 +39,50 @@
 					</span>
 					<p class="role">Recherches<br>Concepteur</p>
 				</div>
-				<div id="virgule-ss-titre" class="deux-ss-titre"><h3>Nos contenus</h3></div>
-				<p>Vous avez aimé votre voyage à Petra et vous souhaitez le montrer au monde entier ? Empressez-vous d'essayer notre filtre snapchat et de l'envoyer à tous vos proches !</p>
-				<img src="images/snapcode.png" alt="Snapcode">
 			</div>
+
+			<div class="snap_credit">
+				<div class="snap">
+					<h3>Nos contenus</h3>
+					<p>Vous avez aimé votre voyage à Petra et vous souhaitez le montrer au monde entier ? Empressez-vous d'essayer notre filtre snapchat et de l'envoyer à tous vos proches !</p>
+					<img src="images/snapcode.png" alt="Snapcode">
+				</div>
+
+				<div class="credits">
+					<h3>Crédits</h3>
+					<h4>Projet</h4>
+					<ul>
+						<li>ETTAYEB Tewfik : Responsable du Forum UNESCO - UGE</li>
+						<li>CESSY David</li>
+						<li>REBY Yann</li>
+					</ul>
+					<h4>Traductions</h4>
+					<ul>
+						<li>Prof d'arabe ?</li>
+					</ul>
+					<h4>Illustrations</h4>
+					<ul>
+						<li>COPERNICI Tia : Logo</li>
+						<li>Le monsieur ? : Photographies</li>
+					</ul>
+				</div>
+				</div>			
+		</div>
+
+		<div class="container-partenaires">
+			<h2>Partenaires</h2>
+			<div class="partenaires">
+				<a href=""><span class="f-logoMCN"></span></a>
+	            <a href="http://www.u-pem.fr" target="_blank"><span class="f-logoUPEM"></span></a>
+	            <a href="https://fr.unesco.org" target="_blank"><span class="f-logoUNESCO"></span></a>
+	            <a href="https://anr.fr" target="_blank"><span class="f-logoANR"></span></a>
+	            <a href="http://idea.univ-paris-est.fr/fr" target="_blank"><span class="f-logoIDEA"></span></a>
+			</div>
+            
 		</div>
 
 		<div class="container-form">
-			<div id="virgule-titre"><h2>Nous contacter</h2></div>
+			<h2>Nous contacter</h2>
 			<div class="formulaire">
 				<form>
 					<p>Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons ravis de vous répondre.</p>
@@ -59,14 +95,7 @@
 				</form>
 			</div>
 		</div>
-			
 	</main>
-
-
-	<div id="goto_top">								<!-- Retour haut de page -->
-		<a href="#"><img src="images/fleche_haut.jpg" alt="Flèche retour haut de page" /></a>
-	</div>
-
 
 	<?php
 		include("footer.inc.php");
