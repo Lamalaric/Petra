@@ -78,18 +78,23 @@ nav {
 	border-bottom: 1px solid black;
 	position: fixed;
 }
-nav ul {
+nav > ul {
 	width: 100%; height: 90px;
 	margin: 0; padding: 0;
-	list-style-type:none;
 	text-align:center;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+nav ul,
 nav li {
-	display: inline-block; 
-    position: relative;
+	list-style-type: none;
+}
+nav > ul > li {				/* Pour pouvoir laisser le sous-menu activé dans la grande zone */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 nav li > a {
 	font-family: Dyno regular;
@@ -101,7 +106,6 @@ nav li > a {
 	display: block;
 	text-align: center;
 	margin: auto 30px;
-	transition-duration: 0.3s;
 	padding: 12px 0;
 }
 nav div {
@@ -126,11 +130,42 @@ nav li a:hover:not(.page-actuelle) {
 	color: #b94503;
 }
 
-.histoire-deroulant {
+.deroulant {
+	background-color: #505050;
+	width: 0px;
+	padding: 0;
+	border: 1.7px solid black;
 	display: none;
 }
-.histoire:hover ~ .histoire-deroulant {
+.deroulant li {
+    position: relative;
+}
+.deroulant > li a {
+	font-size: 20px;
+	letter-spacing: 0.2px;
+}
+.deroulant > ul li a {
+	font-family: Cicle fina;
+	font-size: 20px;
+}
+.deroulant a {
 	display: block;
+	color: white !important;
+	text-align: left;
+}
+.deroulant a:hover {
+	text-decoration: underline #f7af3e;
+}
+.histoire:hover .deroulant,
+.visiter:hover .deroulant,
+.informations:hover .deroulant,
+.deroulant:hover {
+	width: auto;
+	display: block;
+	position: absolute;
+	top: 90px;
+	opacity: 1;
+	z-index: 100;
 }
 
 
@@ -219,8 +254,7 @@ main h2 {
 }
 main h3 {
     background-image: url(images/virgule_sous_titre.svg);
-    background-size: 25em;
-    background-position: 0px 7px;
+    background-position: 0px -20px;
     background-repeat: no-repeat;
     color: #f7af3e;
     font-weight: normal;
@@ -444,9 +478,9 @@ main h3 {
 	color: white;
 }
 .sommaire:hover {
-	border-color: #f7af3e;
+	border-color: #B94403;
 }
-.sommaire a:hover {
+.sommaire a:not(nav):hover {
 	text-decoration: underline;
 }
 
@@ -530,6 +564,71 @@ main h3 {
 .container-h main .img6 {
 	float: right;
 	margin: 0 35px;
+}
+
+
+/*PAGE GALERIE D'IMAGE*/
+.container-g main {
+	display: grid;
+	grid-template-columns: 15% auto 15%;
+}
+.container-g main .big-picture {
+	background-image: url(images/image10.png);
+	background-size: 100%;
+	background-position: 64% 52%;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+	width: 100%; height: 450px;
+	grid-column: 1/4;
+}
+.container-g main h1 {
+	text-align: center;
+	font-size: 50px;
+	margin: 0 auto;
+	padding: 200px;
+	text-shadow: black 0.1em 0.1em 0.2em
+}
+.container-g main div:not(.big-picture) {
+	grid-column: 2/3;
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+.container-g main div > div {
+	width: 350px; height: 350px;
+	margin-bottom: 75px;
+}
+.container-g main div div > img {
+	width: 100%; height: 100%;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	object-fit: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	transition: transform .25s, visibility .25s ease-in, opacity .5s;
+}
+.container-g main div div > p {
+	visibility: hidden;
+	opacity: 0;
+	width: 350px;
+	margin: 0; margin-top: 20px;
+	overflow-y: auto;
+	position: absolute;
+	z-index: -5;
+	transition: visibility .5s, opacity .25s linear;
+	transition-delay: .15s;
+}
+.container-g main div div img:hover {
+	transform: scale(1.14);
+	opacity: 0.2;
+}
+.container-g main div div img:hover + p {
+	visibility: visible;
+	opacity: 1;
+}
+.container-g main div div > p {
+	text-align: center;
 }
 
 
@@ -630,70 +729,6 @@ main h3 {
     background-size: 125%;
 }
 
-/*PAGE GALERIE D'IMAGE*/
-.container-g main {
-	display: grid;
-	grid-template-columns: 15% auto 15%;
-}
-.container-g main .big-picture {
-	background-image: url(images/image10.png);
-	background-size: 100%;
-	background-position: 64% 52%;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	width: 100%; height: 450px;
-	grid-column: 1/4;
-}
-.container-g main h1 {
-	text-align: center;
-	font-size: 50px;
-	margin: 0 auto;
-	padding: 200px;
-	text-shadow: black 0.1em 0.1em 0.2em
-}
-.container-g main div:not(.big-picture) {
-	grid-column: 2/3;
-	margin-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
-}
-.container-g main div > div {
-	width: 350px; height: 350px;
-	margin-bottom: 75px;
-}
-.container-g main div div > img {
-	width: 100%; height: 100%;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	object-fit: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	transition: transform .25s, visibility .25s ease-in, opacity .5s;
-}
-.container-g main div div > p {
-	visibility: hidden;
-	opacity: 0;
-	width: 350px;
-	margin: 0; margin-top: 20px;
-	overflow-y: auto;
-	position: absolute;
-	z-index: -5;
-	transition: visibility .5s, opacity .25s linear;
-	transition-delay: .15s;
-}
-.container-g main div div img:hover {
-	transform: scale(1.14);
-	opacity: 0.2;
-}
-.container-g main div div img:hover + p {
-	visibility: visible;
-	opacity: 1;
-}
-.container-g main div div > p {
-	text-align: center;
-}
-
 
 /*PAGE INFORMATIONS*/
 .container-if main * {
@@ -763,12 +798,12 @@ main .map {
 	width: 100%; height: auto;
 	margin: 25px auto 0 auto;
 	padding: 20px 10px;
-	border: 2px solid #ea5c0d;
+	border: 2px solid black;
 	border-radius: 10px;
+	transition-duration: 0.6s;
 }
 .conv-monnaie:hover {
-	transition-duration: 0.3s;
-	border-color: #f7af3e;
+	border-color: #B94403;
 }
 .conv-monnaie form {
 	width: 100%; height: 100%;
@@ -847,6 +882,10 @@ form .mini-flex {
 	flex-direction: column;
 	align-items: center;
 }
+.container-hotel p,
+.container-resto p {
+	overflow-wrap: break-word;
+}
 .container-hotel > div:not(.etoiles),
 .container-resto > div:not(.etoiles) {
 	background-color: #505050;
@@ -907,7 +946,7 @@ form .mini-flex {
 	grid-template-columns: 15% auto 15%;
 }
 .container-c h3 {
-	margin-top: 50px;
+	height: 2em;
 }
 .container-c h4 {
 	font-size: 22px;
@@ -1009,7 +1048,9 @@ form .mini-flex {
 	width: 47%;
 }
 .snap_credit h3 {
-	margin: 0;
+    margin: 0;
+    padding-left: 20px;
+    background-position-x: -50px;
 }
 .snap {
 	margin-bottom: 75px;

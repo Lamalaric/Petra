@@ -130,10 +130,22 @@
 					echo '<li><a href="index.php?lang='.$langue.'">'.$nav_home[$langue].'</a></li>';
 				}
 				if ($page == "histoire") {
-					echo '<li><a href="histoire.php?lang='.$langue.'" class="page-actuelle">'.$nav_history[$langue].'</a></li>';
+					echo '<li class="histoire"><a href="histoire.php?lang='.$langue.'" class="page-actuelle">'.$nav_history[$langue].'</a>';
 				} else {
-					echo '<li><a href="histoire.php?lang='.$langue.'">'.$nav_history[$langue].'</a></li>';
+					echo '<li class="histoire"><a href="histoire.php?lang='.$langue.'">'.$nav_history[$langue].'</a>';
 				}
+				echo "
+				<ul class=\"deroulant deroulant-h\">
+					<li><a href=\"histoire.php?lang=".$langue."#histoire\">".$sommaire_1[$langue]."</a></li>
+					<ul>
+						<li><a href=\"histoire.php?lang=".$langue."#antiquite\">".$sommaire_1_1[$langue]."</a></li>
+						<li><a href=\"histoire.php?lang=".$langue."#moyen-age\">".$sommaire_1_2[$langue]."</a></li>
+					</ul>
+					<li><a href=\"histoire.php?lang=".$langue."#archeo\">".$sommaire_2[$langue]."</a></li>
+					<li><a href=\"histoire.php?lang=".$langue."#archi\">".$sommaire_3[$langue]."</a></li>
+					<li><a href=\"histoire.php?lang=".$langue."#culture\">".$sommaire_4[$langue]."</a></li>
+				</ul></li>
+				";
 				if ($page == "galerie") {
 					echo '<li><a href="galerie.php?lang='.$langue.'" class="page-actuelle">'.$nav_galery[$langue].'</a></li>';
 				} else {
@@ -147,7 +159,7 @@
 					} else {
 						echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag"></a>';
 					}
-					echo '<a href="index.php"><img src="images/logo.png" alt="Logo" id="logo"></img></a>';
+					echo '<a href="index.php?lang='.$langue.'"><img src="images/logo.png" alt="Logo" id="logo"></img></a>';
 					if ($langue == 1) {
 						echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag" class="langue-actuelle"></a>';
 					} else {
@@ -158,15 +170,39 @@
 				</li>
 				';
 				if ($page == "visiter") {
-					echo '<li><a href="visiter.php?lang='.$langue.'" class="page-actuelle">'.$nav_visit[$langue].'</a></li>';
+					echo '<li class="visiter"><a href="visiter.php?lang='.$langue.'" class="page-actuelle">'.$nav_visit[$langue].'</a>';
 				} else {
-					echo '<li><a href="visiter.php?lang='.$langue.'">'.$nav_visit[$langue].'</a></li>';
+					echo '<li class="visiter"><a href="visiter.php?lang='.$langue.'">'.$nav_visit[$langue].'</a>';
 				}
+				echo "
+				<ul class=\"deroulant deroulant-v\">
+					<li><a href=\"visiter.php?lang=".$langue."#kazneh\">".$visiter_1_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#ad-deir\">".$visiter_2_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#theatre\">".$visiter_3_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#aqueducs\">".$visiter_4_titre[$langue]."</a></li>
+				</ul></li>
+				";
 				if ($page == "informations") {
-					echo '<li><a href="informations.php?lang='.$langue.'" class="page-actuelle">'.$nav_infos[$langue].'</a></li>';
+					echo '<li class="informations"><a href="informations.php?lang='.$langue.'" class="page-actuelle">'.$nav_infos[$langue].'</a>';
 				} else {
-					echo '<li><a href="informations.php?lang='.$langue.'">'.$nav_infos[$langue].'</a></li>';
+					echo '<li class="informations"><a href="informations.php?lang='.$langue.'">'.$nav_infos[$langue].'</a>';
 				}
+				echo "
+				<ul class=\"deroulant deroulant-if\">
+					<li><a href=\"informations.php?lang=".$langue."#plan\">Plan du site</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#divers\">Divers</a></li>
+					<ul>
+						<li><a href=\"informations.php?lang=".$langue."#reco-diplo\">Recommandations diplomatiques</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#trad\">Quelques traductions utiles</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#convertisseur\">Convertisseur de monnaie</a></li>
+					</ul>
+					<li><a href=\"informations.php?lang=".$langue."#alentours\">Aux alentours</a></li>
+					<ul>
+						<li><a href=\"informations.php?lang=".$langue."#hotels\">Hôtels</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#resto\">Restaurants</a></li>
+					</ul>
+				</ul></li>
+				";
 				if ($page == "contact") {
 					echo '<li><a href="contact.php?lang='.$langue.'" class="page-actuelle">'.$nav_contact[$langue].'</a></li>';
 				} else {

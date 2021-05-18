@@ -8,8 +8,8 @@
 	<main>
 		<div class="container-staff">
 			<h2>À propos de nous</h2>
-			<p>Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.</p>
 			<h3>Notre groupe</h3>
+			<p>Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.</p>
 			<div class="auteurs">
 				<div>
 					<div class="img-ama"></div>

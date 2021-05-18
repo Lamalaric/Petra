@@ -10,7 +10,7 @@
 		</div>
 		
 
-		<div class="kazneh">
+		<div class="kazneh" id="kazneh">
 			<div class="image kazneh-img"></div>
 			<div class="text-plus-title">
 				<h3><?php echo $visiter_1_titre[$langue]; ?></h3>
@@ -21,7 +21,7 @@
 			
 		</div>
 
-		<div class="ad-deir">
+		<div class="ad-deir" id="ad-deir">
 			<div class="image ad-deir-img"></div>
 			<div class="text-plus-title">
 				<h3><?php echo $visiter_2_titre[$langue]; ?></h3>
@@ -31,7 +31,7 @@
 			</div>
 		</div>
 
-		<div class="theatre">
+		<div class="theatre" id="theatre">
 			<div class="image theatre-img"></div>
 			<div class="text-plus-title">
 				<h3><?php echo $visiter_3_titre[$langue]; ?></h3>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="aqueducs">
+		<div class="aqueducs" id="aqueducs">
 			<div class="image aqueducs-img"></div>
 			<div class="text-plus-title">
 				<h3><?php echo $visiter_4_titre[$langue]; ?></h3>

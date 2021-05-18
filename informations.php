@@ -10,16 +10,16 @@
 			<h1>Informations pratiques</h1>
 		</div>
 
-		<h2>Plan du site</h2>
+		<h2 id="plan">Plan du site</h2>
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8577.923890256112!2d35.44819378417468!3d30.323710785533354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016eeb79d3cf39%3A0xa40550ba81476059!2sKhazneh!5e1!3m2!1sfr!2sfr!4v1619632907599!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 
-		<h2>Divers</h2>
+		<h2 id="divers">Divers</h2>
 		<p class="texte-horaires">Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.</p>
 		<div class="divers">
 			<div class="diplo">
-				<h3>Recommandations diplomatiques</h3>
+				<h3 id="reco-diplo">Recommandations diplomatiques</h3>
 				<p>
 					Le Royaume hachémite de Jordanie, pôle de stabilité dans une région traversée par les crises, n’est cependant pas à l’abri de troubles, en particulier du risque terroriste. La Jordanie connaît une menace permanente d’attentats. Cette menace est prise en compte par les autorités jordaniennes qui continuent de se mobiliser pour prévenir le risque terroriste ou infiltrations aux frontières.
 				</p>
@@ -51,7 +51,7 @@
 				<p><u>Sources</u> : <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/#securite">www.diplomatie.gouv.fr</a></p>
 			</div>
 			<div class="trad-mo">
-				<h3>Quelques traductions utiles</h3>
+				<h3 id="trad">Quelques traductions utiles</h3>
 				<p>
 					<u>Bonjour/Hello</u> : sabah alkhyr    صباح الخير<br><br>
 					<u>Merci/Thank you</u> : ashkurak    اشكرك<br><br>
@@ -106,7 +106,7 @@
 									echo '</div>';
 									echo '<input type="submit" name="convertir" value="Convertir">';
 								}
-					  			else
+								else
 								{
 									echo '<div class="mini-flex">';
 									echo '<input type="text" name="euro" placeholder="Euro (€)">';
@@ -242,10 +242,10 @@
 		</div>
 
 		<!-- Recommandations diplomatiques -->
-		<h2>Aux alentours</h2>
+		<h2 id="alentours">Aux alentours</h2>
 		<div class="autre">
 			<div class="hotel">
-				<h3>Hôtels</h3>
+				<h3 id="hotels">Hôtels</h3>
 				<p>
 					Besoin de vous loger ? Ne vous en faites pas ! Nous avons séléctionné pour vous les hôtels à proximité, classé par étoiles.
 				</p>
@@ -413,7 +413,7 @@
 			</div>
 
 			<div class="resto">
-				<h3>Restaurants</h3>
+				<h3 id="resto">Restaurants</h3>
 				<p>
 					Un petit creux ? Pas de soucis, voici une liste de restaurants aux alentours qui sauront vous préparer les meilleures spécialités du coin !
 				</p>

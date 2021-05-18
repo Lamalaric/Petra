@@ -19,7 +19,7 @@
 	        	<a href="https://twitter.com/PetraExplo" target="_blank"><span class="f-logoTWI"></span></a>
 	        	<a href="https://www.facebook.com/petra.explo/" target="_blank"><span class="f-logoFB"></span></a>
 	        	<a href="https://www.instagram.com/petra_explo/" target="_blank"><span class="f-logoINSTA"></span></a>
-	        	<a href="" target="_blank"><span class="f-logoYTB"></span></a>
+	        	<a href="https://www.youtube.com/channel/UCNtOZT9KXDB8izzUiJ8KY8A" target="_blank"><span class="f-logoYTB"></span></a>
 	        </div>
 	    </div>
 	</footer>
