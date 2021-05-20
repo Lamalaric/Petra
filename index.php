@@ -162,12 +162,12 @@
 			<section class="a4">					<!-- Images -->
 				<h2><?php echo $a4_h2[$langue]; ?></h2>
 				<div>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
+					<img src="images/al_kazneh.jpg" alt="">
+					<img src="images/image10.png" alt="">
+					<img src="images/aqueducs.jpg" alt="">
+					<img src="images/image6.jpg" alt="">
+					<img src="images/image4.jpg" alt="">
+					<img src="images/kazneh.png" alt="">
 				</div>
 				<?php echo '<div class="container-see-more"><a href="galerie.php?lang='.$langue.'" class="see_more">'.$a4_a[$langue].'</a></div>'; ?>
 			</section>

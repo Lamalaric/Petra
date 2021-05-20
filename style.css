@@ -76,6 +76,7 @@ nav {
 	border-width: 10px;
 	border-bottom: 1px solid black;
 	position: fixed;
+	z-index: 300;
 }
 nav > ul {
 	width: 100%; height: 90px;
@@ -189,19 +190,28 @@ footer .partenaires {
 	float: left;
 }
 footer .reseaux-site {
+	height: 80px;
+	margin-right: 20px;
+	display: inline-flex;
+	align-items: center;
 	float: right;
 }
 footer span {
-	grid-column: 1/3;
 	display: inline-block;
 	background-size: 100%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	width: 150px; min-height: 80px;
 }
-footer .reseaux-site span {
+footer .reseaux-site i {
+	color: white;
+	font-size: 35px;
 	width: 30px; height: 30px;
-	margin: 0 10px;
+	margin: 0 15px;
+	transition-duration: 0.3s;
+}
+footer .reseaux-site i:hover {
+	color: gray;
 }
 .f-logoMCN {
     background-image: url(images/logo_mcn.png);
@@ -381,63 +391,42 @@ main h3 {
 	align-content: space-around;
 }
 
-.a4 div span {
+.a4 div img {
+	width: 300px; height: 300px;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	margin: 15px 0;
-	border: 1px solid black;
-	border-radius: 10px;
-	background-color: black;
-	background-size: 100%;
-	background-position: 50% 50%;
+	margin-bottom: 75px;
+	object-fit: cover;
 	background-repeat: no-repeat;
-	width: 330px; height: 215px;
+	overflow: hidden;
+	transition: transform .25s, visibility .25s ease-in, opacity .5s;
+}
+.a4 div img:hover {
+	transform: scale(1.14);
+}
 }
 .a4 .container-see-more {
 	margin: 0 auto;
 }
 .a4 .see_more {
-	color: #ea5c0d;
-	font-family: Dyno regular;
-	font-size: 30px;
+	color: white;
+	font-family: Cicle fina;
+	font-size: 27px;
+	font-weight: bold;
+	background-color: #505050;
 	text-decoration: none;
 	text-align: center;
 	line-height: 69px;
-	padding: 0 15px;
-	border: solid #ea5c0d;
-	border-radius: 5px;
+	padding: 0 25px;
+	border: 2px solid black;
+	border-radius: 22px;
 	transition-duration: 0.6s;
 }
 
 .a4 .see_more:hover {
-	transition-duration: 0.8s;
-	background-color: #ea5c0d;
-	color: #333333;
 	border-color: #ea5c0d;
 }
-.a4 div span:nth-child(1) {
-	background-image: url(images/image5.jpg);
-	background-size: 118%;
-}
-.a4 div span:nth-child(2) {
-	background-image: url(images/image6.jpg);
-}
-.a4 div span:nth-child(3) {
-	background-image: url(images/image7.jpg);
-}
-.a4 div span:nth-child(4) {
-	background-image: url(images/accueil.jpeg);
-}
-.a4 div span:nth-child(5) {
-	background-image: url(images/image3.jpg);
-}
-.a4 div span:nth-child(6) {
-	background-image: url(images/image8.jpg);
-}
-.a4 div span:nth-child(7) {
-	background-image: url(images/image9.png);
-}
-.a4 div span:nth-child(8) {
-	background-image: url(images/image10.png);
+.a4 img {
+
 }
 
 
@@ -615,6 +604,7 @@ main h3 {
 	background-repeat: no-repeat;
 	overflow: hidden;
 	transition: transform .25s, visibility .25s ease-in, opacity .5s;
+
 }
 .container-g main div div > p {
 	visibility: hidden;
