@@ -62,7 +62,7 @@
 					</ul>
 					<h4>Illustrations</h4>
 					<ul>
-						<li>COPERNICI Tia : Logo</li>
+						<li>PERNICINI Tia : Logo</li>
 						<li>Le monsieur ? : Photographies</li>
 					</ul>
 				</div>

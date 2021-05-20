@@ -38,7 +38,7 @@ body #goto_top img{
 /*COMMON STYLES */
 body {
 	background-color: #333333;
-	font-family: Arial;
+	font-family: Cicle fina;
 	font-size: 20px;
 	color: white;
 	height: 100%;
@@ -48,7 +48,6 @@ body {
   color: white;
   background: #f7af3e;
 }
-
 ::selection {
   color: white;
   background: #f7af3e;
@@ -90,6 +89,9 @@ nav ul,
 nav li {
 	list-style-type: none;
 }
+nav span {
+	display: none;
+}
 nav > ul > li {				/* Pour pouvoir laisser le sous-menu activé dans la grande zone */
 	height: 100%;
 	display: flex;
@@ -108,6 +110,9 @@ nav li > a {
 	margin: auto 30px;
 	padding: 12px 0;
 }
+nav i {
+	display: none !important;
+}
 nav div {
 	display: inline-flex;
 	align-items: center;
@@ -121,6 +126,9 @@ nav .langue-actuelle {
 }
 nav .page-actuelle {
 	border-bottom: 2px solid #b94503;
+}
+nav .logo2 {
+	display: none;
 }
 #logo {
 	width: 80px; height: 80px;

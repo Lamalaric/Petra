@@ -169,7 +169,7 @@
 					<span></span>
 					<span></span>
 				</div>
-				<div class="container-see-more"><a href="galerie.php" class="see_more"><?php echo $a4_a[$langue]; ?></a></div>
+				<?php echo '<div class="container-see-more"><a href="galerie.php?lang='.$langue.'" class="see_more">'.$a4_a[$langue].'</a></div>'; ?>
 			</section>
 		</article>
 	</main>

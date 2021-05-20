@@ -116,12 +116,15 @@
 		<meta name="author" content="Amalaric Le Forestier" />
 		<link rel="icon" href="images/logo.ico" />
 		<meta charset="utf-8" />
+		<script src="https://kit.fontawesome.com/79f61c2135.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="mediaqueries.css" type="text/css" />
 		<script type="text/javascript" src="script.js" ></script>
 	</head>
 
 	<header>
-		<nav>											<!-- Menu de navigation -->
+		<nav role="navigation">											<!-- Menu de navigation -->
+			<i class="fas fa-bars"></i>
 			<ul>';
 				// Pour appliquer un style différent à la page où l'on se trouve
 				if ($page == "index") {
@@ -152,7 +155,7 @@
 					echo '<li><a href="galerie.php?lang='.$langue.'">'.$nav_galery[$langue].'</a></li>';
 				}
 				echo '
-				<li>
+				<li class="logo-langue">
 					<div>';
 					if ($langue == 0) {
 						echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag" class="langue-actuelle"></a>';
@@ -210,6 +213,7 @@
 				}
 	echo '
 			</ul>
+			<a href="index.php?lang='.$langue.'" class="logo2"><img src="images/logo.png" alt="Logo" id="logo"></img></a>
 		</nav>
 	</header>
 
