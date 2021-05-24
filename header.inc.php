@@ -102,37 +102,37 @@
 	$visiter_4_texte = array("La cité se situe dans une zone très aride. Ainsi plusieurs systèmes de gestion de l’eau furent mis en place. L’eau de la cité provenait essentiellement de la pluie, le sol étant peu perméable, les habitants pouvaient la récupérer aux alentours. Pour l’acheminer, deux aqueducs furent creusé dans la parois le long du Sîq (défilé rocheux menant devant Al Kazneh, l’un alimenté par l’Aïn Moussa (cours d’eau passant non loin), l’autre par les eaux de pluies. Enfin environs 200 citernes permettaient de stocker l’eau à proximiter de la citer.", "The city is located in a very arid area. Thus several systems of water management were set up. The water of the city came essentially from the rain, the ground being not very permeable, the inhabitants could recover it in the surroundings. To convey it, two aqueducts were dug in the wall along the Sîq (rocky gorge leading in front of Al Kazneh), one fed by the Aïn Moussa (a stream passing nearby), the other by rainwater. Finally, about 200 cisterns were used to store water near the cistern.");
 
 	/* INFOS PRATIQUE */
-	$practical_info_h1 = array("Informations pratiques", "Practicals informations");
-	$practical_info_title1 = array("PLAN DU SITE", "SITE MAP");
-	$practical_info_title2 = array("DIVERS", "OTHER");
-	$practical_info_text1 = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book a hotel room before starting your trip.");
-	$practical_info_subtitle1 = array("RECOMMANDATIONS DIPLOMATIQUES", "DIPLOMATIC ADVICE");
-	$practical_info_text2 = array("Le Royaume hachémite de Jordanie, pôle de stabilité dans une région traversée par les crises, n’est cependant pas à l’abri de troubles, en particulier du risque terroriste. La Jordanie connaît une menace permanente d’attentats. Cette menace est prise en compte par les autorités jordaniennes qui continuent de se mobiliser pour prévenir le risque terroriste ou infiltrations aux frontières.", "The Hashemite Kingdom of Jordan, a pole of stability in a region plagued by crises, is not, however, immune to unrest, particularly the risk of terrorism. Jordan is under constant threat of terrorist attacks. This threat is taken into account by the Jordanian authorities who continue to mobilize to prevent the risk of terrorism or infiltration at the borders.");
-	$practical_info_subsubtitle1 = array("Recommandations", "Advice");
-	$practical_info_subsubtitle1_text1 = array("La discrétion, y compris vestimentaire, doit être de mise aux abords des mosquées, notamment lors des rassemblements pour la prière du vendredi.", "Discretion, including clothing, must be exercised in the vicinity of mosques, especially during gatherings for Friday prayers.");
-	$practical_info_subsubtitle1_text2 = array("Il est préférable d’éviter tout signe distinctif permettant d’être identifié comme français (drapeaux, logos français sur véhicules, vêtements, etc.).", "It is preferable to avoid any distinctive sign allowing to be identified as French (flags, French logos on vehicles, clothing, etc.). ");
-	$practical_info_subsubtitle1_text3 = array("Il est recommandé aux femmes de ne pas voyager seules et de préférence de jour, et d’adopter une tenue sobre en public. De manière générale, les épaules dénudées, les shorts et les jupes sont à éviter.", "It is recommended that women do not travel alone and preferably during the day, and that they dress conservatively in public. In general, bare shoulders, shorts and skirts should be avoided.");
-	$practical_info_subsubtitle2 = array("Zone de vigilance", "Vigilance area");
-	$practical_info_subsubtitle2_text1 = array("Frontière entre la Jordanie et la Syrie.", "Border between Jordan and Syria.");
-	$practical_info_subsubtitle2_text2 = array("Frontière entre la Jordanie et l’Irak.", "Border between Jordan and Iraq.");
-	$practical_info_subsubtitle2_text3 = array("Péninsule du Sinaï (Égypte) depuis la Jordanie.", "Sinai Peninsula (Egypt) from Jordan.");
-	$practical_info_subtitle2 = array("QUELQUES TRADUCTIONS UTILES", "SOME HELPFUL TRANSLATIONS");
-	$practical_info_subtitle3 = array("Convertisseur de monnaie", "Currency converter");
-	$practical_info_title3 = array("Aux alentours", "near by");
-	$practical_info_subtitle4 = array("Hôtels", "Hotels");
-	$practical_info_subtitle3_text1 = array("Besoin de vous loger ? Ne vous en faites pas ! Nous avons séléctionné pour vous les hôtels à proximité, classé par étoiles.", "Need a place to stay? Don't worry about it! We have selected for you the hotels in the area, classified by stars.");
-	$practical_info_hotel_plus = array("Les + :", "The + :");
-	$practical_info_hotel_tarif = array("Tarifs : ", "Rates :");
-	$practical_info_hotel_non_renseigne = array("Non renseignés.", "No informations");
-	$practical_info_hotel_address = array("Adresse", "Address");
-	$practical_info_hotel_web_site = array("Site web", "Web site");
-	$practical_info_hotel_telephone = array("Téléphone", "Telephone");
+	$infos_h1 = array("Informations pratiques", "Practicals informations");
+	$infos_title1 = array("Plan du site", "Site map");
+	$infos_title2 = array("Divers", "Other");
+	$infos_text1 = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book an hotel room before starting your trip.");
+	$infos_subtitle1 = array("Recommandations diplomatiques", "Diplomatic advices");
+	$infos_text2 = array("Le Royaume hachémite de Jordanie, pôle de stabilité dans une région traversée par les crises, n’est cependant pas à l’abri de troubles, en particulier du risque terroriste. La Jordanie connaît une menace permanente d’attentats. Cette menace est prise en compte par les autorités jordaniennes qui continuent de se mobiliser pour prévenir le risque terroriste ou infiltrations aux frontières.", "The Hashemite Kingdom of Jordan, a pole of stability in a region plagued by crises, is not, however, immune to unrest, particularly the risk of terrorism. Jordan is under constant threat of terrorist attacks. This threat is taken into account by the Jordanian authorities who continue to mobilize to prevent the risk of terrorism or infiltration at the borders.");
+	$infos_subsubtitle1 = array("Recommandations", "Advices");
+	$infos_subsubtitle1_text1 = array("La discrétion, y compris vestimentaire, doit être de mise aux abords des mosquées, notamment lors des rassemblements pour la prière du vendredi.", "Discretion, including clothing, must be exercised in the vicinity of mosques, especially during gatherings for Friday prayers.");
+	$infos_subsubtitle1_text2 = array("Il est préférable d’éviter tout signe distinctif permettant d’être identifié comme français (drapeaux, logos français sur véhicules, vêtements, etc.).", "It is preferable to avoid any distinctive sign allowing to be identified as French (flags, French logos on vehicles, clothing, etc.). ");
+	$infos_subsubtitle1_text3 = array("Il est recommandé aux femmes de ne pas voyager seules et de préférence de jour, et d’adopter une tenue sobre en public. De manière générale, les épaules dénudées, les shorts et les jupes sont à éviter.", "It is recommended that women do not travel alone and preferably during the day, and that they dress conservatively in public. In general, bare shoulders, shorts and skirts should be avoided.");
+	$infos_subsubtitle2 = array("Zone de vigilance", "Vigilance area");
+	$infos_subsubtitle2_text1 = array("Frontière entre la Jordanie et la Syrie.", "Border between Jordan and Syria.");
+	$infos_subsubtitle2_text2 = array("Frontière entre la Jordanie et l’Irak.", "Border between Jordan and Iraq.");
+	$infos_subsubtitle2_text3 = array("Péninsule du Sinaï (Égypte) depuis la Jordanie.", "Sinai Peninsula (Egypt) from Jordan.");
+	$infos_subtitle2 = array("Quelques traductions utiles", "Some helpful translations");
+	$infos_subtitle3 = array("Convertisseur de monnaie", "Currency converter");
+	$infos_title3 = array("Aux alentours", "near by");
+	$infos_subtitle4 = array("Hôtels", "Hotels");
+	$infos_subtitle3_text1 = array("Besoin de vous loger ? Ne vous en faites pas ! Nous avons séléctionné pour vous les hôtels à proximité, classé par étoiles.", "Need a place to stay? Don't worry about it! We have selected for you the hotels in the area, classified by stars.");
+	$infos_hotel_plus = array("Les + :", "Advantages :");
+	$infos_hotel_tarif = array("Tarifs : ", "Prices :");
+	$infos_hotel_non_renseigne = array("Non renseignés.", "Unknown.");
+	$infos_hotel_address = array("Adresse", "Address");
+	$infos_hotel_website = array("Site web", "Website");
+	$infos_hotel_telephone = array("Téléphone", "Phone");
 
-	$practical_info_hotel1_1 = array("L'hotel le plus proche de Petra", "The nearest hotel to Petra");
-	$practical_info_hotel1_2 = array("Vue sur la vallée du grand rift", "View of the Great Rift Valley");
-	$practical_info_hotel1_5 = array("Piscine", "Pool");
-	$practical_info_hotel2_1 = array("Internet haut débit gratuit", "Free high speed internet");
-	$practical_info_hotel2_tarif = array(
+	$infos_hotel1_1 = array("L'hotel le plus proche de Petra", "The nearest hotel to Petra");
+	$infos_hotel1_2 = array("Vue sur la vallée du grand rift", "View of the Great Rift Valley");
+	$infos_hotel1_5 = array("Piscine", "Pool");
+	$infos_hotel2_1 = array("Internet haut débit gratuit", "Free high speed internet");
+	$infos_hotel2_tarif = array(
 							"1 lit : 62 à 88 JOD (72 à 102€)<br>
 							2 lits : 75 à 88 JOD (87 à 102€)<br>
 							3 lits : 110 à 141 JOD (128 à 164€)<br><br>
@@ -140,42 +140,42 @@
 							Prix indiqués pour une nuit.", 
 							"1 bed : 62 to 88 JOD (88 to 124\$ / 62 to 88£)<br>
 							2 beds : 75 to 88 JOD (106 to 124\$ / 75 to 88£)<br>
-							3 beds : 110 to 141 JOD (155 to 175\$ / 110 to 141£)<br>
+							3 beds : 110 to 141 JOD (155 to 175\$ / 110 to 141£)<br><br>
 							Prices vary depending on the size of the beds. (Single or Kings)<br>
 							Prices are for one night.");
-	$practical_info_hotel3_2 = array("Situé à 150m de Petra", "Located at 150m from Petra");
-	$practical_info_hotel3_3 = array("Piscine", "Pool");
-	$practical_info_hotel3_4 = array("Déjeuner gratuit", "Free lunch");
-	$practical_info_hotel3_5 = array("Parking gratuit", "Free parking");
-	$practical_info_hotel3_tarif = array(
+	$infos_hotel3_2 = array("Situé à 150m de Petra", "Located at 150m from Petra");
+	$infos_hotel3_3 = array("Piscine", "Pool");
+	$infos_hotel3_4 = array("Déjeuner gratuit", "Free lunch");
+	$infos_hotel3_5 = array("Parking gratuit", "Free parking");
+	$infos_hotel3_tarif = array(
 							"2 personne : 165€ / nuit<br>
 							3 personnes : 195€ / nuit<br>
 							5 personnes : 250€ / nuit<br>", 
 							"2 persons : 165€ / night<br>
 							3 persons : 195€ / night<br>
 							5 persons : 250€ / night<br>");
-	$practical_info_hotel4_1 = array("Internet gratuit", "Free internet");
-	$practical_info_hotel4_tarif = array(
+	$infos_hotel4_1 = array("Internet gratuit", "Free internet");
+	$infos_hotel4_tarif = array(
 							"Suite Deluxe : 41€+ / nuit<br>
 							King suite : 123€+ / nuit<br>
 							Suite avec vue sur océan : 165€+ / nuit", 
 							"Suite Deluxe : 41€+ / night<br>
 							King suite : 123€+ / night<br>
 							Ocean view Suite : 165€+ / night");
-	$practical_info_hotel5_1 = array("Situé à 10min de Petra", "Located at 10min from Petra");
-	$practical_info_hotel5_4 = array("Petit-déjeuner gratuit", "Free breakfast");
-	$practical_info_hotel5_5 = array("Wifi gratuit", "Free Internet");
-	$practical_info_hotel5_6 = array("Parking gratuit", "Free parking");
-	$practical_info_hotel5_tarif = array(
+	$infos_hotel5_1 = array("Situé à 10min de Petra", "Located at 10min from Petra");
+	$infos_hotel5_4 = array("Petit-déjeuner gratuit", "Free breakfast");
+	$infos_hotel5_5 = array("Wifi gratuit", "Free Internet");
+	$infos_hotel5_6 = array("Parking gratuit", "Free parking");
+	$infos_hotel5_tarif = array(
 							"2 personnes : 95€ / nuit<br>
 							3 personnes : 87 à 99€ / nuit", 
 							"2 persons : 95€ / night<br>
 							3 persons : 87 to 99€ / night");
 
-	$practical_info_hotel6_1 = array("Proche de Petra", "Near to Petra");
-	$practical_info_hotel6_3 = array("Piscine", "Pool");
-	$practical_info_hotel6_5 = array("Wifi gratuit", "Free Internet");
-	$practical_info_hotel6_tarif = array(
+	$infos_hotel6_1 = array("Proche de Petra", "Near to Petra");
+	$infos_hotel6_3 = array("Piscine", "Pool");
+	$infos_hotel6_5 = array("Wifi gratuit", "Free Internet");
+	$infos_hotel6_tarif = array(
 							"1 personne : 44 ou 68€<br>
 							2 personnes : 62 ou 77€<br>
 							3 personnes : 84 ou 104€<br>
@@ -188,6 +188,11 @@
 							The first price indicated refers to high seasons, the second to low seasons.");
 
 	// Header + nav
+	if ($langue == 0) {
+		$lang_header = "fr";
+	} else {
+		$lang_header = "en";
+	}
 	echo '
 	<!DOCTYPE html> 
 	<html lang="'.$lang_header.'">
@@ -197,9 +202,9 @@
 		<link rel="icon" href="images/logo.ico" />
 		<meta charset="utf-8" />
 		<script src="https://kit.fontawesome.com/79f61c2135.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="style.css" type="text/css" />
-		<link rel="stylesheet" href="mediaqueries.css" type="text/css" />
-		<script type="text/javascript" src="script.js" ></script>
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />
+		<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" />
+		<script type="text/javascript" src="scripts/script.js" ></script>
 	</head>
 
 	<header>
