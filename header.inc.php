@@ -1,9 +1,4 @@
 <?php
-	echo '
-	<!DOCTYPE html> 
-	<html lang="fr">
-	';
-
 	// Initialisation de la variable langue qui va indiquer à la page si le contenu doit
 	// être affiché en anglais ou en français.
 	// 0 : français
@@ -108,9 +103,15 @@
 	$var = array("", "");
 
 
-
+	if ($langue == 0) {
+		$lang_header = "fr";
+	} else {
+		$lang_header = "en";
+	}
 	// Header + nav
 	echo '
+	<!DOCTYPE html> 
+	<html lang="'.$lang_header.'">
 	<head> 
 		<title>Petra - Médiation Culturelle et Numérique</title>
 		<meta name="author" content="Amalaric Le Forestier" />

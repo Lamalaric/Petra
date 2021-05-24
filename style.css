@@ -152,6 +152,7 @@ nav li a:hover:not(.page-actuelle) {
 .deroulant > li a {
 	font-size: 20px;
 	letter-spacing: 0.2px;
+	overflow-wrap: break-word;
 }
 .deroulant > ul li a {
 	font-family: Cicle fina;
@@ -456,6 +457,7 @@ main h3 {
 	justify-content: space-around;
 }
 .sommaire > ul > li {
+	font-size: 30px;
 	margin: 0 20px;
 }
 .sommaire .underline {
@@ -467,7 +469,7 @@ main h3 {
 }
 .sommaire li {
 	width: auto;
-	font-size: 25px;
+	font-size: 27px;
 	list-style-type: none;
 }
 .sommaire a {
