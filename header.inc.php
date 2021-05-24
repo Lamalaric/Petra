@@ -100,15 +100,8 @@
 	$visiter_3_texte = array("L’occupation romaine a elle aussi marqué la cité de Pétra. Un théâtre pouvant accueillir plusieurs milliers de spectateur a été creusé dans le grès.", "The Roman occupation also marked the city of Petra. A theater that could accommodate several thousand spectators was dug in the sandstone.");
 	$visiter_4_titre = array("Les aqueducs", "The aqueducts");
 	$visiter_4_texte = array("La cité se situe dans une zone très aride. Ainsi plusieurs systèmes de gestion de l’eau furent mis en place. L’eau de la cité provenait essentiellement de la pluie, le sol étant peu perméable, les habitants pouvaient la récupérer aux alentours. Pour l’acheminer, deux aqueducs furent creusé dans la parois le long du Sîq (défilé rocheux menant devant Al Kazneh, l’un alimenté par l’Aïn Moussa (cours d’eau passant non loin), l’autre par les eaux de pluies. Enfin environs 200 citernes permettaient de stocker l’eau à proximiter de la citer.", "The city is located in a very arid area. Thus several systems of water management were set up. The water of the city came essentially from the rain, the ground being not very permeable, the inhabitants could recover it in the surroundings. To convey it, two aqueducts were dug in the wall along the Sîq (rocky gorge leading in front of Al Kazneh), one fed by the Aïn Moussa (a stream passing nearby), the other by rainwater. Finally, about 200 cisterns were used to store water near the cistern.");
-	$var = array("", "");
 
-
-	if ($langue == 0) {
-		$lang_header = "fr";
-	} else {
-		$lang_header = "en";
-	}
-	$var = array("", "");
+	/* INFOS PRATIQUE */
 	$practical_info_h1 = array("Informations pratiques", "Practicals informations");
 	$practical_info_title1 = array("PLAN DU SITE", "SITE MAP");
 	$practical_info_title2 = array("DIVERS", "OTHER");
