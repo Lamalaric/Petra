@@ -7,9 +7,9 @@
 <body class="container-c">
 	<main>
 		<div class="container-staff">
-			<h2>À propos de nous</h2>
-			<h3>Notre groupe</h3>
-			<p>Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.</p>
+			<h2><?php echo $contact_title1[$langue]; ?></h2>
+			<h3><?php echo $contact_title1_subtitle1[$langue]; ?></h3>
+			<p><?php echo $contact_title1_subtitle1_text[$langue]; ?></p>
 			<div class="auteurs">
 				<div>
 					<div class="img-ama"></div>
@@ -19,7 +19,7 @@
 						<a href="https://github.com/Lamalaric" class="github"><span></span></a>
 						<a href="https://www.instagram.com/lamalaric/" class="instagram"><span></span></a>
 					</span>
-					<p class="role">Chef de projet<br>Lead developpeur<br>Designer</p>
+					<p class="role"><?php echo $contact_chef[$langue]; ?><br><?php echo $contact_chef_dev[$langue]; ?><br>Designer</p>
 				</div>
 				<div>
 					<div class="img-bastou"></div>
@@ -28,7 +28,7 @@
 						<a href="https://www.linkedin.com/in/bastien-corgnac/" class="linkedin"><span></span></a>
 						<a href="https://github.com/Bastien-crg" class="github"><span></span></a>
 					</span>
-					<p class="role">Lead recherches<br>Développeur<br>Designer</p>
+					<p class="role"><?php echo $contact_chef_recherche[$langue]; ?><br><?php echo $contact_dev[$langue]; ?><br>Designer</p>
 				</div>
 				<div>
 					<div class="img-dydy"></div>
@@ -37,40 +37,25 @@
 						<a href="https://www.linkedin.com/in/dylan-chalier-435080206/" class="linkedin"><span></span></a>
 						<a href="https://github.com/DylanChalier" class="github"><span></span></a>
 					</span>
-					<p class="role">Recherches<br>Concepteur</p>
+					<p class="role"><?php echo $contact_recherche[$langue]; ?><br><?php echo $contact_concept[$langue]; ?></p>
 				</div>
 			</div>
 
 			<div class="snap_credit">
 				<div class="snap">
-					<h3>Nos contenus</h3>
-					<p>Vous avez aimé votre voyage à Petra et vous souhaitez le montrer au monde entier ? Empressez-vous d'essayer notre filtre snapchat et de l'envoyer à tous vos proches !</p>
+					<h3><?php echo $contact_title1_subtitle2[$langue]; ?></h3>
+					<p><?php echo $contact_title1_subtitle2_text[$langue]; ?></p>
 					<img src="images/snapcode.png" alt="Snapcode">
 				</div>
 
 				<div class="credits">
-					<h3>Crédits</h3>
-					<h4>Projet</h4>
-					<ul>
-						<li>ETTAYEB Tewfik : Responsable du Forum UNESCO - UGE</li>
-						<li>CESSY David</li>
-						<li>REBY Yann</li>
-					</ul>
-					<h4>Traductions</h4>
-					<ul>
-						<li>Prof d'arabe ?</li>
-					</ul>
-					<h4>Illustrations</h4>
-					<ul>
-						<li>PERNICINI Tia : Logo</li>
-						<li>Le monsieur ? : Photographies</li>
-					</ul>
+					<?php echo $contact_title1_subtitle3[$langue]; ?>
 				</div>
 				</div>			
 		</div>
 
 		<div class="container-partenaires">
-			<h2>Partenaires</h2>
+			<h2><?php echo $contact_title2[$langue]; ?></h2>
 			<div class="partenaires">
 				<a href=""><span class="f-logoMCN"></span></a>
 	            <a href="http://www.u-pem.fr" target="_blank"><span class="f-logoUPEM"></span></a>
@@ -82,10 +67,10 @@
 		</div>
 
 		<div class="container-form">
-			<h2>Nous contacter</h2>
+			<h2><?php echo $contact_title3[$langue]; ?></h2>
 			<div class="formulaire">
 				<form>
-					<p>Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons ravis de vous répondre.</p>
+					<p><?php echo $contact_title3_text[$langue]; ?></p>
 					<input type="text" name="prenom" id="prenom" placeholder="Prénom">
 					<input type="text" name="nom" id="nom" placeholder="Nom">
 					<input type="text" name="mail" id="mail" placeholder="Adresse mail">

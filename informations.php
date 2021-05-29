@@ -404,132 +404,132 @@
 			<div class="resto">
 				<h3 id="resto">Restaurants</h3>
 				<p>
-					Un petit creux ? Pas de soucis, voici une liste de restaurants aux alentours qui sauront vous préparer les meilleures spécialités du coin !
+					<?php echo $practical_info_subtitle5_text1[$langue]; ?>
 				</p>
 				<div class="container-resto">
 					<div>
 						<img src="images/resto-image1.jpg" alt="The cave bar restaurant">
 						<h3>The Cave Bar</h3>
 						<p>
-							Restaurant traditionnel.<br>
-							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.
+							<?php echo $practical_info_resto1_pres[$langue]; ?>
 						</p>
-						<h4>Horaires :</h4>
-							<p>Tous les jours : 14h - 23h</p>
-						<h4>Avis tripadvisor :</h4>
+						<h4><?php echo $practical_info_resto_horaire[$langue]; ?></h4>
+							<p>
+								<?php echo $practical_info_resto1_horaire1[$langue]; ?>
+							</p>
+						<h4><?php echo $practical_info_resto_notice[$langue]; ?></h4>
 						<p>
-							4.5/5 (1656 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6419189-Reviews-The_Cave_Bar-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
+							<?php echo $practical_info_resto1_rate[$langue]; ?><br><br>
+							<?php echo $practical_info_resto_link_see[$langue]; ?> 
+							<a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6419189-Reviews-The_Cave_Bar-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank"><?php echo $practical_info_resto_link_click[$langue]; ?> </a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
 							<u><?php echo $practical_info_hotel_address[$langue]; ?></u> : Main tourist street وادي موسى، 71810, Jordanie<br><br>
-							<u>Site web</u> : <a href="https://www.petraguesthousehotel.com/?lang=fr" target="_blank">www.petraguesthousehotel.com</a><br><br>
-							<u>Téléphone</u> : +962 7 9889 6806<br><br>
+							<u><?php echo $practical_info_hotel_web_site[$langue]; ?></u> : <a href="https://www.petraguesthousehotel.com/?lang=fr" target="_blank">www.petraguesthousehotel.com</a><br><br>
+							<u><?php echo $practical_info_hotel_telephone[$langue]; ?></u> : +962 7 9889 6806<br><br>
 						</p>
 					</div>
 					<div>
 						<h3>My mom's recipe</h3>
 						<p>
-							Restaurant traditionnel.<br>
-							<u>Cuisine</u> : libanaise, méditerranéenne, barbecue/grillades, Moyen-Orient, arabe.<br>
-							<u>Régimes</u> spéciaux : végétariens bienvenus, choix végétaliens, halal, plats sans gluten.
+							<?php echo $practical_info_resto2_pres[$langue]; ?>
 						</p>
-						<h4>Horaires :</h4>
+						<h4><?php echo $practical_info_resto_horaire[$langue]; ?></h4>
 						<p>
-							Lun / mer / jeu : 10h - 23h<br>
-							Mar / ven / sam / dim : 10h - 22h
+							<?php echo $practical_info_resto2_horaire1[$langue]; ?>
 						</p>
-						<h4>Avis tripadvisor :</h4>
+						<h4><?php echo $practical_info_resto_notice[$langue]; ?></h4>
 						<p>
-							4.5/5 (1930 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d2720550-Reviews-My_Mom_s_Recipe_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
+							<?php echo $practical_info_resto2_rate[$langue]; ?><br><br>
+							<?php echo $practical_info_resto_link_see[$langue]; ?> <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d2720550-Reviews-My_Mom_s_Recipe_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank"><?php echo $practical_info_resto_link_click[$langue]; ?></a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
-							<u>Adresse</u> : Tourism Street – Wadi Musa, 71810 Jordanie<br><br>
-							<u>Site web</u> : <a href="http://www.mymomsreciperestaurant.com" target="_blank">http://www.mymomsreciperestaurant.com</a><br><br>
-							<u>Téléphone</u> : +962 7 7082 4824<br><br>
+							<u><?php echo $practical_info_hotel_address[$langue]; ?></u> : Tourism Street – Wadi Musa, 71810 Jordanie<br><br>
+							<u><?php echo $practical_info_hotel_web_site[$langue]; ?></u> : <a href="http://www.mymomsreciperestaurant.com" target="_blank">http://www.mymomsreciperestaurant.com</a><br><br>
+							<u><?php echo $practical_info_hotel_telephone[$langue]; ?></u> : +962 7 7082 4824<br><br>
 						</p>
 					</div>
 					<div>
 						<h3>Petra night restaurant</h3>
 						<p>
-							<u>Cuisines</u> : pizza, internationale, méditerranéenne, Moyen-Orient, arabe.
-							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.
+							<?php echo $practical_info_resto3_pres[$langue]; ?>
 						</p>
-						<h4>Horaires :</h4>
-							<p>Tous les jours : 11h - 00h</p>
-						<h4>Avis tripadvisor :</h4>
+						<h4><?php echo $practical_info_resto_horaire[$langue]; ?></h4>
+							<p>
+								<?php echo $practical_info_resto3_horaire1[$langue]; ?>
+							</p>
+						<h4><?php echo $practical_info_resto_notice[$langue]; ?></h4>
 						<p>
-							4.5/5 (141 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d17531880-Reviews-Petra_Night_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
+							<?php echo $practical_info_resto3_rate[$langue]; ?><br><br>
+							<?php echo $practical_info_resto_link_see[$langue]; ?> <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d17531880-Reviews-Petra_Night_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank"><?php echo $practical_info_resto_link_click[$langue]; ?></a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
-							<u>Adresse</u> : Tourism Street, Pétra/Wadi Moussa 71810 Jordanie<br><br>
-							<u>Téléphone</u> : +962 7 7555 0450<br><br>
+							<u><?php echo $practical_info_hotel_address[$langue]; ?></u> : Tourism Street, Pétra/Wadi Moussa 71810 Jordanie<br><br>
+							<u><?php echo $practical_info_hotel_telephone[$langue]; ?></u> : +962 7 7555 0450<br><br>
 						</p>
 					</div>
 					<div>
 						<h3>Al Qantarah</h3>
 						<p>
-							Restaurant traditionnel.<br>
-							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens, plats sans gluten.
+							<?php echo $practical_info_resto4_pres[$langue]; ?>
 						</p>
-						<h4>Horaires :</h4>
-							<p>Non renseignées.</p>
-						<h4>Avis tripadvisor :</h4>
+						<h4><?php echo $practical_info_resto_horaire[$langue]; ?></h4>
+							<p><?php echo $practical_info_hotel_non_renseigne[$langue]; ?></p>
+						<h4><?php echo $practical_info_resto_notice[$langue]; ?></h4>
 						<p>
-							4/5 (383 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d1570869-Reviews-Al_Qantarah-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
+							<?php echo $practical_info_resto4_rate[$langue]; ?><br><br>
+							<?php echo $practical_info_resto_link_see[$langue]; ?> <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d1570869-Reviews-Al_Qantarah-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank"><?php echo $practical_info_resto_link_click[$langue]; ?></a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
-							<u>Adresse</u> : Near Petra Main Gate Walking distance from Petra Visitor Center, 20 meters from Petra Mevenpick Resort, Pétra/Wadi Moussa Jordanie<br><br>
-							<u>Téléphone</u> : +962 3 215 5535<br><br>
+							<u><?php echo $practical_info_hotel_address[$langue]; ?></u> : Near Petra Main Gate Walking distance from Petra Visitor Center, 20 meters from Petra Mevenpick Resort, Pétra/Wadi Moussa Jordanie<br><br>
+							<u><?php echo $practical_info_hotel_telephone[$langue]; ?></u> : +962 3 215 5535<br><br>
 						</p>
 					</div>
 					<div>
 						<h3>Red Cave restaurant</h3>
 						<p>
-							Restaurant traditionnel.<br>
-							<u>Régimes spéciaux</u> : végétariens bienvenus, halal, choix végétaliens.
+							<?php echo $practical_info_resto5_pres[$langue]; ?>
 						</p>
-						<h4>Horaires :</h4>
-							<p>Tous les jours : 10h - 23h</p>
-						<h4>Avis tripadvisor :</h4>
+						<h4><?php echo $practical_info_resto_horaire[$langue]; ?></h4>
+							<p>
+								<?php echo $practical_info_resto5_horaire1[$langue]; ?>
+							</p>
+						<h4><?php echo $practical_info_resto_notice[$langue]; ?></h4>
 						<p>
-							4/5 (1043 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6363999-Reviews-Red_cave-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
+							<?php echo $practical_info_resto5_rate[$langue]; ?><br><br>
+							<?php echo $practical_info_resto_link_see[$langue]; ?> <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d6363999-Reviews-Red_cave-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank"><?php echo $practical_info_resto_link_click[$langue]; ?></a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
-							<u>Adresse</u> : Tourist Street Main Tourist Street- 30 M From Petra Visitor Center - Petra Guest House, Pétra/Wadi Moussa 71810 Jordanie<br><br>
-							<u>Site web</u> : <a href="http://redcaverestaurant.com" target="_blank">redcaverestaurant.com</a><br><br>
-							<u>Adresse mail</u> : <a href="mailto:info@redcaverestaurant.com">info@redcaverestaurant.com</a><br><br>
-							<u>Téléphone</u> : +962 7 9889 6806<br><br>
+							<u><?php echo $practical_info_hotel_address[$langue]; ?></u> : Tourist Street Main Tourist Street- 30 M From Petra Visitor Center - Petra Guest House, Pétra/Wadi Moussa 71810 Jordanie<br><br>
+							<u><?php echo $practical_info_hotel_web_site[$langue]; ?></u> : <a href="http://redcaverestaurant.com" target="_blank">redcaverestaurant.com</a><br><br>
+							<u>Mail</u> : <a href="mailto:info@redcaverestaurant.com">info@redcaverestaurant.com</a><br><br>
+							<u><?php echo $practical_info_hotel_telephone[$langue]; ?></u> : +962 7 9889 6806<br><br>
 						</p>
 					</div>
 					<div>
 						<h3>Jordan heart restaurant</h3>
 						<p>
-							Restaurant traditionnel.<br>
-							<u>Cuisines</u> : méditerranéenne, Moyen-Orient, arabe, barbecue/grillades.<br>
-							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.
+							<?php echo $practical_info_resto6_pres[$langue]; ?>
 						</p>
-						<h4>Horaires :</h4>
-							<p>Tous les jours : 9h - 23h</p>
-						<h4>Avis tripadvisor :</h4>
+						<h4><?php echo $practical_info_resto_horaire[$langue]; ?></h4>
+							<p>
+								<?php echo $practical_info_resto6_horaire1[$langue]; ?>
+							</p>
+						<h4><?php echo $practical_info_resto_notice[$langue]; ?></h4>
 						<p>
-							5/5 (223 avis)<br><br>
-							Voir les avis : <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d19113202-Reviews-Jordan_Heart_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank">cliquez ici</a>
+							<?php echo $practical_info_resto_notice[$langue]; ?><br><br>
+							<?php echo $practical_info_resto6_rate[$langue]; ?> <a href="https://www.tripadvisor.fr/Restaurant_Review-g318895-d19113202-Reviews-Jordan_Heart_Restaurant-Petra_Wadi_Musa_Ma_an_Governorate.php" target="_blank"><?php echo $practical_info_resto_link_click[$langue]; ?></a>
 						</p>
 						<h4>Contact :</h4>
 						<p>
-							<u>Adresse</u> : Tourism St 28, Pétra/Wadi Moussa Jordanie<br><br>
-							<u>Page Facebook</u> : <a href="https://www.petraguesthousehotel.com/?lang=fr" target="_blank">www.facebook.com/jordanheart2019</a><br><br>
-							<u>Téléphone</u> : +962 7 7719 5920<br><br>
+							<u><?php echo $practical_info_hotel_address[$langue]; ?></u> : Tourism St 28, Pétra/Wadi Moussa Jordanie<br><br>
+							<u><?php echo $practical_info_resto_facebook[$langue]; ?></u> : <a href="https://www.petraguesthousehotel.com/?lang=fr" target="_blank">www.facebook.com/jordanheart2019</a><br><br>
+							<u><?php echo $practical_info_hotel_telephone[$langue]; ?></u> : +962 7 7719 5920<br><br>
 						</p>
 					</div>
 				</div>

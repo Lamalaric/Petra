@@ -30,8 +30,8 @@
 	$nav_contact = array("À propos", "About us");
 
 	/* INDEX */
-	$a1_h1 = array("Petra, une cité nabatéenne", "Petra, a Nabatean city");
-	$introduction = array("Petra est une cité antique du sud de l’actuelle Jordanie.<br>Son attraction mondiale en a fait l’un des principaux pôle touristique de Jordanie. Fondée en -1200 par les Édomites, elle fut par la suite occupée par les Nabatéens à partir du VIe siècle avant JC, qui la firent prospérer grâce à sa position stratégique sur la route des caravanes en provenance de l’Orient. Aujourd’hui classée au patrimoine mondial de l’UNESCO, elle est considérée comme l’un des plus beaux sites troglodytiques du monde.",
+	$a1_h1 = array("Pétra, une cité nabatéenne", "Petra, a Nabatean city");
+	$introduction = array("Pétra est une cité antique du sud de l’actuelle Jordanie.<br>Son attraction mondiale en a fait l’un des principaux pôle touristique de Jordanie. Fondée en -1200 par les Édomites, elle fut par la suite occupée par les Nabatéens à partir du VIe siècle avant JC, qui la firent prospérer grâce à sa position stratégique sur la route des caravanes en provenance de l’Orient. Aujourd’hui classée au patrimoine mondial de l’UNESCO, elle est considérée comme l’un des plus beaux sites troglodytiques du monde.",
 	    "Petra is an ancient city in the south of present-day Jordan.<br>Its worldwide attraction has made it one of Jordan's main tourist poles. Founded in 1200 BC by the Edomites, it was later occupied by the Nabataeans from the 6th century BC who made it prosper thanks to its strategic position on the route of caravans from the East. Today, classified as a UNESCO World Heritage Site, it is considered one of the most beautiful troglodytic sites in the world.");
 	$a3_h2 = array("PARCOURS", "COURSES");
 	$a3_p = array("Nous avons sélectionné pour vous les meilleurs parcours à effectuer, tout en nous assurant que vous ne raterez aucun des monuments phare de cette magnifique citée nabatéenne.", "We have selected for you the best routes to take, ensuring that you will not miss any of the highlights of this magnificent Nabatean city.");
@@ -43,14 +43,14 @@
 	$a4_a = array("Voir plus", "See more");
 
 	/* HISTOIRE */
-	$h1_h1 = array("La grande histoire de Petra", "The great history of Petra");
+	$h1_h1 = array("La grande histoire de Pétra", "The great history of Petra");
 	$sommaire = array("Sommaire", "Summary");
 	$sommaire_1 = array("Histoire", "History");
 	$sommaire_1_1 = array("Antiquité", "Antiquity");
 	$sommaire_1_2 = array("Moyen-Âge", "Middle Ages");
 	$sommaire_2 = array("Recherches archéologiques", "Archaeological researches");
 	$sommaire_3 = array("Architecture", "Architecture");
-	$sommaire_4 = array("Petra dans l'art et la culture", "Petra in art and culture");
+	$sommaire_4 = array("Pétra dans l'art et la culture", "Petra in art and culture");
 	$h2_h2 = $sommaire_1;
 	$h2_h3 = $sommaire_1_1;
 	$h2_p = array("Aux alentours de 1200 avant  JC les Édomites furent les premiers à occuper l’emplacement actuel de la cité de Pétra. Originaire du royaume d’Édom (sud de l’actuelle Jordanie) ces tribus nomades étaient réputés pour leurs textiles, leurs céramiques et leur travail des métaux. Parmi leur héritage sur place, on retrouve les traces d’une série de fortins au dessus de promontoires visant à les protéger d’éventuelles attaques.", "Around 1200 B.C. the Edomites were the first to occupy the present site of the city of Petra. Originally from the Kingdom of Edom (southern Jordan), these nomadic tribes were famous for their textiles, ceramics, and metalwork. Nowaday, their legacies on the site are traces of a series of forts above promontories to protect them from possible attack.");
@@ -68,7 +68,7 @@
 	$h7_h2 = $sommaire_3;
 	$h7_p = array("Les premières constructions des Nabatéens étaient simplement creusées dans la roche de manière assez rustique. Progressivement, les habitants s’inspirèrent des styles architecturaux des civilisations voisines afin de créer des façades plus complexe. On peut aussi retrouver des traces de l’architecture hellénistiques dans l’aspect des bâtiments public que ce soit les colonnes ou encore le péristyle. Les lieux de vie et de travail des habitants sont quand à eux d’avantage d’inspiration arabe.", "The first constructions of the Nabateans were simply dug into the rock in a rather rustic way. Gradually, the inhabitants were inspired by the architectural styles of neighboring civilizations to create more complex facades. Traces of Hellenistic architecture can also be found in the appearance of the public buildings, be it the columns or the peristyle. The living and working places of the inhabitants are more of Arab inspiration.");
 	$h8_h2 = $sommaire_4;
-	$h8_p = array("Depuis sa redécouverte, Petra subjugue et inspire. C’est ainsi que virent le jours de nombres œuvres . Plusieurs peintre en firent des représentations.<br><br>
+	$h8_p = array("Depuis sa redécouverte, Pétra subjugue et inspire. C’est ainsi que virent le jours de nombres œuvres . Plusieurs peintre en firent des représentations.<br><br>
 		La cité nabatéenne fit aussi quelques apparitions sur grand écran que ce soit dans Indiana Jones et la dernière croisade, Transformers 2, Le Retour de la Momie ou encore Mortal Kombat : Destruction Finale. Le jeu vidéo Overwatch lui fit aussi hommage en recréant la cité dans un monde futuriste.", "Since his rediscovery Petra subjugates and inspires, that's how many works saw the light of day. Several painters made representations of it.<br><br>
 		The Nabataean city also made some appearances on large screen that it is in Indiana Jones and the last crusade, Transformers 2, The Return of the Mummy or Mortal Kombat: Final Destruction. The video game Overwatch also paid homage to him by recreating the city in a futuristic world.");
 
@@ -109,11 +109,26 @@
 
 	// INFO PRATIQUE
 
+	$practical_info_s1 = array("Plan du site", "Site map");
+	$practical_info_s2 = array("Divers", "Other");
+	$practical_info_s2_1 = array("Recommandations diplomatiques", "Diplomatic advices");
+
+	$practical_info_s2_2 = array("Quelques traductions utiles", "Some helpful translations");
+
+	$practical_info_s2_3 = array("Convertisseur de monnaie", "Currency converter");
+
+	$practical_info_s3 = array("Aux alentours", "Near by");
+
+	$practical_info_s3_1 = array("Hôtels", "Hotels");
+
+	$practical_info_s3_2 = array("Restaurants", "Restaurants");
+
+
 	$var = array("", "");
 	$practical_info_h1 = array("Informations pratiques", "Practicals informations");
 	$practical_info_title1 = array("PLAN DU SITE", "SITE MAP");
 	$practical_info_title2 = array("DIVERS", "OTHER");
-	$practical_info_text1 = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book a hotel room before starting your trip.");
+	$practical_info_text1 = array("Le site de Pétra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book a hotel room before starting your trip.");
 	$practical_info_subtitle1 = array("RECOMMANDATIONS DIPLOMATIQUES", "DIPLOMATIC ADVICE");
 	$practical_info_text2 = array("Le Royaume hachémite de Jordanie, pôle de stabilité dans une région traversée par les crises, n’est cependant pas à l’abri de troubles, en particulier du risque terroriste. La Jordanie connaît une menace permanente d’attentats. Cette menace est prise en compte par les autorités jordaniennes qui continuent de se mobiliser pour prévenir le risque terroriste ou infiltrations aux frontières.", "The Hashemite Kingdom of Jordan, a pole of stability in a region plagued by crises, is not, however, immune to unrest, particularly the risk of terrorism. Jordan is under constant threat of terrorist attacks. This threat is taken into account by the Jordanian authorities who continue to mobilize to prevent the risk of terrorism or infiltration at the borders.");
 	$practical_info_subsubtitle1 = array("Recommandations", "Advice");
@@ -136,7 +151,7 @@
 	$practical_info_hotel_web_site = array("Site web", "Web site");
 	$practical_info_hotel_telephone = array("Téléphone", "Telephone");
 
-	$practical_info_hotel1_1 = array("L'hotel le plus proche de Petra", "The nearest hotel to Petra");
+	$practical_info_hotel1_1 = array("L'hotel le plus proche de Pétra", "The nearest hotel to Petra");
 	$practical_info_hotel1_2 = array("Vue sur la vallée du grand rift", "View of the Great Rift Valley");
 	$practical_info_hotel1_5 = array("Piscine", "Pool");
 	$practical_info_hotel2_1 = array("Internet haut débit gratuit", "Free high speed internet");
@@ -151,7 +166,7 @@
 							3 beds : 110 to 141 JOD (155 to 175\$ / 110 to 141£)<br>
 							Prices vary depending on the size of the beds. (Single or Kings)<br>
 							Prices are for one night.");
-	$practical_info_hotel3_2 = array("Situé à 150m de Petra", "Located at 150m from Petra");
+	$practical_info_hotel3_2 = array("Situé à 150m de Pétra", "Located at 150m from Petra");
 	$practical_info_hotel3_3 = array("Piscine", "Pool");
 	$practical_info_hotel3_4 = array("Déjeuner gratuit", "Free lunch");
 	$practical_info_hotel3_5 = array("Parking gratuit", "Free parking");
@@ -170,7 +185,7 @@
 							"Suite Deluxe : 41€+ / night<br>
 							King suite : 123€+ / night<br>
 							Ocean view Suite : 165€+ / night");
-	$practical_info_hotel5_1 = array("Situé à 10min de Petra", "Located at 10min from Petra");
+	$practical_info_hotel5_1 = array("Situé à 10min de Pétra", "Located at 10min from Petra");
 	$practical_info_hotel5_4 = array("Petit-déjeuner gratuit", "Free breakfast");
 	$practical_info_hotel5_5 = array("Wifi gratuit", "Free Internet");
 	$practical_info_hotel5_6 = array("Parking gratuit", "Free parking");
@@ -180,7 +195,7 @@
 							"2 persons : 95€ / night<br>
 							3 persons : 87 to 99€ / night");
 
-	$practical_info_hotel6_1 = array("Proche de Petra", "Near to Petra");
+	$practical_info_hotel6_1 = array("Proche de Pétra", "Near to Petra");
 	$practical_info_hotel6_3 = array("Piscine", "Pool");
 	$practical_info_hotel6_5 = array("Wifi gratuit", "Free Internet");
 	$practical_info_hotel6_tarif = array(
@@ -195,10 +210,117 @@
 							4 persons : 108 or 136€<br><br>
 							The first price indicated refers to high seasons, the second to low seasons.");
 
+
+	$practical_info_subtitle5_text1 = array("Un petit creux ? Pas de soucis, voici une liste de restaurants aux alentours qui sauront vous préparer les meilleures spécialités du coin !", "Feeling hungry? Don't worry, here is a list of restaurants in the area that will be able to prepare the best specialties of the area!");
+	$practical_info_resto_horaire = array("Horaires : ","Schedules : ");
+	$practical_info_resto_notice = array("Avis Tripadvisor : ","Tripadvisor notice : ");
+	$practical_info_resto_link_see = array("Voir les avis : ","See the notices : ");
+	$practical_info_resto_link_click = array("Cliquez ici","Click here");
+	$practical_info_resto_facebook = array("Page Facebook","Facebook page");
+
+	$practical_info_resto1_pres = array("Restaurant traditionnel.<br>
+							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.","
+							Traditional restaurant.<br>
+							<u>Special diets</u>: vegetarians welcome, vegan choices.");
+	$practical_info_resto1_horaire1 = array("Tous les jours : 14h - 23h","Every day : 14h - 23h");
+	$practical_info_resto1_rate = array("4.5/5 (1656 avis)","4.5/5 (1656 notices)");
+
+	$practical_info_resto2_pres = array("Restaurant traditionnel.<br>
+							<u>Cuisine</u> : libanaise, méditerranéenne, barbecue/grillades, Moyen-Orient, arabe.<br>
+							<u>Régimes</u> spéciaux : végétariens bienvenus, choix végétaliens, halal, plats sans gluten.","
+							Traditional restaurant.<br>
+							<u>Cuisine</u>: Lebanese, Mediterranean, barbecue/grill, Middle Eastern, Arabic.<br>
+							<u>Special diets</u>: vegetarians welcome, vegan choices, halal, gluten-free dishes.");
+	$practical_info_resto2_horaire1 = array(
+							"Lun / Mer / Jeu : 10h - 23h<br>
+							Mar / Ven / Sam / Dim : 10h - 22h",
+							"Mon / Wed / Thu : 10h - 23h<br>
+							Tue / Fri / Sat / Sun : 10h - 22h");
+	$practical_info_resto2_rate = array("4.5/5 (1930 avis)","4.5/5 (1930 notices)");
+
+	$practical_info_resto3_pres = array("<u>Cuisines</u> : pizza, 							internationale, méditerranéenne, Moyen-Orient, 						arabe.
+							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.","
+							<u>Cuisines</u>: pizza, international, Mediterranean, Middle Eastern, Arabic.
+							<u>Special diets</u>: vegetarians welcome, vegan choices.");
+	$practical_info_resto3_horaire1 = array("Tous les jours : 11h - 00h","Every day : 11h - 00h");
+	$practical_info_resto3_rate = array("4.5/5 (141 avis)","4.5/5 (141 notices)");
+
+	$practical_info_resto4_pres = array("Restaurant traditionnel.<br>
+							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens, plats sans gluten.","
+							Traditional restaurant.<br>
+							<u>Special diets</u>: vegetarians welcome, vegan choices, gluten-free dishes.");
+	$practical_info_resto4_rate = array("4/5 (383 avis)","4/5 (383 notices)");
+
+	$practical_info_resto5_pres = array("Restaurant traditionnel.<br>
+							<u>Régimes spéciaux</u> : végétariens bienvenus, halal, choix végétaliens.","
+							Traditional restaurant.<br>
+							<u>Special diets</u>: vegetarians welcome, halal, vegan choices.");
+	$practical_info_resto5_horaire1 = array("Tous les jours : 10h - 23h","Every day : 10h - 23h");
+	$practical_info_resto5_rate = array("4/5 (1043 avis)","4/5 (1043 notices)");
+
+	$practical_info_resto6_pres = array("Restaurant traditionnel.<br>
+							<u>Cuisines</u> : méditerranéenne, Moyen-Orient, arabe, barbecue/grillades.<br>
+							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.","
+							Traditional restaurant.<br>
+							<u>Cuisines</u>: Mediterranean, Middle Eastern, Arabic, barbecue/grilled.<br>
+							<u>Special diets</u>: vegetarians welcome, vegan choices.");
+	$practical_info_resto6_horaire1 = array("Tous les jours : 9h - 23h","Every day : 9h - 23h");
+	$practical_info_resto6_rate = array("5/5 (223 avis)","5/5 (223 notices)");
+
+
+	//Contact
+	$contact_title1 = array("À propos de nous","About us");
+	$contact_title1_subtitle1 = array("Notre groupe","Our group");
+	$contact_title1_subtitle1_text = array("Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.","This website was created as part of our tutored project in our first year of computer science DUT. It aims above all at creating a cultural and digital mediation, and was realized in collaboration with UNESCO.");
+	$contact_chef = array("Chef de projet","Project Manager");
+	$contact_chef_dev = array("Developpeur en chef","Lead developer");
+	$contact_dev = array("Developpeur","Developer");
+	$contact_chef_recherche = array("Chef de la recherche","Lead research");
+	$contact_recherche = array("Researcher","Researcher");
+	$contact_concept = array("Concepteur","Concepter");
+	$contact_title1_subtitle2 = array("Nos contenus","Our contents");
+	$contact_title1_subtitle2_text = array("Vous avez aimé votre voyage à Pétra et vous souhaitez le montrer au monde entier ? Empressez-vous d'essayer notre filtre snapchat et de l'envoyer à tous vos proches !",
+		"Did you enjoy your trip to Petra and want to show it to the world? Try our snapchat filter and send it to all your friends and family!");
+	$contact_title1_subtitle3 = array("<h4>Projet</h4>
+					<ul>
+						<li>ETTAYEB Tewfik : Responsable du Forum UNESCO - UGE</li>
+						<li>CESSY David</li>
+						<li>REBY Yann</li>
+					</ul>
+					<h4>Traductions</h4>
+					<ul>
+						<li>Prof d'arabe ?</li>
+					</ul>
+					<h4>Illustrations</h4>
+					<ul>
+						<li>PERNICINI Tia : Logo</li>
+						<li>Le monsieur ? : Photographies</li>
+					</ul>","<h4>Project</h4>
+					<ul>
+						<li>ETTAYEB Tewfik: Head of Forum UNESCO - UGE</li>
+						<li>CESSY David</li>
+						<li>REBY Yann</li>
+					</ul>
+					<h4>Translations</h4>
+					<ul>
+						<li>Arabic teacher?</li>
+					</ul>
+					<h4>Illustrations</h4>
+					<ul>
+						<li>PERNICINI Tia: Logo</li>
+						<li>The man? : Photographs</li>
+					</ul>");
+	$contact_title2 = array("Partenaires","Partner");
+	$contact_title3 = array("Nous contacter","Contact us");
+	$contact_title3_text = array("Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons ravis de vous répondre.","Have a question? Need help ? Do not hesitate to write to us, we will be delighted to answer you.");
+
+
+
+
 	// Header + nav
 	echo '
 	<head> 
-		<title>Petra - Médiation Culturelle et Numérique</title>
+		<title>Pétra - Médiation Culturelle et Numérique</title>
 		<meta name="author" content="Amalaric Le Forestier" />
 		<link rel="icon" href="images/logo.ico" />
 		<meta charset="utf-8" />
@@ -278,17 +400,17 @@
 				}
 				echo "
 				<ul class=\"deroulant deroulant-if\">
-					<li><a href=\"informations.php?lang=".$langue."#plan\">Plan du site</a></li>
-					<li><a href=\"informations.php?lang=".$langue."#divers\">Divers</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#plan\">".$practical_info_s1[$langue]."</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#divers\">".$practical_info_s2[$langue]."</a></li>
 					<ul>
-						<li><a href=\"informations.php?lang=".$langue."#reco-diplo\">Recommandations diplomatiques</a></li>
-						<li><a href=\"informations.php?lang=".$langue."#trad\">Quelques traductions utiles</a></li>
-						<li><a href=\"informations.php?lang=".$langue."#convertisseur\">Convertisseur de monnaie</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#reco-diplo\">".$practical_info_s2_1[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#trad\">".$practical_info_s2_2[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#convertisseur\">".$practical_info_s2_3[$langue]."</a></li>
 					</ul>
-					<li><a href=\"informations.php?lang=".$langue."#alentours\">Aux alentours</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#alentours\">".$practical_info_s3[$langue]."</a></li>
 					<ul>
-						<li><a href=\"informations.php?lang=".$langue."#hotels\">Hôtels</a></li>
-						<li><a href=\"informations.php?lang=".$langue."#resto\">Restaurants</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#hotels\">".$practical_info_s3_1[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#resto\">".$practical_info_s3_2[$langue]."</a></li>
 					</ul>
 				</ul></li>
 				";
