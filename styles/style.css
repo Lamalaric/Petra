@@ -1,15 +1,15 @@
 /* POLICES */
 @font-face {								/*Police Dyno normale*/
 	font-family: Dyno regular;
-	src: url('fonts/dyno/Dyno Regular.ttf');
+	src: url('../fonts/dyno/Dyno Regular.ttf');
 }
 @font-face {
 	font-family: Cicle fina;
-	src: url('fonts/cicle/Cicle Fina.ttf');
+	src: url('../fonts/cicle/Cicle Fina.ttf');
 }
 @font-face {
 	font-family: Cicle gordita;
-	src: url('fonts/cicle/Cicle Gordita.ttf');
+	src: url('../fonts/cicle/Cicle Gordita.ttf');
 	font-weight: bold;
 }
 
@@ -110,6 +110,7 @@ nav li > a {
 	text-align: center;
 	margin: auto 30px;
 	padding: 12px 0;
+	transition-duration: 0.2s;
 }
 nav i {
 	display: none !important;
@@ -152,6 +153,7 @@ nav li a:hover:not(.page-actuelle) {
 .deroulant > li a {
 	font-size: 20px;
 	letter-spacing: 0.2px;
+	overflow-wrap: break-word;
 }
 .deroulant > ul li a {
 	font-family: Cicle fina;
@@ -214,50 +216,50 @@ footer .reseaux-site i:hover {
 	color: gray;
 }
 .f-logoMCN {
-    background-image: url(images/logo_mcn.png);
+    background-image: url(../images/logo_mcn.png);
     background-position-y: 18px;
     width: 190px;
 }
 .f-logoUPEM {
-    background-image: url(images/logo_upem.png);
+    background-image: url(../images/logo_upem.png);
     background-position-y: 15px;
     width: 190px;
     margin-left: 10px;
 }
 .f-logoUNESCO {
-    background-image: url(images/logo_unesco.png);
+    background-image: url(../images/logo_unesco.png);
     background-position: 0px 10px;
     width: 80px;
     margin: 0px 14px 0 22px;
 }
 .f-logoANR {
-    background-image: url(images/logo_anr.png);
+    background-image: url(../images/logo_anr.png);
     background-position-y: 9px;
     width: 65px;
 }
 .f-logoIDEA {
-    background-image: url(images/logo_idea.png);
+    background-image: url(../images/logo_idea.png);
     width: 149px;
     margin-left: 9px;
 }
 footer .f-logoTWI {
-	background-image: url(images/logo_twitter.png);
+	background-image: url(../images/logo_twitter.png);
 }
 footer .f-logoFB {
-	background-image: url(images/logo_facebook.png);
+	background-image: url(../images/logo_facebook.png);
 }
 footer .f-logoINSTA {
-	background-image: url(images/instagram.png);
+	background-image: url(../images/instagram.png);
 }
 footer .f-logoYTB {
-	background-image: url(images/logo_youtube.png);
+	background-image: url(../images/logo_youtube.png);
 	width: 83px !important;
 }
 
 
 /* VIRGULES POUR TITRES */
 main h2 {
-	background-image: url(images/virgule_titre.svg);
+	background-image: url(../images/virgule_titre.svg);
     background-size: 54em;
     background-repeat: no-repeat;
     background-position-y: -15px;
@@ -271,7 +273,7 @@ main h2 {
     height: 3em;
 }
 main h3 {
-    background-image: url(images/virgule_sous_titre.svg);
+    background-image: url(../images/virgule_sous_titre.svg);
     background-position: 0px -20px;
     background-repeat: no-repeat;
     color: #f7af3e;
@@ -296,7 +298,7 @@ main h3 {
 
 /* 1 */
 .a1 {
-	background-image: url(images/accueil.jpeg);
+	background-image: url(../images/accueil.jpeg);
 	background-size: 100%;
 	background-position: 50% 81%;
 	background-repeat: no-repeat;
@@ -321,7 +323,7 @@ main h3 {
 	height: auto;
 }
 .a2 #image1_1 {
-	background-image: url(images/presentation.jpg);
+	background-image: url(../images/presentation.jpg);
 	background-size: 100%;
 	width: 450px; height: 300px;
 	margin: 30px 50px 0 0;
@@ -456,6 +458,7 @@ main h3 {
 	justify-content: space-around;
 }
 .sommaire > ul > li {
+	font-size: 30px;
 	margin: 0 20px;
 }
 .sommaire .underline {
@@ -467,7 +470,7 @@ main h3 {
 }
 .sommaire li {
 	width: auto;
-	font-size: 25px;
+	font-size: 27px;
 	list-style-type: none;
 }
 .sommaire a {
@@ -501,7 +504,7 @@ main h3 {
 	border-radius: 5px;
 }
 .container-h main .h1 {
-	background-image: url(images/image4.jpg);
+	background-image: url(../images/image4.jpg);
 	background-size: 103%;
 	background-position: 64% 73%;
 	background-repeat: no-repeat;
@@ -570,7 +573,7 @@ main h3 {
 	grid-template-columns: 15% auto 15%;
 }
 .container-g main .big-picture {
-	background-image: url(images/image10.png);
+	background-image: url(../images/image10.png);
 	background-size: 100%;
 	background-position: 64% 52%;
 	background-repeat: no-repeat;
@@ -632,7 +635,7 @@ main h3 {
 
 /* PAGE VISITER.HTML */
 .container-v main .big-picture {
-	background-image: url(images/image6.jpg);
+	background-image: url(../images/image6.jpg);
 	background-size: 100%;
 	background-position: 64% 100%;
 	background-repeat: no-repeat;
@@ -710,20 +713,20 @@ main h3 {
 }
 
 .container-v main .kazneh-img {
-	background-image: url(images/al_kazneh.jpg);
+	background-image: url(../images/al_kazneh.jpg);
     background-size: 125%;
     
 }
 .container-v main .ad-deir-img {
-	background-image: url(images/kazneh.png);
+	background-image: url(../images/kazneh.png);
     background-size: 100%;
 }
 .container-v main .theatre-img {
-	background-image: url(images/image3.jpg);
+	background-image: url(../images/image3.jpg);
     background-size: 112%;
 }
 .container-v main .aqueducs-img {
-	background-image: url(images/aqueducs.jpg);
+	background-image: url(../images/aqueducs.jpg);
     background-size: 125%;
 }
 
@@ -746,7 +749,7 @@ main h3 {
 	grid-template-columns: 15% auto 15%;
 }
 .container-if main .big-picture {
-	background-image: url(images/image12.png);
+	background-image: url(../images/image12.png);
 	background-size: 100%;
 	background-position: 64% 68%;
 	background-repeat: no-repeat;
@@ -842,7 +845,7 @@ form .mini-flex {
 	font-weight: bold;
 }
 .conv-monnaie span {
-	background-image: url('images/double-fleche.png');
+	background-image: url('../images/double-fleche.png');
 	background-size: 99%;
 	background-repeat: no-repeat;
 	width: 75px; height: 75px;
@@ -866,7 +869,7 @@ form .mini-flex {
 	justify-content: space-evenly;
 }
 .etoiles > span {
-	background-image: url(images/etoiles.png);
+	background-image: url(../images/etoiles.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 40px; height: 40px;
@@ -977,34 +980,34 @@ form .mini-flex {
 	border-radius: 100px;
 }
 .auteurs .img-ama {
-	background-image: url('images/Amalaric.jpg');
+	background-image: url('../images/Amalaric.jpg');
 }
 .auteurs .img-ama:hover {
-	background-image: url('images/Amalaric_petra.jpg');
+	background-image: url('../images/Amalaric_petra.jpg');
 }
 .auteurs .img-bastou {
-	background-image: url('images/Bastien.jpg');
+	background-image: url('../images/Bastien.jpg');
 }
 .auteurs .img-bastou:hover {
-	background-image: url('images/Bastien_petra.jpg');
+	background-image: url('../images/Bastien_petra.jpg');
 }
 .auteurs .img-dydy {
-	background-image: url('images/Dylan.jpg');
+	background-image: url('../images/Dylan.jpg');
 }
 .auteurs .img-dydy:hover {
-	background-image: url('images/Dylan_petra.jpg');
+	background-image: url('../images/Dylan_petra.jpg');
 }
 .auteurs .img-quent {
-	background-image: url('images/Quentin.jpg');
+	background-image: url('../images/Quentin.jpg');
 }
 .auteurs .img-quent:hover {
-	background-image: url('images/Quentin.png');
+	background-image: url('../images/Quentin.png');
 }
 .auteurs .img-ivan {
-	background-image: url('images/ivan2.webp');
+	background-image: url('../images/ivan2.webp');
 }
 .auteurs .img-ivan:hover {
-	background-image: url('images/Ivan.JPG');
+	background-image: url('../images/Ivan.JPG');
 	background-position: 0 28px;
 }
 .reseaux {
@@ -1019,14 +1022,14 @@ form .mini-flex {
 	display: inline;
 }
 .linkedin {
-	background-image: url('images/linkedin.png');
+	background-image: url('../images/linkedin.png');
 	width: 25px; height: 25px;
 }
 .github {
-	background-image: url('images/github.png');
+	background-image: url('../images/github.png');
 }
 .instagram {
-	background-image: url('images/instagram.png');
+	background-image: url('../images/instagram.png');
 }
 .auteurs div p {
 	margin-top: 10px;
