@@ -1,5 +1,5 @@
 <?php
-	$page = "admin-login";
+	$page = "admin";
 	include("includes/header.inc.php");
 ?>
 
