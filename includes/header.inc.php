@@ -322,13 +322,14 @@
 	$contact_chef = array("Chef de projet","Project Manager");
 	$contact_chef_dev = array("Developpeur en chef","Lead developer");
 	$contact_dev = array("Developpeur","Developer");
-	$contact_chef_recherche = array("Chef de la recherche","Lead research");
-	$contact_recherche = array("Researcher","Researcher");
+	$contact_chef_recherche = array("Lead recherches","Lead research");
+	$contact_recherche = array("Recherches","Researcher");
 	$contact_concept = array("Concepteur","Concepter");
 	$contact_title1_subtitle2 = array("Nos contenus","Our contents");
 	$contact_title1_subtitle2_text = array("Vous avez aimé votre voyage à Pétra et vous souhaitez le montrer au monde entier ? Empressez-vous d'essayer notre filtre snapchat et de l'envoyer à tous vos proches !",
 		"Did you enjoy your trip to Petra and want to show it to the world? Try our snapchat filter and send it to all your friends and family!");
-	$contact_title1_subtitle3 = array("<h4>Projet</h4>
+	$contact_title1_subtitle3 = array("<h3>Crédits</h3>
+					<h4>Projet</h4>
 					<ul>
 						<li>ETTAYEB Tewfik : Responsable du Forum UNESCO - UGE</li>
 						<li>CESSY David</li>
@@ -341,8 +342,9 @@
 					<h4>Illustrations</h4>
 					<ul>
 						<li>PERNICINI Tia : Logo</li>
-						<li>Le monsieur ? : Photographies</li>
-					</ul>","<h4>Project</h4>
+					</ul>",
+					"<h3>Credits</h3>
+					<h4>Project</h4>
 					<ul>
 						<li>ETTAYEB Tewfik: Head of Forum UNESCO - UGE</li>
 						<li>CESSY David</li>
@@ -355,7 +357,6 @@
 					<h4>Illustrations</h4>
 					<ul>
 						<li>PERNICINI Tia: Logo</li>
-						<li>The man? : Photographs</li>
 					</ul>");
 	$contact_title2 = array("Partenaires","Partner");
 	$contact_title3 = array("Nous contacter","Contact us");
@@ -374,7 +375,7 @@
 	<!DOCTYPE html> 
 	<html lang="'.$lang_header.'">
 	<head> 
-		<title>Pétra - Médiation Culturelle et Numérique</title>
+		<title>Petra - Médiation Culturelle et Numérique</title>
 		<meta name="author" content="Amalaric Le Forestier" />
 		<link rel="icon" href="images/logo.ico" />
 		<meta charset="utf-8" />
@@ -385,7 +386,7 @@
 	</head>
 
 	<header>
-		<nav role="navigation">											<!-- Menu de navigation -->
+		<nav class="navbar" role="navigation">											<!-- Menu de navigation -->
 			<i class="fas fa-bars"></i>
 			<ul>';
 				// Pour appliquer un style différent à la page où l'on se trouve

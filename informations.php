@@ -1,6 +1,6 @@
 <?php
 	$page = "informations";
-	include("header.inc.php");
+	include("includes/header.inc.php");
 ?>
 
 
@@ -50,7 +50,7 @@
 					</li>
 				</ul>
 				<br>
-				<p><u>Sources</u> : <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/#securite">www.diplomatie.gouv.fr</a></p>
+				<p><u>Sources</u> : <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/#securite" target="_blank">www.diplomatie.gouv.fr</a></p>
 			</div>
 			<div class="trad-mo">
 				<h3 id="trad"><?php echo $infos_subtitle2[$langue]; ?></h3>
@@ -543,7 +543,7 @@
 
 
 	<?php
-		include("footer.inc.php");
+		include("includes/footer.inc.php");
 	?>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 	$page = "index";
-	include("header.inc.php");
+	include("includes/header.inc.php");
 ?>
 
 <body class="container-i">
@@ -176,7 +176,7 @@
 	
 
 	<?php
-		include("footer.inc.php");
+		include("includes/footer.inc.php");
 	?>
 </body>
 </html>

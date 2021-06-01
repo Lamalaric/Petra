@@ -42,7 +42,7 @@ body {
 	font-size: 20px;
 	color: white;
 	height: 100%;
-	margin: 0 0 0 0;
+	margin: 0;
 }
 ::-moz-selection { /* Code for Firefox */
   color: white;
@@ -66,6 +66,9 @@ h3 {
 p, ul, li, a, label {
 	font-family: Cicle fina;
 }
+a {
+	text-decoration: none;
+}
 
 
 /* BARRE DE NAVIGATION */ 
@@ -76,6 +79,7 @@ nav {
 	border-width: 10px;
 	border-bottom: 1px solid black;
 	position: fixed;
+	top: 0;
 	z-index: 300;
 }
 nav > ul {
@@ -106,11 +110,25 @@ nav li > a {
 	text-shadow: 0px 0px #b94503;
 	text-decoration: none;
 	width: 200px;
+	position: relative;
 	display: block;
 	text-align: center;
 	margin: auto 30px;
 	padding: 12px 0;
 	transition-duration: 0.2s;
+}
+nav > ul > li > a::after {
+	content: '';
+	background: #ea5c0d;
+	height: 3px;
+	display: block;
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	transform: scale(0, 1);
+	transition: transform ease-in-out 250ms;
+}
+nav > ul > li > a:not(.page-actuelle):hover::after {
+	transform: scale(1,1);
 }
 nav i {
 	display: none !important;
@@ -126,8 +144,8 @@ nav #flag {
 nav .langue-actuelle {
 	border: 2px solid #ea5c0d;	
 }
-nav .page-actuelle {
-	border-bottom: 2px solid #b94503;
+nav .page-actuelle::after {
+	transform: scale(1, 1);
 }
 nav .logo2 {
 	display: none;
@@ -135,9 +153,10 @@ nav .logo2 {
 #logo {
 	width: 80px; height: 80px;
 	margin: 0 20px;
+	transition: transform cubic-bezier(0.76,-0.4, 0.35, 1.52) 1s;
 }
-nav li a:hover:not(.page-actuelle) {
-	color: #b94503;
+#logo:hover {
+	transform: rotate(360deg);
 }
 
 .deroulant {
@@ -414,21 +433,23 @@ main h3 {
 	font-family: Cicle fina;
 	font-size: 27px;
 	font-weight: bold;
-	background-color: #505050;
-	text-decoration: none;
 	text-align: center;
-	line-height: 69px;
 	padding: 0 25px;
-	border: 2px solid black;
-	border-radius: 22px;
-	transition-duration: 0.6s;
+	position: relative;
 }
-
-.a4 .see_more:hover {
-	border-color: #ea5c0d;
+.a4 .see_more::after {
+	content: '';
+	background: #ea5c0d;
+	width: 100%; height: 1.7em;
+	position: absolute;
+	bottom: -.3em; left: 0; right: 0;
+	transform: scale(1, .1);
+	transform-origin: bottom;
+	transition: transform cubic-bezier(0.68, -0.55, 0.27, 1.55) 400ms;
+	z-index: -10;
 }
-.a4 img {
-
+.a4 .see_more:hover::after {
+	transform: scale(1, 1);
 }
 
 
@@ -1061,7 +1082,7 @@ form .mini-flex {
 	display: block;
 	margin: 0 auto;
 }
-.container-c .partenaires span {
+.container-partenaires span {
 	display: inline-block;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -1075,6 +1096,12 @@ form .mini-flex {
 }
 .container-partenaires {
 	margin: 100px 0;
+}
+.container-partenaires a {
+	transition: transform ease-in-out 200ms;
+}
+.container-partenaires a:hover {
+	transform: scale(1.3);
 }
 .formulaire {
 	background-color: #505050;
@@ -1104,4 +1131,47 @@ form .mini-flex {
 .formulaire input[type=submit] {
 	border-style: none;
 	width: 100px; height: 35px;
+}
+.formulaire .mail-ok {
+	color: lightgreen;
+	text-align: center;
+}
+
+
+/* PAGE ADMIN */
+.container-admin h2 {
+	margin-top: 150px;
+}
+.container-login {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.container-login form {
+	background-color: #505050;
+	border: 2.5px solid #b94503;
+	width: 60%;
+	padding: 35px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container-login form input {
+	font-size: 1em;
+	width: 60%;
+	margin: 20px;
+	padding: 10px 20px;
+}
+.container-login form input[type="submit"] {
+	width: auto; height: auto;
+	padding: 10px 20px;
+}
+.container-login p {
+	text-align: center;
+}
+.container-admin footer {
+	position: fixed;
+	bottom: 0; left: 0; right: 0;
 }

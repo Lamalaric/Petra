@@ -1,6 +1,6 @@
 <?php
 	$page = "galerie";
-	include("header.inc.php");
+	include("includes/header.inc.php");
 ?>
 
 
@@ -96,7 +96,7 @@
 
 
 	<?php
-		include("footer.inc.php");
+		include("includes/footer.inc.php");
 	?>
 </body>
 </html>

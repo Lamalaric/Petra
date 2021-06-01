@@ -1,6 +1,6 @@
 <?php
 	$page = "visiter";
-	include("header.inc.php");
+	include("includes/header.inc.php");
 ?>
 
 <body class="container-v">
@@ -56,7 +56,7 @@
 
 
 	<?php
-		include("footer.inc.php");
+		include("includes/footer.inc.php");
 	?>
 </body>
 </htmls>
