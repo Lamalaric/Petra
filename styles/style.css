@@ -36,6 +36,9 @@ body #goto_top img{
 
 
 /*COMMON STYLES */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #333333;
 	font-family: Cicle fina;
@@ -878,6 +881,9 @@ main .map {
 .divers {
 	display: flex;
 	justify-content: space-between;
+}
+#divers {
+	margin-top: 100px;
 }
 .divers .diplo {
 	text-align: justify;

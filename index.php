@@ -18,13 +18,14 @@
 					<span id="texte1_1">
 						<p><?php echo $introduction[$langue]; ?></p>
 					</span>
+					<span id=beacon-parcours></span>
 				</div>
 			</section>
 
 			<section class="a3" id="parcours">					<!-- Parcours -->
 				<h2><?php echo $a3_h2[$langue]; ?></h2>
 				<p><?php echo $a3_p[$langue]; ?></p>
-				<form name="saisie" method="GET" action="#parcours">
+				<form name="saisie" method="GET" action="#beacon-parcours">
 					<label><?php echo $a3_label[$langue]; ?></label>
           			<select name="choix">
           				<option value="0"><?php echo $a3_option0[$langue]; ?></option>

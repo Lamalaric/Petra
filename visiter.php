@@ -7,6 +7,7 @@
 	<main>
 		<div class="big-picture">
 			<h1><?php echo $visiter_h1[$langue]; ?></h1>
+			<span id="beacon-kazneh"></span>
 		</div>
 		
 
@@ -18,7 +19,7 @@
 					<?php echo $visiter_1_texte[$langue]; ?>
 				</p>
 			</div>
-			
+			<span id="beacon-deir"></span>
 		</div>
 
 		<div class="ad-deir" id="ad-deir">
@@ -29,6 +30,7 @@
 					<?php echo $visiter_2_texte[$langue]; ?>
 				</p>
 			</div>
+			<span id="beacon-theatre"></span>
 		</div>
 
 		<div class="theatre" id="theatre">
@@ -39,6 +41,7 @@
 					<?php echo $visiter_3_texte[$langue]; ?>
 				</p>
 			</div>
+			<span id="beacon-aqueducs"></span>
 		</div>
 
 		<div class="aqueducs" id="aqueducs">
@@ -49,6 +52,7 @@
 					<?php echo $visiter_4_texte[$langue]; ?>
 				</p>
 			</div>
+			<span id="beacon-columbarium"></span>
 		</div>
 
 		<div class="columbarium" id="columbarium">
@@ -60,6 +64,7 @@
 					Contrairement à ce que son nom indique, il ne s'agissait pas d'un pigeonnier pour les pigeons mais probablement d'un lieu pour y conservées les urnes cinéraires.
 				</p>
 			</div>
+			<span id="beacon-tombe-soldat"></span>
 		</div>
 
 		<div class="tombe-soldat" id="tombe-soldat">
@@ -70,6 +75,7 @@
 					Il fut nommé ainsi à tort, car le soldat représenté dans la niche centrale, au dessus de la porte, était sans doute nabatéen. Le tombeau constituait un ensemble avec le triclinium qui se trouve en face.
 				</p>
 			</div>
+			<span id="beacon-al-khubtha"></span>
 		</div>
 
 		<div class="al-khubtha" id="al-khubtha">
@@ -80,6 +86,7 @@
 					Al-Khubtha est une grande montagne dans laquelle sont creusées 4 tombes : les tombes royales. Le Tombeau à Étages, les Tombeau Corinthien, le Tombeau de la Soie et le Tombeau à l'Urne.
 				</p>
 			</div>
+			<span id="beacon-tombes-royales"></span>
 		</div>
 
 		<div class="tombes-royales" id="tombes-royales">
@@ -90,6 +97,7 @@
 					Au nombre de quatre, ces tombes sont creusées dans la roche. Malgré le nom du monument, il ne semblerait qu'aucun élément ne permette d'identifier qu'un quelconque monarque y soit enterré. Cependant, au vu de l'importance des tombes, on imagine qu'elles devaient appartenir à de hauts dignitaires du royaume.
 				</p>
 			</div>
+			<span id="beacon-al-bint"></span>
 		</div>
 
 		<div class="al-bint" id="al-bint">
@@ -100,6 +108,7 @@
 					Le Qasr al-Bint était l'un des principaux temples de la cité de Pétra et est l'une des rares structures construites encore relativement intacte. Si le nom donné par les bédouins (Qasr al-Bint Firaun) signifie « le palais de la fille du Pharaon », il s'agissait en fait du plus grand lieu de culte de la cité.
 				</p>
 			</div>
+			<span id="beacon-fontaine"></span>
 		</div>
 
 		<div class="fontaine" id="fontaine">
@@ -110,6 +119,7 @@
 					On peut y apercevoir un très grand lion gravé dans la roche.
 				</p>
 			</div>
+			<span id="beacon-nymphaeum"></span>
 		</div>
 
 		<div class="nymphaeum" id="nymphaeum">
@@ -120,6 +130,7 @@
 					C'est un petit temple pourvu d'une fontaine ou grotte ayant une source consacré aux nymphes.
 				</p>
 			</div>
+			<span id="beacon-grand-temple"></span>
 		</div>
 
 		<div class="grand-temple" id="grand-temple">

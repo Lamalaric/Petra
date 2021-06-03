@@ -8,15 +8,19 @@
 	<main>
 		<div class="big-picture">
 			<h1><?php echo $infos_h1[$langue]; ?></h1>
+			<span id="beacon-plan"></span>
 		</div>
 
 		<h2 id="plan"><?php echo $infos_title1[$langue]; ?></h2>
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8577.923890256112!2d35.44819378417468!3d30.323710785533354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016eeb79d3cf39%3A0xa40550ba81476059!2sKhazneh!5e1!3m2!1sfr!2sfr!4v1619632907599!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<span id="beacon-divers"></span>
 		</div>
 
 		<h2 id="divers"><?php echo $infos_title2[$langue]; ?></h2>
 		<p class="texte-horaires">
+			<span id="beacon-reco-diplo"></span>
+			<span id="beacon-trad"></span>
 			<?php echo $infos_text1[$langue]; ?>
 		</p>
 		<div class="divers">
@@ -49,6 +53,7 @@
 						<?php echo $infos_subsubtitle2_text3[$langue]; ?>
 					</li>
 				</ul>
+				<span id="beacon-alentours"></span>
 				<br>
 				<p><u>Sources</u> : <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/#securite" target="_blank">www.diplomatie.gouv.fr</a></p>
 			</div>
@@ -61,6 +66,7 @@
 					<u>Manger/Eat</u> : 'akl    أكل<br><br>
 					<u>Dormir/Sleep</u> : lilnuwm      للنوم<br><br>
 					<u>Je ne parle pas arabe/I don’t speak arabia</u> : la 'atakalam alearabia      لا أتكلم العربية<br><br>
+					<span id="beacon-convertisseur"></span>
 					<u>Parlez vous anglais/Do you speak english</u> : hal tatakalam al'iinjlizia    هل تتكلم الانجليزية<br><br>
 					<u>Parlez vous français/Do you speak french</u> : hal tatakalam alfaransia    هل تتكلم الفرنسية<br><br>
 				</p>
@@ -244,6 +250,9 @@
 		</div>
 
 		<!-- Recommandations diplomatiques -->
+		<span id="beacon-alentours"></span>
+		<span id="beacon-hotels"></span>
+		<span id="beacon-resto"></span>
 		<h2 id="alentours"><?php echo $infos_title3[$langue]; ?></h2>
 		<div class="autre">
 			<div class="hotel">
