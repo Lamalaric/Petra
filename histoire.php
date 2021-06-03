@@ -35,19 +35,21 @@
 					<?php echo $h2_p[$langue]; ?>
 				</p>
 			</article>
-			<input type="checkbox">
-			<article class="h3">
-				<p>
-					<?php echo $h3_p[$langue]; ?>
-				</p>
-				<img src="images/caravane_chameaux.jpg" alt="Paysage" class="img2">
-			</article>
+			<div id="toSeeMore">
+				<article class="h3">
+					<p>
+						<?php echo $h3_p[$langue]; ?>
+					</p>
+					<img src="images/caravane_chameaux.jpg" alt="Paysage" class="img2">
+				</article>
 
-			<article class="h4">
-				<p>
-					<?php echo $h4_p[$langue]; ?>
-				</p>
-			</article>
+				<article class="h4">
+					<p>
+						<?php echo $h4_p[$langue]; ?>
+					</p>
+				</article>
+			</div>
+			<span class="container-btnSeeMore"><button id="btnSeeMore" onclick="seeMore('toSeeMore', <?php echo $langue; ?>)"><?php echo $h_button[$langue]; ?></button></span>
 
 			<article class="h5">
 				<h3 id="moyen-age"><?php echo $h5_h3[$langue]; ?></h3>

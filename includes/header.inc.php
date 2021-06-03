@@ -46,6 +46,7 @@
 	$sommaire_2 = array("Recherches archéologiques", "Archaeological researches");
 	$sommaire_3 = array("Architecture", "Architecture");
 	$sommaire_4 = array("Pétra dans l'art et la culture", "Petra in art and culture");
+	$h_button = array("Voir plus", "See more");
 	$h2_h2 = $sommaire_1;
 	$h2_h3 = $sommaire_1_1;
 	$h2_p = array("Aux alentours de 1200 avant  JC les Édomites furent les premiers à occuper l’emplacement actuel de la cité de Pétra. Originaire du royaume d’Édom (sud de l’actuelle Jordanie) ces tribus nomades étaient réputés pour leurs textiles, leurs céramiques et leur travail des métaux. Parmi leur héritage sur place, on retrouve les traces d’une série de fortins au dessus de promontoires visant à les protéger d’éventuelles attaques.", "Around 1200 B.C. the Edomites were the first to occupy the present site of the city of Petra. Originally from the Kingdom of Edom (southern Jordan), these nomadic tribes were famous for their textiles, ceramics, and metalwork. Nowaday, their legacies on the site are traces of a series of forts above promontories to protect them from possible attack.");
@@ -383,6 +384,7 @@
 		<link rel="stylesheet" href="styles/style.css" type="text/css" />
 		<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" />
 		<script type="text/javascript" src="scripts/script.js" ></script>
+		<script type="text/javascript" src="scripts/seeMore.js" ></script>
 	</head>
 
 	<header>
@@ -446,6 +448,14 @@
 					<li><a href=\"visiter.php?lang=".$langue."#ad-deir\">".$visiter_2_titre[$langue]."</a></li>
 					<li><a href=\"visiter.php?lang=".$langue."#theatre\">".$visiter_3_titre[$langue]."</a></li>
 					<li><a href=\"visiter.php?lang=".$langue."#aqueducs\">".$visiter_4_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#columbarium\">Columbarium</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#tombe-romain\">Tombe du soldat romain</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#al-khubtha\">Al-Khubtha</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#tombes-royales\">Tombes royales</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#al-bint\">Qasr Al-Bint</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#fontaine\">Fontaine au lion</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#nymphanaeum\">Nymphaeum</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#grand-temple\">Grand temple</a></li>
 				</ul></li>
 				";
 				if ($page == "informations") {

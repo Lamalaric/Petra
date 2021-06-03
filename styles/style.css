@@ -197,6 +197,10 @@ nav .logo2 {
 	opacity: 1;
 	z-index: 100;
 }
+.visiter .deroulant {
+	height: 300px;
+	overflow-y: scroll;
+}
 
 
 /* FOOTER */
@@ -285,7 +289,7 @@ main h2 {
     font-size: 45px;
     font-weight: normal;
     text-transform: uppercase;
-    text-shadow: none;
+    text-shadow: 2px 2px 2px black;
     text-align: left;
     line-height: 1.5em;
     padding: 0 0 0 114px;
@@ -540,16 +544,48 @@ main h3 {
 	padding: 200px;
 	text-shadow: black 0.1em 0.1em 0.2em
 }
-.h3, .h4 {
+.container-btnSeeMore {
+	width: 100%;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+}
+.container-h #btnSeeMore {
+	all: unset;
+	color: white;
+	font-family: Cicle fina;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 25px;
+	position: relative;	
+}
+.container-h #btnSeeMore::after {
+	content: '';
+	background: #ea5c0d;
+	width: 100%; height: 1.7em;
+	position: absolute;
+	bottom: -.3em; left: 0; right: 0;
+	transform: scale(1, .1);
+	transform-origin: bottom;
+	transition: transform cubic-bezier(0.68, -0.55, 0.27, 1.55) 400ms;
+	z-index: -10;
+}
+.container-h #btnSeeMore:hover {
+	cursor: pointer;
+}
+.container-h #btnSeeMore:hover::after {
+	transform: scale(1, 1);
+}
+
+.container-h #toSeeMore {
 	display: none;
 }
 .container-h input {
 	background-color: #f7af3e;
 	width: 100px; height: 20px;
 	border: none;
-}
-.container-h input:checked ~ .h3, .container-h input:checked ~ .h4 {
-	display: block;
 }
 .first-title-history {
 	margin-top: 60px !important;
@@ -728,28 +764,66 @@ main h3 {
 	border-right: 2px solid black;
 }
 .container-v main .image {
+	background-color: #222222;
 	background-repeat: no-repeat;
     width: 364px; height: 305px;
     float: left;
 }
 
 .container-v main .kazneh-img {
-	background-image: url(../images/al_kazneh.jpg);
+	background-image: url("../images/al_kazneh.jpg");
     background-size: 125%;
-    
 }
 .container-v main .ad-deir-img {
-	background-image: url(../images/kazneh.png);
+	background-image: url("../images/kazneh.png");
     background-size: 100%;
 }
 .container-v main .theatre-img {
-	background-image: url(../images/image3.jpg);
+	background-image: url("../images/image3.jpg");
     background-size: 112%;
 }
 .container-v main .aqueducs-img {
-	background-image: url(../images/aqueducs.jpg);
+	background-image: url("../images/aqueducs.jpg");
     background-size: 125%;
 }
+.container-v main .columbarium-img {
+	background-image: url("../images/columbarium.jpg");
+    background-size: 128%;
+}
+.container-v main .tombe-soldat-img {
+	background-image: url("../images/tombe_soldat.jpg");
+    background-size: 65%;
+    background-position-x: 50%;
+}
+.container-v main .tombes-royales-img {
+	background-image: url("../images/tombes_royales.jpg");
+    background-size: 112%;
+}
+.container-v main .al-khubtha-img {
+	background-image: url("../images/al-khubtha.jpg");
+    background-size: 150%;
+}
+.container-v main .al-bint-img {
+	background-image: url("../images/al-bint.jpg");
+    background-size: 102%;
+}
+.container-v main .fontaine-img {
+	background-image: url("../images/fontaine_lion.jpg");
+    background-size: 135%;
+    background-position-x: -75px;
+}
+.container-v main .nymphaeum-img {
+	background-image: url("../images/nymphaeum.jpg");
+    background-size: 127%;
+    background-position-x: -40px;
+}
+.container-v main .grand-temple-img {
+	background-image: url("../images/grand-temple.jpg");
+    background-size: 200%;
+    background-position: -160px -50px;
+}
+
+
 
 
 /*PAGE INFORMATIONS*/

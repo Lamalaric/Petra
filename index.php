@@ -21,10 +21,10 @@
 				</div>
 			</section>
 
-			<section class="a3">					<!-- Parcours -->
+			<section class="a3" id="parcours">					<!-- Parcours -->
 				<h2><?php echo $a3_h2[$langue]; ?></h2>
 				<p><?php echo $a3_p[$langue]; ?></p>
-				<form name="saisie" method="GET" action="#">
+				<form name="saisie" method="GET" action="#parcours">
 					<label><?php echo $a3_label[$langue]; ?></label>
           			<select name="choix">
           				<option value="0"><?php echo $a3_option0[$langue]; ?></option>
