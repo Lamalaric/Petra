@@ -37,6 +37,20 @@
 	$a4_h2 = array("IMAGES À LA UNE", "FEATURED IMAGES");
 	$a4_a = array("Voir plus", "See more");
 
+	$theatre = array("<p>Théâtre nabatéen</p>","<p>Nabataean theater</p>");
+	$urne = array("<p>Tombe à l'Urne</p>","<p>Tomb at the Urn</p>");
+	$soie = array("<p>Tombe de Soie</p>","<p>Silk tomb</p>");
+	$corinthe = array("<p>Tombe corinthienne</p>","<p>Corinthian tomb</p>");
+	$palais = array("<p>Tombeau-palais</p>","<p>Palace tomb</p>");
+	$unayshu = array("<p>Tombe de 'Unayshu</p>","<p>Tomb of 'Unayshu</p>");
+	$temple = array("<p>Grand Temple</p>","<p>Great Temple</p>");
+	$rennaissance = array("<p>Tombeau Renaissance</p>","<p>Renaissance tomb</p>");
+	$lion = array("<p>Fontaine au lion</p>","<p>Lion fountain</p>");
+	$obelix = array("<p>Tombe aux obélisques</p>","<p>Tomb of the obelisks</p>");
+
+
+
+
 	/* HISTOIRE */
 	$h1_h1 = array("La grande histoire de Pétra", "The great history of Petra");
 	$sommaire = array("Sommaire", "Summary");
