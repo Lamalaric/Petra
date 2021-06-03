@@ -46,6 +46,7 @@
 	$sommaire_2 = array("Recherches archéologiques", "Archaeological researches");
 	$sommaire_3 = array("Architecture", "Architecture");
 	$sommaire_4 = array("Pétra dans l'art et la culture", "Petra in art and culture");
+	$h_button = array("Voir plus", "See more");
 	$h2_h2 = $sommaire_1;
 	$h2_h3 = $sommaire_1_1;
 	$h2_p = array("Aux alentours de 1200 avant  JC les Édomites furent les premiers à occuper l’emplacement actuel de la cité de Pétra. Originaire du royaume d’Édom (sud de l’actuelle Jordanie) ces tribus nomades étaient réputés pour leurs textiles, leurs céramiques et leur travail des métaux. Parmi leur héritage sur place, on retrouve les traces d’une série de fortins au dessus de promontoires visant à les protéger d’éventuelles attaques.", "Around 1200 B.C. the Edomites were the first to occupy the present site of the city of Petra. Originally from the Kingdom of Edom (southern Jordan), these nomadic tribes were famous for their textiles, ceramics, and metalwork. Nowaday, their legacies on the site are traces of a series of forts above promontories to protect them from possible attack.");
@@ -383,6 +384,7 @@
 		<link rel="stylesheet" href="styles/style.css" type="text/css" />
 		<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" />
 		<script type="text/javascript" src="scripts/script.js" ></script>
+		<script type="text/javascript" src="scripts/seeMore.js" ></script>
 	</head>
 
 	<header>
@@ -402,13 +404,13 @@
 				}
 				echo "
 				<ul class=\"deroulant deroulant-h\">
-					<li><a href=\"histoire.php?lang=".$langue."#histoire\">".$sommaire_1[$langue]."</a></li>
+					<li><a href=\"histoire.php?lang=".$langue."#beacon-histoire\">".$sommaire_1[$langue]."</a></li>
 					<ul>
-						<li><a href=\"histoire.php?lang=".$langue."#antiquite\">".$sommaire_1_1[$langue]."</a></li>
-						<li><a href=\"histoire.php?lang=".$langue."#moyen-age\">".$sommaire_1_2[$langue]."</a></li>
+						<li><a href=\"histoire.php?lang=".$langue."#beacon-histoire\">".$sommaire_1_1[$langue]."</a></li>
+						<li><a href=\"histoire.php?lang=".$langue."#beacon-moyen-age\">".$sommaire_1_2[$langue]."</a></li>
 					</ul>
-					<li><a href=\"histoire.php?lang=".$langue."#archeo\">".$sommaire_2[$langue]."</a></li>
-					<li><a href=\"histoire.php?lang=".$langue."#archi\">".$sommaire_3[$langue]."</a></li>
+					<li><a href=\"histoire.php?lang=".$langue."#beacon-archeo\">".$sommaire_2[$langue]."</a></li>
+					<li><a href=\"histoire.php?lang=".$langue."#beacon-archi\">".$sommaire_3[$langue]."</a></li>
 					<li><a href=\"histoire.php?lang=".$langue."#culture\">".$sommaire_4[$langue]."</a></li>
 				</ul></li>
 				";
@@ -442,10 +444,18 @@
 				}
 				echo "
 				<ul class=\"deroulant deroulant-v\">
-					<li><a href=\"visiter.php?lang=".$langue."#kazneh\">".$visiter_1_titre[$langue]."</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#ad-deir\">".$visiter_2_titre[$langue]."</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#theatre\">".$visiter_3_titre[$langue]."</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#aqueducs\">".$visiter_4_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-kazneh\">".$visiter_1_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-deir\">".$visiter_2_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-theatre\">".$visiter_3_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-aqueducs\">".$visiter_4_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-columbarium\">Columbarium</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-tombe-soldat\">Tombe du soldat romain</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-al-khubtha\">Al-Khubtha</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-tombes-royales\">Tombes royales</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-al-bint\">Qasr Al-Bint</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-fontaine\">Fontaine au lion</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-nymphaeum\">Nymphaeum</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-grand-temple\">Grand temple</a></li>
 				</ul></li>
 				";
 				if ($page == "informations") {
@@ -455,17 +465,17 @@
 				}
 				echo "
 				<ul class=\"deroulant deroulant-if\">
-					<li><a href=\"informations.php?lang=".$langue."#plan\">".$practical_info_s1[$langue]."</a></li>
-					<li><a href=\"informations.php?lang=".$langue."#divers\">".$practical_info_s2[$langue]."</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#beacon-plan\">".$practical_info_s1[$langue]."</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#beacon-divers\">".$practical_info_s2[$langue]."</a></li>
 					<ul>
-						<li><a href=\"informations.php?lang=".$langue."#reco-diplo\">".$practical_info_s2_1[$langue]."</a></li>
-						<li><a href=\"informations.php?lang=".$langue."#trad\">".$practical_info_s2_2[$langue]."</a></li>
-						<li><a href=\"informations.php?lang=".$langue."#convertisseur\">".$practical_info_s2_3[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#beacon-reco-diplo\">".$practical_info_s2_1[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#beacon-trad\">".$practical_info_s2_2[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#beacon-convertisseur\">".$practical_info_s2_3[$langue]."</a></li>
 					</ul>
-					<li><a href=\"informations.php?lang=".$langue."#alentours\">".$practical_info_s3[$langue]."</a></li>
+					<li><a href=\"informations.php?lang=".$langue."#beacon-alentours\">".$practical_info_s3[$langue]."</a></li>
 					<ul>
-						<li><a href=\"informations.php?lang=".$langue."#hotels\">".$practical_info_s3_1[$langue]."</a></li>
-						<li><a href=\"informations.php?lang=".$langue."#resto\">".$practical_info_s3_2[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#beacon-hotels\">".$practical_info_s3_1[$langue]."</a></li>
+						<li><a href=\"informations.php?lang=".$langue."#beacon-resto\">".$practical_info_s3_2[$langue]."</a></li>
 					</ul>
 				</ul></li>
 				";
