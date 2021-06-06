@@ -91,6 +91,40 @@
 				<img src="images/image15.png" alt="Ad-Deir"></img>
 				<p><?php echo $galerie_img20[$langue]; ?></p>
 			</div>
+
+			<?php 
+				/*
+				 * Ajout des images ajoutées depuis la base de donnée
+				 */
+
+				// Connexion à la BDD
+				include("includes/connexion.inc.php");
+			    $cnx->exec("SET SEARCH_PATH TO petra");
+
+			    // On lit toutes les entrées de la table GALERIE
+			    $requete = "SELECT image FROM galerie;";
+	            $result = $cnx->query($requete);
+	            while($ligne = $result->fetch()){
+	            	// Pour chaque entrée, on récupère le champs que l'on veut
+	            	$image = $cnx -> query("SELECT image FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$alt = $cnx -> query("SELECT alt FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$desc_fr = $cnx -> query("SELECT desc_fr FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$desc_en = $cnx -> query("SELECT desc_en FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$nom_auteur = $cnx -> query("SELECT nom_auteur FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$site_auteur = $cnx -> query("SELECT site_auteur FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+
+	            	// On prend un texte différent selon la langue puis on affiche l'élément
+	            	$description = [$desc_fr, $desc_en];
+				    echo '
+				    <div>
+						<img src="'.$image.'" alt="'.$alt.'"></img>
+						<p>'.$description[$langue].'</p>
+					</div>';
+					// Ajouter la partie auteur
+					// Nécéssite un bon chemin d'image (voir send_form.php)
+			    }
+			 ?>
+
 		</div>
 	</main>
 

@@ -69,7 +69,7 @@
 		<div class="container-form">
 			<h2><?php echo $contact_title3[$langue]; ?></h2>
 			<div class="formulaire">
-				<form method="post" action="contact.php#beacon-form" onsubmit="preventDefault()">
+				<form method="post" action="send_form.php?page=contact" onsubmit="preventDefault()">
 					<p><?php echo $contact_title3_text[$langue]; ?></p>
 					<input type="text" name="prenom" id="prenom" placeholder="Prénom">
 					<input type="text" name="nom" id="nom" placeholder="Nom">
@@ -80,26 +80,10 @@
 				</form>
 				<?php
 					error_reporting(0);
-					if(!empty($_POST['sujet']) && !empty($_POST['message'])){
-						$entete  = 'MIME-Version: 1.0' . "\r\n";
-       					$entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-				        $entete .= 'From: ' . $_POST['mail'] . "\r\n";
-
-				        $message = '<h1>Message envoyé depuis le site Petra</h1>
-				        <p><b>Nom : </b>' . $_POST['nom'] . '<br>
-				        <b>Email : </b>' . $_POST['mail'] . '<br>
-				        <b>Message : </b>' . $_POST['message'] . '</p>';
-
-				        $retour = mail('alf2002@hotmail.fr', 'Petra - Médiation culturelle et numérique', $message, $entete);
-				        if($retour) {
-				            echo '<p class="mail-ok">Votre message a bien été envoyé.</p>';
-				        }
-					    
-				    }
-					unset($_POST["sujet"]);
-					unset($_POST["message"]);
-				?>
-				
+					if($_GET['isSent']) {
+			            echo '<p class="mail-ok">Votre message a bien été envoyé.</p>';
+			        }
+				?>		
 			</div>
 		</div>
 	</main>

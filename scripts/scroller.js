@@ -1,3 +1,4 @@
+// INDICATEUR HAUTEUR DE LA PAGE SUR LE SCROLL
 window.onload = () => {
     // Ecouteur d'évènement sur scroll
     window.addEventListener("scroll", () => {

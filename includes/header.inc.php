@@ -357,7 +357,7 @@
 					</ul>
 					<h4>Illustrations</h4>
 					<ul>
-						<li>PERNICINI Tia: Logo</li>
+						<li>PERNICI Tia: Logo</li>
 					</ul>");
 	$contact_title2 = array("Partenaires","Partner");
 	$contact_title3 = array("Nous contacter","Contact us");
@@ -383,8 +383,8 @@
 		<script src="https://kit.fontawesome.com/79f61c2135.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="styles/style.css" type="text/css" />
 		<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" />
-		<script type="text/javascript" src="scripts/script.js" ></script>
-		<script type="text/javascript" src="scripts/seeMore.js" ></script>
+		<script type="text/javascript" src="scripts/app.js" ></script>
+		<script type="text/javascript" src="scripts/scroller.js" ></script>
 	</head>
 
 	<header>

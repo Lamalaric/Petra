@@ -1,10 +1,15 @@
 <?php
 	$page = "admin";
 	include("includes/header.inc.php");
+
+	error_reporting(0);		// Enlève tous les warnings inutiles
+	if ($_POST['login'] == "adminP" && $_POST['password'] == "42021") {			// Vérification des identifiants pour accéder à la page admin
+		header("Location: admin.php");
+	}
 ?>
 
 <body class="container-admin">
-	
+
 	<main>
 		<h2>Accès interface administrateur</h2>
 		<div class="container-login">
@@ -18,14 +23,6 @@
 				Seul les personnes de confiance disposant du mot de passe peuvent y accéder.
 			</p>
 		</div>
-
-		<?php 
-		error_reporting(0);
-		if ($_POST['login'] == "htmlnasahacker" && $_POST['password'] == "petra42021") {
-			header('location:admin.php');
-		}
-		 ?>
-
 	</main>
 
 </body>

@@ -36,6 +36,11 @@ body #goto_top img{
 
 
 /*COMMON STYLES */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -769,7 +774,7 @@ main h3 {
 .container-v main .image {
 	background-color: #222222;
 	background-repeat: no-repeat;
-    width: 364px; height: 305px;
+    width: 364px; height: 301px;
     float: left;
 }
 
@@ -1196,7 +1201,8 @@ form .mini-flex {
 	flex-direction: column;
 	align-items: center;
 }
-.formulaire input, textarea {
+.formulaire input, 
+.formulaire textarea {
 	font-family: Cicle fina;
 	font-size: 20px;
 	width: 80%; height: 35px;
@@ -1218,7 +1224,7 @@ form .mini-flex {
 }
 
 
-/* PAGE ADMIN */
+/* PAGE ADMIN-CONNEXION */
 .container-admin h2 {
 	margin-top: 150px;
 }
@@ -1248,10 +1254,85 @@ form .mini-flex {
 	width: auto; height: auto;
 	padding: 10px 20px;
 }
+.container-login .wrong-login {
+	color: indianred;
+}
 .container-login p {
 	text-align: center;
 }
-.container-admin footer {
-	position: fixed;
-	bottom: 0; left: 0; right: 0;
+
+
+
+/* PAGE ADMIN */
+.indications-form {
+	font-size: 1.2em;
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.indications-form h3 {
+	background-position: -52px -20px;
+	height: 2em;
+	padding-left: 15px;
+	margin: 20px 0 0 0;
+}
+.indications-form .warning {
+	color: orange;
+	text-align: center;
+}
+.indications-form .ajout-ok,
+.indications-form .delete-ok {
+	color: lightgreen;
+	text-align: center;
+}
+.indications-form .ajout-no-ok,
+.indications-form .delete-no-ok {
+	color: indianred;
+	text-align: center;
+}
+.indications-form form > h2 {
+	margin-top: 0;
+}
+.form-admin,
+.preview {
+	display: none;
+}
+.content-fr-en {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.content-fr-en > div {
+	width: 46%;
+}
+.form-admin {
+	width: 100%;
+	margin-top: 50px;
+}
+.form-admin input,
+.form-admin textarea {
+	font-family: Cicle fina;
+	font-size: 20px;
+	width: 80%; height: 35px;
+	margin: 10px auto; padding: 5px;
+	border: none;
+	border-radius: 5px;
+	display: block;
+}
+.form-admin textarea {
+	height: 200px;
+}
+.form-admin input[type=submit],
+.btn-refresh,
+.indications-form button {
+	border-style: none;
+	width: 100px; height: 35px;
+	margin: 50px auto 0 auto;
+	display: block;
+}
+.preview {
+	width: 100%;
 }
