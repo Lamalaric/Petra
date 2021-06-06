@@ -7,11 +7,24 @@
 	 * Le code suivant est à modifier il ne marche pas. Mais c'est une piste
 	 * Il faudra aussi décommenter les 3 lignes dans la condition de chaque partie, elle va avec le bout de code qui suit.
 	 *
-	 *
+	 */
+
+
+
+		
+		echo "Filename: " . $_FILES['UploadFileName']['name']."<br>";
+		echo "Type : " . $_FILES['UploadFileName']['type'] ."<br>";
+		echo "Size : " . $_FILES['UploadFileName']['size'] ."<br>";
+		echo "Temp name: " . $_FILES['UploadFileName']['tmp_name'] ."<br>";
+		echo "Error : " . $_FILES['UploadFileName']['error'] . "<br>";
+		
+
+	
+
 		// Vérification si le fichier est une image
 		$fileTmpPath = fopen($_FILES["UploadFileName"]["tmp_name"], 'r'); 		// Chemin image par défaut
 
-		$dest_path = 'alefor03/WWW/Petra/images/'.$filename;
+		$dest_path = 'bcorgnac/WWW/Petra/images/';
 		if(move_uploaded_file($fileTmpPath, $dest_path)) {
 			echo 'File is successfully uploaded.';
 		} else {
@@ -20,10 +33,10 @@
 
 		echo '<br>'.$fileTmpPath.'<br>';
 		echo $dest_path;
-	 *
-	 *
-	*/
-
+		
+	 
+	
+	
 
 	/*
 	 * TODO :
@@ -31,6 +44,14 @@
 	 *    Il faut que seul les champs renseignés se modifient.
 	 *  - Faire marcher les images
 	*/
+
+
+
+	
+
+
+
+
 
 
 	// Si on vient de la page admin
@@ -48,13 +69,16 @@
 			$texte_fr = $_POST['texte_fr'];
 			$texte_en = $_POST['texte_en'];
 
+
+
+
 			// Si tout est rempli et que l'extension est valide, on insère le contenu dans la BDD
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
 			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
 				$ajout_visiter = $cnx -> exec("INSERT INTO visiter (titre_fr, titre_en, texte_fr, texte_en, image) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."');");
-				header("Location: admin.php?isAdded=true");
+				//header("Location: admin.php?isAdded=true");
 			}
-			header("Location: admin.php?isAdded=false");
+			//header("Location: admin.php?isAdded=false");
 		}
 
 		// Code pour modifier un monument
@@ -70,9 +94,9 @@
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
 			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
 				$modif_visiter = $cnx -> exec("UPDATE visiter SET titre_fr = '".$titre_fr."', titre_en = '".$titre_en."', texte_fr = '".$texte_fr."', texte_en = '".$texte_en."', image = '".$filename."' WHERE titre_fr = '".$input_titre."';");
-				header("Location: admin.php?isModif=true");
+				//header("Location: admin.php?isModif=true");
 			}
-			header("Location: admin.php?isModif=false");
+			//header("Location: admin.php?isModif=false");
 		}
 
 		// Code pour supprimer un monument
@@ -81,9 +105,9 @@
 
 			if ($input_titre != '') {
 				$supprimer_visiter = $cnx -> exec("DELETE FROM visiter WHERE titre_fr = LOWER('".$input_titre."');");
-				header("Location: admin.php?isDeleted=true");
+				//header("Location: admin.php?isDeleted=true");
 			}
-			header("Location: admin.php?isDeleted=false");
+			//header("Location: admin.php?isDeleted=false");
 		}
 
 
@@ -99,9 +123,9 @@
 
 			if ($filename != '' && $alt != '' && $desc_fr != '' && $desc_en != '') {
 				$ajouter_galerie = $cnx -> exec("INSERT INTO galerie (image, desc_fr, desc_en, nom_auteur, site_auteur, alt) VALUES ('".$filename."', '".$desc_fr."', '".$desc_en."', '".$nom_auteur."', '".$site_auteur."', '".$alt."');");
-				header("Location: admin.php?isAdded=true");
+				//header("Location: admin.php?isAdded=true");
 			}
-			header("Location: admin.php?isAdded=false");
+			//header("Location: admin.php?isAdded=false");
 		}
 
 		// Code pour modifier une image
@@ -121,9 +145,9 @@
 			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
 				echo 'vu bg';
 				$modif_galerie = $cnx -> exec("UPDATE galerie SET image = '".$filename."', desc_fr = '".$desc_fr."', desc_en = '".$desc_en."', nom_auteur = '".$nom_auteur."', site_auteur = '".$site_auteur."', alt = '".$alt."' WHERE alt = '".$input_alt."';");
-				header("Location: admin.php?isModif=true");
+				//header("Location: admin.php?isModif=true");
 			}
-			header("Location: admin.php?isModif=false");
+			//header("Location: admin.php?isModif=false");
 		}
 
 		// Code pour supprimer une image
@@ -132,9 +156,9 @@
 
 			if ($input_alt != '') {
 				$supprimer_visiter = $cnx -> exec("DELETE FROM galerie WHERE alt = LOWER('".$input_alt."');");
-				header("Location: admin.php?isDeleted=true");
+				//header("Location: admin.php?isDeleted=true");
 			}
-			header("Location: admin.php?isDeleted=false");
+			//header("Location: admin.php?isDeleted=false");
 		}
 	}
 
@@ -155,6 +179,6 @@
 
 	        $retour = mail('alf2002@hotmail.fr', 'Petra - Médiation culturelle et numérique', $message, $entete);
 		}
-	    header("Location: contact.php?isSent=true#beacon-form");
+	    //header("Location: contact.php?isSent=true#beacon-form");
 	}
 ?>
