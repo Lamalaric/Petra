@@ -12,6 +12,18 @@
 
 		<div class="container-images">
 			<div>
+				<img src="images/alexandre1.jpg" alt=""></img>
+				<?php echo $galerie_alex1[$langue]; ?>
+			</div>
+			<div>
+				<img src="images/alexandre2.jpg" alt=""></img>
+				<?php echo $galerie_alex2[$langue]; ?>
+			</div>
+			<div>
+				<img src="images/alexandre3.jpg" alt=""></img>
+				<?php echo $galerie_alex3[$langue]; ?>
+			</div>
+			<div>
 				<img src="images/kazneh.png" alt="Al-Kazneh"></img>
 				<p><?php echo $galerie_img1[$langue]; ?></p>
 			</div>
@@ -91,6 +103,14 @@
 				<img src="images/image15.png" alt="Ad-Deir"></img>
 				<p><?php echo $galerie_img20[$langue]; ?></p>
 			</div>
+			<div>
+				<img src="images/tombeau_obelisques.jpg" alt="Tombeau aux obelisques"></img>
+				<p><?php echo $galerie_img21[$langue]; ?></p>
+			</div>
+			<div>
+				<img src="images/unayshu.jpg" alt="Unayshu"></img>
+				<p><?php echo $galerie_img22[$langue]; ?></p>
+			</div>
 
 			<?php 
 				/*
@@ -125,6 +145,26 @@
 			    }
 			 ?>
 
+		</div>
+		<div class="credits-images">
+			<h2>Crédits</h2>
+			<p>
+				<?php echo $galerie_credits_info[$langue]; ?>
+				<?php echo "<a href=\"contact.php?lang=".$langue."#beacon-formulaire\" target='_blank'>".$galerie_credits_info_ici[$langue]."</a>"; ?>
+			</p>
+			<div>
+				<h3>Alexandre Carpentier</h3>
+				<p>Photographe professionnel</p>
+				<p>Site web : <i class="fas fa-globe-americas"></i> <a href="https://www.alexandre-carpentier.com" target="_blank">www.alexandre-carpentier.com</a></p>
+				<p class="reseaux-auteur">
+					Réseaux :
+					<a href="https://www.facebook.com/alexandrecarpentierphotography/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.flickr.com/photos/alex_carpentier/" target="_blank"><i class="fab fa-flickr"></i></a>
+					<a href="https://www.instagram.com/alexandre.carpentier/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://vimeo.com/alpslapse" target="_blank"><i class="fab fa-vimeo"></i></a>
+					<a href="https://www.youtube.com/channel/UC92rk3jfjSdW7f7s0Fc16ig" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+				</p>
+			</div>
 		</div>
 	</main>
 

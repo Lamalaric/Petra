@@ -6,26 +6,28 @@
 
 <body class="container-h">
 	<main>
-		<div class="h1">
+		<div class="h1 big-picture">
 			<h1><?php echo $h1_h1[$langue]; ?></h1>
 		</div>
 
+		<aside class="sommaire">
+			<ul>
+				<li>
+					<a href="#beacon-histoire" class="underline" id="beacon-histoire"><?php echo $sommaire_1[$langue]; ?></a>
+				</li>
+				<li>
+					<a href="#beacon-archeo" class="underline"><?php echo $sommaire_2[$langue]; ?></a>
+				</li>
+				<li>
+					<a href="#beacon-archi" class="underline"><?php echo $sommaire_3[$langue]; ?></a>
+				</li>
+				<li>
+					<a href="#culture" class="underline"><?php echo $sommaire_4[$langue]; ?></a>
+				</li>
+			</ul>
+		</aside>
+
 		<section>
-			<aside class="sommaire">
-				<h3><?php echo $sommaire[$langue]; ?></h3>
-				<ul>
-					<li>
-						<a href="#beacon-histoire" class="underline" id="beacon-histoire"><?php echo $sommaire_1[$langue]; ?></a>
-						<ul>
-							<li><a href="#beacon-histoire"><?php echo $sommaire_1_1[$langue]; ?></a></li>
-							<li><a href="#beacon-moyen-age"><?php echo $sommaire_1_2[$langue]; ?></a></li>
-						</ul>
-					</li><br>
-					<li><a href="#beacon-archeo" class="underline"><?php echo $sommaire_2[$langue]; ?></a></li><br>
-					<li><a href="#beacon-archi" class="underline"><?php echo $sommaire_3[$langue]; ?></a></li><br>
-					<li><a href="#culture" class="underline"><?php echo $sommaire_4[$langue]; ?></a></li><br>
-				</ul>
-			</aside>
 
 			<article class="h2">				<!-- PARTIE ANTIQUITÉ -->
 				<h2 id="histoire"><?php echo $sommaire_1[$langue]; ?></h2>          

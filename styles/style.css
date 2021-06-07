@@ -77,6 +77,13 @@ p, ul, li, a, label {
 a {
 	text-decoration: none;
 }
+.big-picture {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 90px;
+	width: 100%; height: 450px;
+	grid-column: 1/4;
+}
 
 
 /* BARRE DE NAVIGATION */ 
@@ -222,13 +229,6 @@ footer {
 footer .partenaires {
 	float: left;
 }
-footer .reseaux-site {
-	height: 80px;
-	margin-right: 20px;
-	display: inline-flex;
-	align-items: center;
-	float: right;
-}
 footer span {
 	display: inline-block;
 	background-size: 100%;
@@ -236,9 +236,17 @@ footer span {
 	background-repeat: no-repeat;
 	width: 150px; min-height: 80px;
 }
+footer .reseaux-site {
+	height: 80px;
+	margin-right: 20px;
+	display: inline-flex;
+	align-items: center;
+	float: right;
+}
 footer .reseaux-site i {
 	color: white;
 	font-size: 35px;
+	text-align: center;
 	width: 30px; height: 30px;
 	margin: 0 15px;
 	transition-duration: 0.3s;
@@ -328,14 +336,9 @@ main h3 {
 }
 
 /* 1 */
-.a1 {
+.container-i .big-picture {
 	background-image: url(../images/accueil.jpeg);
-	background-size: 100%;
 	background-position: 50% 81%;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	width: 100%; height: 450px;
-	grid-column: 1/4;
 }
 .a1 h1 {
 	text-align: center;
@@ -467,28 +470,21 @@ main h3 {
 
 /* PAGE HISTOIRE.HTML */
 .sommaire {
-	width: auto;
-	grid-column: 1; grid-row: 3;
-	background-color: #505050;
-	border: 2px solid black;
-	border-radius: 8px;
-	margin: 18px auto;
-	padding: 10px;
-	transition-duration: 0.6s;
-}
-.sommaire h3 {
-	background-image: inherit;
-	color: inherit;
-	height: inherit;
-	margin: inherit; padding: inherit;
-	font-size: 30px;
-	font-weight: normal;
-	text-align: center;
-	text-decoration: underline #f7af3e;
+    width: 100%;
+    height: 125px;
+    grid-column: 1/4;
+    background-color: #505050;
+    border: 2px solid black;
+    transition-duration: 0.6s;
+    display: flex;
+    justify-content: center;
 }
 .sommaire > ul {
+	width: 75%;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
+    align-items: center;
 }
 .sommaire > ul > li {
 	font-size: 30px;
@@ -536,16 +532,12 @@ main h3 {
 	width: 450px;
 	border-radius: 5px;
 }
-.container-h main .h1 {
+.container-h .big-picture {
 	background-image: url(../images/image4.jpg);
 	background-size: 103%;
 	background-position: 64% 73%;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	width: 100%; height: 450px;
-	grid-column: 1/4;
 }
-.container-h main .h1 h1 {
+.container-h .big-picture h1 {
 	text-align: center;
 	font-size: 50px;
 	margin: 0 auto;
@@ -637,14 +629,9 @@ main h3 {
 	display: grid;
 	grid-template-columns: 15% auto 15%;
 }
-.container-g main .big-picture {
+.container-g .big-picture {
 	background-image: url(../images/image10.png);
-	background-size: 100%;
 	background-position: 64% 52%;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	width: 100%; height: 450px;
-	grid-column: 1/4;
 }
 .container-g main h1 {
 	text-align: center;
@@ -655,17 +642,17 @@ main h3 {
 }
 .container-g main div:not(.big-picture) {
 	grid-column: 2/3;
-	margin-top: 100px;
+	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: space-around;
 }
-.container-g main div > div {
+.container-g .container-images > div {
 	width: 350px; height: 350px;
 	margin-bottom: 75px;
 }
-.container-g main div div > img {
+.container-g .container-images div > img {
 	width: 100%; height: 100%;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	object-fit: cover;
@@ -674,7 +661,7 @@ main h3 {
 	transition: transform .25s, visibility .25s ease-in, opacity .5s;
 
 }
-.container-g main div div > p {
+.container-g .container-images div > div {
 	visibility: hidden;
 	opacity: 0;
 	width: 350px;
@@ -685,28 +672,81 @@ main h3 {
 	transition: visibility .5s, opacity .25s linear;
 	transition-delay: .15s;
 }
-.container-g main div div img:hover {
+.container-g .container-images .titre {
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 100%;
+	margin: 0;
+	text-decoration: underline #f7af3e;
+}
+.container-g .container-images .auteur a {
+	color: white;
+	text-decoration: underline #f7af3e;
+}
+.container-g .container-images div img:hover {
 	transform: scale(1.14);
 	opacity: 0.2;
 }
-.container-g main div div img:hover + p {
+.container-g .container-images div img:hover + div {
 	visibility: visible;
 	opacity: 1;
 }
-.container-g main div div > p {
+.container-g .container-images div > div {
 	text-align: center;
+}
+.container-g main .credits-images {
+	justify-content: unset !important;
+}
+.container-g .credits-images h2 {
+	width: 100%;
+}
+.container-g .credits-images h3 {
+	background-position: -51px -20px;
+	height: 2em;
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+.container-g .credits-images > div {
+	margin: 0 100px;
+	display: block;
+}
+.credits-images > p {
+	text-align: center;
+}
+.credits-images div {
+	width: 100%;
+	/* Oui c'est mohce et pas à reproduire, masi j'avais pas d'autres solutions
+	   à part modifier le système de classe de la page et il es tard
+	*/
+	grid-column: unset !important;
+	margin-top: 50px;
+	display: block !important;
+	justify-content: flex-start !important;
+}
+.credits-images p {
+	font-size: 1.2em;
+	width: 100%;
+	margin: 10px 0;
+}
+.credits-images a {
+	color: white;
+	text-decoration: underline #f7af3e;
+}
+.credits-images .reseaux-auteur {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.credits-images .reseaux-auteur i {
+	font-size: 1.3em;
+	margin: 10px;
 }
 
 
 /* PAGE VISITER.HTML */
-.container-v main .big-picture {
+.container-v .big-picture {
 	background-image: url(../images/image6.jpg);
-	background-size: 100%;
 	background-position: 64% 100%;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	width: 100%; height: 450px;
-	grid-column: 1/4;
 }
 .container-v main h1 {
 	text-align: center;
@@ -830,7 +870,16 @@ main h3 {
     background-size: 200%;
     background-position: -160px -50px;
 }
-
+.container-v main .unayshu-img {
+	background-image: url("../images/unayshu.jpg");
+    background-size: 125%;
+    background-position: -65px 0px;
+}
+.container-v main .obelisque-img {
+	background-image: url("../images/tombeau_obelisque.jpg");
+    background-size: 112%;
+    background-position: -39px 0px;
+}
 
 
 
@@ -839,7 +888,7 @@ main h3 {
 	grid-column: 2/3;
 }
 .container-if .divers h3 {
-	font-size: 1.7em;
+	font-size: 1.7vw;
 }
 
 .container-if .divers h3,
@@ -851,17 +900,13 @@ main h3 {
 	display: grid;
 	grid-template-columns: 15% auto 15%;
 }
-.container-if main .big-picture {
+.container-if .big-picture {
 	background-image: url(../images/image12.png);
-	background-size: 100%;
 	background-position: 64% 68%;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	width: 100%; height: 450px;
-	grid-column: 1/4;
+	grid-column: 1/4 !important;
 }
 
-.container-if main .big-picture h1 {
+.container-if .big-picture h1 {
 	text-align: center;
 	font-size: 50px;
 	margin: 0 auto;
@@ -882,6 +927,13 @@ main .map {
 .texte-horaires {
 	text-align: center;
 	margin: 0 0 35px 0;
+}
+.texte-horaires a {
+	color: white;
+	text-decoration: underline #f7af3e;
+}
+.texte-horaires i {
+	color: white;
 }
 .divers {
 	display: flex;

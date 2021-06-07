@@ -143,6 +143,27 @@
 			</div>
 		</div>
 
+		<div class="unayshu" id="unayshu">
+			<div class="image unayshu-img"></div>
+			<div class="text-plus-title">
+				<h3>Tombe d'Unayshu</h3>
+				<p>
+					La tombe d'Unayshu date de la fin du 1er siècle après JC.<br>
+					Le pilastre de coin de la tombe et ceux qui encadrent l'entrée sont un dessin typiquement nabatéen. La façade lisse est dans le même style que les tombes trouvées à Madâin Sâlih en Arabie Saoudite.
+				</p>
+			</div>
+		</div>
+
+		<div class="obelisque" id="obelisque">
+			<div class="image obelisque-img"></div>
+			<div class="text-plus-title">
+				<h3>Tombeau à Obelisques</h3>
+				<p>
+					TBD
+				</p>
+			</div>
+		</div>
+
 		<?php 
 			/*
 			 * Ajout des monuments à visiter ajoutés depuis la base de donnée

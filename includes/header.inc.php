@@ -28,7 +28,9 @@
 	$a1_h1 = array("Pétra, une cité nabatéenne", "Petra, a Nabatean city");
 	$introduction = array("Pétra est une cité antique du sud de l’actuelle Jordanie.<br>Son attraction mondiale en a fait l’un des principaux pôle touristique de Jordanie. Fondée en -1200 par les Édomites, elle fut par la suite occupée par les Nabatéens à partir du VIe siècle avant JC, qui la firent prospérer grâce à sa position stratégique sur la route des caravanes en provenance de l’Orient. Aujourd’hui classée au patrimoine mondial de l’UNESCO, elle est considérée comme l’un des plus beaux sites troglodytiques du monde.",
 	    "Petra is an ancient city in the south of present-day Jordan.<br>Its worldwide attraction has made it one of Jordan's main tourist poles. Founded in 1200 BC by the Edomites, it was later occupied by the Nabataeans from the 6th century BC who made it prosper thanks to its strategic position on the route of caravans from the East. Today, classified as a UNESCO World Heritage Site, it is considered one of the most beautiful troglodytic sites in the world.");
-	$a3_h2 = array("PARCOURS", "COURSES");
+	$a3_h2 = array("Parcours", "Courses");
+	$kazneh = array("Le Kazneh", "Al Kazneh");
+	$theatre = array("Théâtre nabatéen", "Nabataean theater");
 	$a3_p = array("Nous avons sélectionné pour vous les meilleurs parcours à effectuer, tout en nous assurant que vous ne raterez aucun des monuments phare de cette magnifique citée nabatéenne.", "We have selected for you the best routes to take, ensuring that you will not miss any of the highlights of this magnificent Nabatean city.");
 	$a3_label = array("Durée du parcours : ", "Duration of the course : ");
 	$a3_option0 = array("Aucun ", "None ");
@@ -69,36 +71,58 @@
 		The Nabataean city also made some appearances on large screen that it is in Indiana Jones and the last crusade, Transformers 2, The Return of the Mummy or Mortal Kombat: Final Destruction. The video game Overwatch also paid homage to him by recreating the city in a futuristic world.");
 
 	/* GALERIE */
+	/*
+	 * Exemple à suivre :
+
+	<div>
+		<h4 class=\"titre\">TITRE</h4><br>
+		<p class=\"auteur\">AUTEUR - <i class=\"fas fa-globe-americas\"></i> <a href=\"URL DU SITE WEB\" target=\"_blank\">Site web</a></p>
+		<p class=\"description\">
+			DESCRIPTION
+		</p>
+	</div>
+	<div>
+	 *
+	 *
+	*/
 	$galerie_h1 = array("Galerie d'image", "Image gallery");
-	$galerie_img1 = array("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel egestas ex. Morbi placerat risus in ante pretium, eu dapibus ante suscipit. Phasellus tempor ex augue, ac iaculis tortor sollicitudin eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel egestas ex. Morbi placerat risus in ante pretium, eu dapibus ante suscipit. Phasellus tempor ex augue, ac iaculis tortor sollicitudin eu.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel egestas ex. Morbi placerat risus in ante pretium, eu dapibus ante suscipit. Phasellus tempor ex augue, ac iaculis tortor sollicitudin eu.");
-	$galerie_img2 = array("Description", "Description");
-	$galerie_img3 = array("Description", "Description");
-	$galerie_img4 = array("Description", "Description");
-	$galerie_img5 = array("Description", "Description");
-	$galerie_img6 = array("Description", "Description");
-	$galerie_img7 = array("Description", "Description");
-	$galerie_img8 = array("Description", "Description");
-	$galerie_img9 = array("Description", "Description");
-	$galerie_img10 = array("Description", "Description");
-	$galerie_img11 = array("Description", "Description");
-	$galerie_img12 = array("Description", "Description");
-	$galerie_img13 = array("Description", "Description");
-	$galerie_img14 = array("Description", "Description");
-	$galerie_img15 = array("Description", "Description");
-	$galerie_img16 = array("Description", "Description");
-	$galerie_img17 = array("Description", "Description");
-	$galerie_img18 = array("Description", "Description");
-	$galerie_img19 = array("Description", "Description");
-	$galerie_img20 = array("Description", "Description");
+	$galerie_alex1 = array("<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier - <i class=\"fas fa-globe-americas\"></i> <a href=\"https://www.alexandre-carpentier.com\" target=\"_blank\">Site web</a></p><p class=\"description\">Une magnifique photo d'Ad Deir prise lors d'un couché du soleil, avec un mélange de couleur qui fait plaisir à l'oeuil.</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier - <i class=\"fas fa-globe-americas\"></i> <a href=\"https://www.alexandre-carpentier.com\" target=\"_blank\">Website</a></p><p class=\"description\">A beautiful picture of Ad Deir taken during a sunset, with a mix of colors that pleases the eye.</p>
+		</div>");
+	$galerie_alex2 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_alex3 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img1 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img2 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img3 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img4 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img5 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img6 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img7 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img8 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img9 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img10 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img11 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img12 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img13 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img14 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img15 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img16 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img17 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img18 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img19 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img20 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img21 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_img22 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_credits_info = array("Si vous aussi vous souhaitez publier vos photographies de Pétra sur notre site, n'hésitez pas à nous contacter ", "If you also wish to publish your photographs of Petra on our site, do not hesitate to contact us ");
+	$galerie_credits_info_ici = array("ici", "here");
 
 	/* A VISITER */
 	$visiter_h1 = array("Principaux monuments", "Main monuments");
 	$visiter_1_titre = array("Le Kazneh", "El Kazneh");
 	$visiter_1_texte = array("Cette édifice troglodyte, sans doute le plus impressionnant, serait le tombeau d’un roi nabatéen mort autour de l’an 40 de notre ère. Le style architectural de la façade est inspiré de celui d’Alexandrie que l’on peut également retrouver dans les décors de certaines villas de Pompéi. À l’intérieur du monuments se trouve un vestibules débouchant sur 3 salles complètement souterraine dont les dimensions vont jusqu’à 11*28 m pour la plus grande.", "Perhaps the most impressive of the troglodytic buildings is the tomb of a Nabataean king who died around 40. The architectural style of the facade is inspired by that of Alexandria, which can also be found in the decoration of some of the villas in Pompeii. Inside the monument is a vestibule leading to 3 completely underground rooms, the largest of which is 11*28 m in size.");
-	$visiter_2_titre = array("Al Deir", "Al Deir");
+	$visiter_2_titre = array("Ad Deir", "Ad Deir");
 	$visiter_2_texte = array("Ce monument aux envergures impressionnantes (45 m de large et 42 m de haut) est lui aussi un tombeau d’un roi nabatéen, sans doute Obodas 1er qui accéda au trône en -96. Une urne funéraire de 9 mètres de haut est présente à son sommet. Il fut par la suite utilisé comme monastère par des Chrétiens qui lui donnèrent son nom actuel.", "This monument of impressive proportions (45 meters wide and 42 meters high) is also the tomb of a Nabataean king, probably Obodas I, who acceded to the throne in 96 BC. A 9-meter (30-foot) tall funerary urn stands at the top of the tomb. It was later used as a monastery by Christians who gave it its present name.");
-	$visiter_3_titre = array("Théâtre romain", "Roman theater");
-	$visiter_3_texte = array("L’occupation romaine a elle aussi marqué la cité de Pétra. Un théâtre pouvant accueillir plusieurs milliers de spectateur a été creusé dans le grès.", "The Roman occupation also marked the city of Petra. A theater that could accommodate several thousand spectators was dug in the sandstone.");
+	$visiter_3_titre = array("Théâtre nabatéen", "Nabatean theater");
+	$visiter_3_texte = array("L’occupation romaine a elle aussi marqué la cité de Pétra. Un théâtre pouvant accueillir de 3000 à 8500 spectateurs a été creusé dans le grès.<br>Il avait un orchestre semi-circulaire et des gradins en trois niveaux superposés en forme de lune croissante.", "The Roman occupation also marked the city of Petra. A theater that could accommodate from 3000 to 8500 spectators was dug in the sandstone.<br>It had a semi-circular orchestra and tiers in three superimposed levels in the shape of a growing moon.");
 	$visiter_4_titre = array("Les aqueducs", "The aqueducts");
 	$visiter_4_texte = array("La cité se situe dans une zone très aride. Ainsi plusieurs systèmes de gestion de l’eau furent mis en place. L’eau de la cité provenait essentiellement de la pluie, le sol étant peu perméable, les habitants pouvaient la récupérer aux alentours. Pour l’acheminer, deux aqueducs furent creusé dans la parois le long du Sîq (défilé rocheux menant devant Al Kazneh, l’un alimenté par l’Aïn Moussa (cours d’eau passant non loin), l’autre par les eaux de pluies. Enfin environs 200 citernes permettaient de stocker l’eau à proximiter de la citer.", "The city is located in a very arid area. Thus several systems of water management were set up. The water of the city came essentially from the rain, the ground being not very permeable, the inhabitants could recover it in the surroundings. To convey it, two aqueducts were dug in the wall along the Sîq (rocky gorge leading in front of Al Kazneh), one fed by the Aïn Moussa (a stream passing nearby), the other by rainwater. Finally, about 200 cisterns were used to store water near the cistern.");
 
@@ -106,7 +130,9 @@
 	$infos_h1 = array("Informations pratiques", "Practicals informations");
 	$infos_title1 = array("Plan du site", "Site map");
 	$infos_title2 = array("Divers", "Other");
-	$infos_text1 = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book an hotel room before starting your trip.");
+	$infos_text1_1 = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.<br><br>", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book an hotel room before starting your trip.<br><br>");
+	$infos_text1_2 = array("Une fois là-bas, il se peut que vous vous retrouviez à un endroit sans connexion. Ne prennez pas de risque et téléchargez le site web afin d'accéder à toutes les informations dont vous aurez-besoin, hors connexion :<br><br>", "Once there, you may find yourself in a place without connection. Don't take any chances and download the website to access all the information you need, offline:<br><br>");
+	$infos_text_download = array("Télécharger", "Download");
 	$infos_subtitle1 = array("Recommandations diplomatiques", "Diplomatic advices");
 	$infos_text2 = array("Le Royaume hachémite de Jordanie, pôle de stabilité dans une région traversée par les crises, n’est cependant pas à l’abri de troubles, en particulier du risque terroriste. La Jordanie connaît une menace permanente d’attentats. Cette menace est prise en compte par les autorités jordaniennes qui continuent de se mobiliser pour prévenir le risque terroriste ou infiltrations aux frontières.", "The Hashemite Kingdom of Jordan, a pole of stability in a region plagued by crises, is not, however, immune to unrest, particularly the risk of terrorism. Jordan is under constant threat of terrorist attacks. This threat is taken into account by the Jordanian authorities who continue to mobilize to prevent the risk of terrorism or infiltration at the borders.");
 	$infos_subsubtitle1 = array("Recommandations", "Advices");
@@ -118,6 +144,16 @@
 	$infos_subsubtitle2_text2 = array("Frontière entre la Jordanie et l’Irak.", "Border between Jordan and Iraq.");
 	$infos_subsubtitle2_text3 = array("Péninsule du Sinaï (Égypte) depuis la Jordanie.", "Sinai Peninsula (Egypt) from Jordan.");
 	$infos_subtitle2 = array("Quelques traductions utiles", "Some helpful translations");
+	$infos_trad1 = array("Bonjour", "Hello");
+	$infos_trad2 = array("Merci", "Thank you");
+	$infos_trad3 = array("S'il vous plaît", "Please");
+	$infos_trad4 = array("Au revoir", "Goodbye");
+	$infos_trad5 = array("Manger", "Eat");
+	$infos_trad6 = array("Dormir", "Sleep");
+	$infos_trad7 = array("Où sont les toilettes", "Where are the toilets");
+	$infos_trad8 = array("Je ne parle pas arabe", "I don't speak Arabia");
+	$infos_trad9 = array("Parlez-vous anglais", "Do you speak English");
+	$infos_trad10 = array("Parlez-vous français", "Do you speak french");
 	$infos_subtitle3 = array("Convertisseur de monnaie", "Currency converter");
 	$infos_title3 = array("Aux alentours", "near by");
 	$infos_subtitle4 = array("Hôtels", "Hotels");
@@ -181,7 +217,8 @@
 	$infos_hotel1_1 = array("L'hotel le plus proche de Petra", "The nearest hotel to Petra");
 	$infos_hotel1_2 = array("Vue sur la vallée du grand rift", "View of the Great Rift Valley");
 	$infos_hotel1_5 = array("Piscine", "Pool");
-	$infos_hotel2_1 = array("Internet haut débit gratuit", "Free high speed internet");
+
+	$infos_hotel2_1 = array("Divertissement le soir", "Nightly entertainment");
 	$infos_hotel2_tarif = array(
 							"1 lit : 62 à 88 JOD (72 à 102€)<br>
 							2 lits : 75 à 88 JOD (87 à 102€)<br>
@@ -286,9 +323,9 @@
 							Tue / Fri / Sat / Sun : 10h - 22h");
 	$practical_info_resto2_rate = array("4.5/5 (1930 avis)","4.5/5 (1930 notices)");
 
-	$practical_info_resto3_pres = array("<u>Cuisines</u> : pizza, 							internationale, méditerranéenne, Moyen-Orient, 						arabe.
+	$practical_info_resto3_pres = array("<u>Cuisines</u> : pizza, internationale, méditerranéenne, Moyen-Orient, arabe.<br>
 							<u>Régimes spéciaux</u> : végétariens bienvenus, choix végétaliens.","
-							<u>Cuisines</u>: pizza, international, Mediterranean, Middle Eastern, Arabic.
+							<u>Cuisines</u>: pizza, international, Mediterranean, Middle Eastern, Arabic.<br>
 							<u>Special diets</u>: vegetarians welcome, vegan choices.");
 	$practical_info_resto3_horaire1 = array("Tous les jours : 11h - 00h","Every day : 11h - 00h");
 	$practical_info_resto3_rate = array("4.5/5 (141 avis)","4.5/5 (141 notices)");

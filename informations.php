@@ -21,7 +21,9 @@
 		<p class="texte-horaires">
 			<span id="beacon-reco-diplo"></span>
 			<span id="beacon-trad"></span>
-			<?php echo $infos_text1[$langue]; ?>
+			<?php echo $infos_text1_1[$langue]; ?>
+			<?php echo $infos_text1_2[$langue]; ?>
+			<a href="#" target="_blank"><i class="fas fa-download"></i><?php echo $infos_text_download[$langue]; ?></a>
 		</p>
 		<div class="divers">
 			<div class="diplo">
@@ -60,15 +62,17 @@
 			<div class="trad-mo">
 				<h3 id="trad"><?php echo $infos_subtitle2[$langue]; ?></h3>
 				<p>
-					<u>Bonjour/Hello</u> : sabah alkhyr    صباح الخير<br><br>
-					<u>Merci/Thank you</u> : ashkurak    اشكرك<br><br>
-					<u>Au revoir/Good bye</u> : 'iilaa alliqa'    إلى اللقاء<br><br>
-					<u>Manger/Eat</u> : 'akl    أكل<br><br>
-					<u>Dormir/Sleep</u> : lilnuwm      للنوم<br><br>
-					<u>Je ne parle pas arabe/I don’t speak arabia</u> : la 'atakalam alearabia      لا أتكلم العربية<br><br>
+					<u><?php echo $infos_trad1[$langue]; ?></u> : sabah alkhyr    صباح الخير<br><br>
+					<u><?php echo $infos_trad2[$langue]; ?></u> : ashkurak    اشكرك<br><br>
+					<u><?php echo $infos_trad3[$langue]; ?></u> : min fadlik    من فضلك<br><br>
+					<u><?php echo $infos_trad4[$langue]; ?></u> : 'iilaa alliqa'    إلى اللقاء<br><br>
+					<u><?php echo $infos_trad5[$langue]; ?></u> : 'akl    أكل<br><br>
+					<u><?php echo $infos_trad6[$langue]; ?></u> : lilnuwm      للنوم<br><br>
+					<u><?php echo $infos_trad7[$langue]; ?></u> : 'ayn hi dawrat almiah    أين هي دورات المياه<br><br>
+					<u><?php echo $infos_trad8[$langue]; ?></u> : la 'atakalam alearabia      لا أتكلم العربية<br><br>
 					<span id="beacon-convertisseur"></span>
-					<u>Parlez vous anglais/Do you speak english</u> : hal tatakalam al'iinjlizia    هل تتكلم الانجليزية<br><br>
-					<u>Parlez vous français/Do you speak french</u> : hal tatakalam alfaransia    هل تتكلم الفرنسية<br><br>
+					<u><?php echo $infos_trad9[$langue]; ?></u> : hal tatakalam al'iinjlizia    هل تتكلم الانجليزية<br><br>
+					<u><?php echo $infos_trad10[$langue]; ?></u> : hal tatakalam alfaransia    هل تتكلم الفرنسية<br><br>
 				</p>
 				<h3 id="convertisseur"><?php echo $infos_subtitle3[$langue]; ?></h3>
 				<div class="conv-monnaie" id="conv-monnaie">
@@ -275,11 +279,8 @@
 						<ul>
 							<li><?php echo $infos_hotel1_1[$langue]; ?></li>
 							<li><?php echo $infos_hotel1_2[$langue]; ?></li>
-							<li>Personnel accueillant###</li>
 							<li>SPA</li>
 							<li><?php echo $infos_hotel1_5[$langue]; ?></li>
-							<li>Excellents repas###</li>
-							<li>Propre###</li>
 						</ul>
 						<h4><?php echo $infos_hotel_tarif[$langue]; ?></h4>
 						<p><?php echo $infos_hotel_non_renseigne[$langue]; ?></p>
@@ -303,9 +304,6 @@
 						<h4><?php echo $infos_hotel_plus[$langue]; ?></h4>
 						<ul>
 							<li><?php echo $infos_hotel2_1[$langue]; ?></li>
-							<li>Divertissement le soir###</li>
-							<li>Room service###</li>
-							<li>Menus personnalisés###</li>
 						</ul>
 						<h4><?php echo $infos_hotel_tarif[$langue]; ?></h4>
 						<p>
@@ -322,11 +320,9 @@
 						<h3>Petra Moon Hotel</h3>
 						<h4><?php echo $infos_hotel_plus[$langue]; ?></h4>
 						<ul>
-							<li>Bons repas###</li>
 							<li><?php echo $infos_hotel3_2[$langue]; ?></li>
 							<li><?php echo $infos_hotel3_3[$langue]; ?></li>
 							<li><?php echo $infos_hotel3_4[$langue]; ?></li>
-							<li><?php echo $infos_hotel3_5[$langue]; ?></li>
 						</ul>
 						<h4><?php echo $infos_hotel_tarif[$langue]; ?></h4>
 						<p>
@@ -346,11 +342,6 @@
 					</div>
 					<div>
 						<h3>Edom Hotel</h3>
-						<h4><?php echo $infos_hotel_plus[$langue]; ?></h4>
-						<ul>
-							<li>Minibar</li>
-							<li><?php echo $infos_hotel4_1[$langue]; ?></li>
-						</ul>
 						<h4><?php echo $infos_hotel_tarif[$langue]; ?></h4>
 						<p>
 							<?php echo $infos_hotel4_tarif[$langue]; ?>
@@ -369,10 +360,6 @@
 						<ul>
 							<li><?php echo $infos_hotel5_1[$langue]; ?></li>
 							<li>SPA</li>
-							<li>Restaurant</li>
-							<li><?php echo $infos_hotel5_4[$langue]; ?></li>
-							<li><?php echo $infos_hotel5_5[$langue]; ?></li>
-							<li><?php echo $infos_hotel5_6[$langue]; ?></li>
 						</ul>
 						<h4><?php echo $infos_hotel_tarif[$langue]; ?></h4>
 						<p>
@@ -390,10 +377,7 @@
 						<h4><?php echo $infos_hotel_plus[$langue]; ?></h4>
 						<ul>
 							<li><?php echo $infos_hotel6_1[$langue]; ?></li>
-							<li>Chambres avec belle vue###</li>
 							<li><?php echo $infos_hotel6_3[$langue]; ?></li>
-							<li>Restaurant</li>
-							<li><?php echo $infos_hotel6_5[$langue]; ?></li>
 						</ul>
 						<h4><?php echo $infos_hotel_tarif[$langue]; ?></h4>
 						<p>

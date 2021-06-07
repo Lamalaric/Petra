@@ -63,7 +63,7 @@
 	            <a href="https://anr.fr" target="_blank"><span class="f-logoANR"></span></a>
 	            <a href="http://idea.univ-paris-est.fr/fr" target="_blank"><span class="f-logoIDEA" id="beacon-form"></span></a>
 			</div>
-            
+			<span id="beacon-formulaire"></span>
 		</div>
 
 		<div class="container-form">
