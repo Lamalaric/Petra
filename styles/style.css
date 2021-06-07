@@ -740,6 +740,10 @@ main h3 {
 .credits-images .reseaux-auteur i {
 	font-size: 1.3em;
 	margin: 10px;
+	transition: 0.3s;
+}
+.credits-images .reseaux-auteur i:hover {
+	color: gray;
 }
 
 

@@ -150,7 +150,7 @@
 			<h2>Crédits</h2>
 			<p>
 				<?php echo $galerie_credits_info[$langue]; ?>
-				<?php echo "<a href=\"contact.php?lang=".$langue."#beacon-formulaire\" target='_blank'>".$galerie_credits_info_ici[$langue]."</a>"; ?>
+				<?php echo "<a href=\"contact.php?lang=".$langue."#beacon-formulaire\">".$galerie_credits_info_ici[$langue]."</a>"; ?>
 			</p>
 			<div>
 				<h3>Alexandre Carpentier</h3>
