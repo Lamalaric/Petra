@@ -58,10 +58,9 @@
 		<div class="columbarium" id="columbarium">
 			<div class="image columbarium-img"></div>
 			<div class="text-plus-title">
-				<h3>Columbarium</h3>
+				<h3><?php echo $visiter_5_titre[$langue]; ?></h3>
 				<p>
-					L'utilisation de ce monument très étrange est inconnue.<br>
-					Contrairement à ce que son nom indique, il ne s'agissait pas d'un pigeonnier pour les pigeons mais probablement d'un lieu pour y conservées les urnes cinéraires.
+					<?php echo $visiter_5_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-tombe-soldat"></span>
@@ -70,9 +69,9 @@
 		<div class="tombe-soldat" id="tombe-soldat">
 			<div class="image tombe-soldat-img"></div>
 			<div class="text-plus-title">
-				<h3>Tombe du soldat romain</h3>
+				<h3><?php echo $visiter_6_titre[$langue]; ?></h3>
 				<p>
-					Il fut nommé ainsi à tort, car le soldat représenté dans la niche centrale, au dessus de la porte, était sans doute nabatéen. Le tombeau constituait un ensemble avec le triclinium qui se trouve en face.
+					<?php echo $visiter_6_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-al-khubtha"></span>
@@ -81,9 +80,9 @@
 		<div class="al-khubtha" id="al-khubtha">
 			<div class="image al-khubtha-img"></div>
 			<div class="text-plus-title">
-				<h3>Al-Khubtha</h3>
+				<h3><?php echo $visiter_7_titre[$langue]; ?></h3>
 				<p>
-					Al-Khubtha est une grande montagne dans laquelle sont creusées 4 tombes : les tombes royales. Le Tombeau à Étages, les Tombeau Corinthien, le Tombeau de la Soie et le Tombeau à l'Urne.
+					<?php echo $visiter_7_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-tombes-royales"></span>
@@ -92,9 +91,9 @@
 		<div class="tombes-royales" id="tombes-royales">
 			<div class="image tombes-royales-img"></div>
 			<div class="text-plus-title">
-				<h3>Tombes royales</h3>
+				<h3><?php echo $visiter_8_titre[$langue]; ?></h3>
 				<p>
-					Au nombre de quatre, ces tombes sont creusées dans la roche. Malgré le nom du monument, il ne semblerait qu'aucun élément ne permette d'identifier qu'un quelconque monarque y soit enterré. Cependant, au vu de l'importance des tombes, on imagine qu'elles devaient appartenir à de hauts dignitaires du royaume.
+					<?php echo $visiter_8_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-al-bint"></span>
@@ -103,9 +102,9 @@
 		<div class="al-bint" id="al-bint">
 			<div class="image al-bint-img"></div>
 			<div class="text-plus-title">
-				<h3>Qasr Al-Bint</h3>
+				<h3><?php echo $visiter_9_titre[$langue]; ?></h3>
 				<p>
-					Le Qasr al-Bint était l'un des principaux temples de la cité de Pétra et est l'une des rares structures construites encore relativement intacte. Si le nom donné par les bédouins (Qasr al-Bint Firaun) signifie « le palais de la fille du Pharaon », il s'agissait en fait du plus grand lieu de culte de la cité.
+					<?php echo $visiter_9_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-fontaine"></span>
@@ -114,9 +113,9 @@
 		<div class="fontaine" id="fontaine">
 			<div class="image fontaine-img"></div>
 			<div class="text-plus-title">
-				<h3>Fontaine au lion</h3>
+				<h3><?php echo $visiter_10_titre[$langue]; ?></h3>
 				<p>
-					On peut y apercevoir un très grand lion gravé dans la roche.
+					<?php echo $visiter_10_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-nymphaeum"></span>
@@ -125,9 +124,9 @@
 		<div class="nymphaeum" id="nymphaeum">
 			<div class="image nymphaeum-img"></div>
 			<div class="text-plus-title">
-				<h3>Nymphaeum</h3>
+				<h3><?php echo $visiter_11_titre[$langue]; ?></h3>
 				<p>
-					C'est un petit temple pourvu d'une fontaine ou grotte ayant une source consacré aux nymphes.
+					<?php echo $visiter_11_texte[$langue]; ?>
 				</p>
 			</div>
 			<span id="beacon-grand-temple"></span>
@@ -136,9 +135,9 @@
 		<div class="grand-temple" id="grand-temple">
 			<div class="image grand-temple-img"></div>
 			<div class="text-plus-title">
-				<h3>Grand temple</h3>
+				<h3><?php echo $visiter_12_titre[$langue]; ?></h3>
 				<p>
-					Construit à l'extrémité ouest de l'allée des colonnes, le temple de Qasr el-Bint fut dédié au dieu nabatéen Dusarès et à son épouse al-Uzza. Par sa forme, le temple rappelle le temple de Bêl de Palmyre (qui fut détruit en 2015 au cours de la guerre en Syrie).
+					<?php echo $visiter_12_texte[$langue]; ?>
 				</p>
 			</div>
 		</div>
@@ -146,10 +145,9 @@
 		<div class="unayshu" id="unayshu">
 			<div class="image unayshu-img"></div>
 			<div class="text-plus-title">
-				<h3>Tombe d'Unayshu</h3>
+				<h3><?php echo $visiter_13_titre[$langue]; ?></h3>
 				<p>
-					La tombe d'Unayshu date de la fin du 1er siècle après JC.<br>
-					Le pilastre de coin de la tombe et ceux qui encadrent l'entrée sont un dessin typiquement nabatéen. La façade lisse est dans le même style que les tombes trouvées à Madâin Sâlih en Arabie Saoudite.
+					<?php echo $visiter_13_texte[$langue]; ?>
 				</p>
 			</div>
 		</div>
@@ -157,9 +155,9 @@
 		<div class="obelisque" id="obelisque">
 			<div class="image obelisque-img"></div>
 			<div class="text-plus-title">
-				<h3>Tombeau à Obelisques</h3>
+				<h3><?php echo $visiter_14_titre[$langue]; ?></h3>
 				<p>
-					TBD
+					<?php echo $visiter_14_texte[$langue]; ?>
 				</p>
 			</div>
 		</div>
