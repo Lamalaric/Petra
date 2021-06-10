@@ -262,20 +262,20 @@
 	$infos_hotel3_4 = array("Déjeuner gratuit", "Free lunch");
 	$infos_hotel3_5 = array("Parking gratuit", "Free parking");
 	$infos_hotel3_tarif = array(
-							"2 personne : 165€ / nuit<br>
-							3 personnes : 195€ / nuit<br>
-							5 personnes : 250€ / nuit<br>", 
-							"2 persons : 165€ / night<br>
-							3 persons : 195€ / night<br>
-							5 persons : 250€ / night<br>");
+							"2 personne : 137 JOD (165€)<br>
+							3 personnes : 168 JOD (195€)<br>
+							5 personnes : 215 JOD (250€)<br>", 
+							"2 persons : 137 JOD (193\$ / 137£)<br>
+							3 persons : 168 JOD (236\$ / 168£)<br>
+							5 persons : 215 JOD (303\$ / 215£)<br>");
 	$infos_hotel4_1 = array("Internet gratuit", "Free internet");
 	$infos_hotel4_tarif = array(
-							"Suite Deluxe : 41€+ / nuit<br>
-							King suite : 123€+ / nuit<br>
-							Suite avec vue sur océan : 165€+ / nuit", 
-							"Suite Deluxe : 41€+ / night<br>
-							King suite : 123€+ / night<br>
-							Ocean view Suite : 165€+ / night");
+							"Suite Deluxe : 35 JOD (41€)<br>
+							King suite : 106 JOD (123€)<br>
+							Suite avec vue sur océan : 142 JOD (165€)", 
+							"Suite Deluxe : 35 JOD (39\$ / 35£)<br>
+							King suite : 106 JOD (149\$ / 106£)<br>
+							Ocean view Suite : 142 JOD (200\$ / 142£)");
 
 	$practical_info_hotel5_1 = array("Situé à 10min de Pétra", "Located at 10min from Petra");
 	$practical_info_hotel5_4 = array("Petit-déjeuner gratuit", "Free breakfast");
@@ -289,10 +289,10 @@
 	$infos_hotel5_6 = array("Parking gratuit", "Free parking");
 	$infos_hotel5_tarif = array(
 
-							"2 personnes : 95€ / nuit<br>
-							3 personnes : 87 à 99€ / nuit", 
-							"2 persons : 95€ / night<br>
-							3 persons : 87 to 99€ / night");
+							"2 personnes : 81 JOD (95€)<br>
+							3 personnes : 75 à 85 JOD (87 à 99€)", 
+							"2 persons : 81 JOD (114\$ / 81£)<br>
+							3 persons : 75 to 85 JOD (105\$ to 119\$ / 75 to 85£)");
 
 
 	$practical_info_hotel6_1 = array("Proche de Pétra", "Near to Petra");
@@ -304,15 +304,15 @@
 	$infos_hotel6_3 = array("Piscine", "Pool");
 	$infos_hotel6_5 = array("Wifi gratuit", "Free Internet");
 	$infos_hotel6_tarif = array(
-							"1 personne : 44 ou 68€<br>
-							2 personnes : 62 ou 77€<br>
-							3 personnes : 84 ou 104€<br>
-							4 personnes : 108 ou 136€<br><br>
+							"1 personne : 37 ou 58 JOD (44 ou 68€)<br>
+							2 personnes : 53 ou 66 JOD (62 ou 77€)<br>
+							3 personnes : 72 ou 89 JOD (84 ou 104€)<br>
+							4 personnes : 93 ou 117 JOD (108 ou 136€)<br><br>
 							Le premier prix indiqué fait référence aux saisons hautes, le second aux saisons basses.", 
-							"1 person : 44 or 68€<br>
-							2 persons : 62 or 77€<br>
-							3 persons : 84 or 104€<br>
-							4 persons : 108 or 136€<br><br>
+							"1 person : 37 or 58 JOD (52 or 81\$ / 37 or 58£)<br>
+							2 persons : 53 or 66 JOD (74 or 93\$ / 53 or 66£)<br>
+							3 persons : 72 or 89 JOD (101 or 125\$ / 72 or 89£)<br>
+							4 persons : 93 or 117 JOD (131 or 165\$ / 93 or 117£)<br><br>
 							The first price indicated refers to high seasons, the second to low seasons.");
 
 
