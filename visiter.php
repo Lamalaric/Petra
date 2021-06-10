@@ -93,7 +93,7 @@
 			<div class="slider">
 				<div class="slides">
 					<div class="image columbarium-img" id="slide5_1"></div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4210.549671396517!2d35.43717885102775!3d30.3289952119389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016ef6a93297b9%3A0x15faadc615dca38d!2sColumbarium!5e1!3m2!1sfr!2sfr!4v1623287097808!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> width="364" height="301" id="slide5_2" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4210.549671396516!2d35.43717885102775!3d30.3289952119389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016ef6a93297b9%3A0x15faadc615dca38d!2sColumbarium!5e1!3m2!1sfr!2sfr!4v1623287589242!5m2!1sfr!2sfr" id="slide5_2" width="364" height="301" style="border:0;" allowfullscreen="" loading="lazy">
 				</div>
 				<div class="slide-links">
 					<a href="#slide5_1" class="slide-link"><i class="far fa-dot-circle"></i></a>
