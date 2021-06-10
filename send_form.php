@@ -129,7 +129,7 @@
 
 		// Code pour ajouter un paragraphe histoire
 		if ($_GET['action'] == "ajout-histoire") {
-			$filename = $_FILES['UploadFileName']['name'];
+			$filename = "images/".$_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
 			$titre_fr = $_POST['titre_fr'];
 			$titre_en = $_POST['titre_en'];
@@ -138,8 +138,8 @@
 
 			// Si tout est rempli, on insère le contenu dans la BDD
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
-				if (!file_exists("images/".$filename)) {
-					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], "images/".$filename);
+				if (!file_exists($filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $filename);
 				}
 				$ajout_histoire = $cnx -> exec("INSERT INTO histoire (titre_fr, titre_en, texte_fr, texte_en, image, alt) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."', '".$alt."');");
 				header("Location: admin.php?isAdded=true");

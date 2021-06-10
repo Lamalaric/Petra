@@ -114,7 +114,7 @@
 			    echo '
 			    <article>
 					<h2>'.$titre[$langue].'</h2>
-					<img src="'.$image[$langue].'" alt="'.$alt[$langue].'">
+					<img src="'.$image.'" alt="'.$alt[$langue].'" style="display:block; margin:0 auto;">
 					<p>'.$texte[$langue].'</p>
 				</article>';
 		    }
