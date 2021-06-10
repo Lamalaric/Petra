@@ -56,20 +56,12 @@
 				<p><?php echo $galerie_img8[$langue]; ?></p>
 			</div>
 			<div>
-				<a href="images/image4.jpg" data-fancybox="gallery"><img src="images/image4.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img9[$langue]; ?></p>
-			</div>
-			<div>
 				<a href="images/image5.jpg" data-fancybox="gallery"><img src="images/image5.jpg" alt="Ad-Deir"></img></a>
 				<p><?php echo $galerie_img10[$langue]; ?></p>
 			</div>
 			<div>
 				<a href="images/image6.jpg" data-fancybox="gallery"><img src="images/image6.jpg" alt="Ad-Deir"></img></a>
 				<p><?php echo $galerie_img11[$langue]; ?></p>
-			</div>
-			<div>
-				<a href="images/image7.jpg" data-fancybox="gallery"><img src="images/image7.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img12[$langue]; ?></p>
 			</div>
 			<div>
 				<a href="images/image8.jpg" data-fancybox="gallery"><img src="images/image8.jpg" alt="Ad-Deir"></img></a>
@@ -94,10 +86,6 @@
 			<div>
 				<a href="images/image13.png" data-fancybox="gallery"><img src="images/image13.png" alt="Ad-Deir"></img></a>
 				<p><?php echo $galerie_img18[$langue]; ?></p>
-			</div>
-			<div>
-				<a href="images/image14.jpg" data-fancybox="gallery"><img src="images/image14.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img19[$langue]; ?></p>
 			</div>
 			<div>
 				<a href="images/image15.png" data-fancybox="gallery"><img src="images/image15.png" alt="Ad-Deir"></img></a>

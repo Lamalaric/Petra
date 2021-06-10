@@ -179,6 +179,6 @@
 
 	        $retour = mail('alf2002@hotmail.fr', 'Petra - Médiation culturelle et numérique', $message, $entete);
 		}
-	    //header("Location: contact.php?isSent=true#beacon-form");
+	    header("Location: contact.php?isSent=true#beacon-form");
 	}
 ?>

@@ -3,12 +3,10 @@
 	include("includes/header.inc.php");
 ?>
 
-<body>
+<body class="container-ml">
 
 	<main>
-		<?php echo($mention_legal[$langue]);?>
-
-		
+		<?php echo($mention_legal[$langue]);?>		
 	</main>
 
 

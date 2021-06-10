@@ -422,11 +422,11 @@
 
 
 	//Mention légale
-	$mention_legal = array("<h2>Informations légales</h2>
+	$mention_legal = array("<h2>Mentions légales</h2>
 <h3>1. Présentation du site.</h3>
 <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <a href=\"//https://etudiant.u-pem.fr/~alefor03/website//\">https://etudiant.u-pem.fr/~alefor03/website/</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
 <p><strong>Propriétaire</strong> : Université Gustave Eiffel – Université – 16 Boulevard Newton, 77420 Champs-sur-Marne<br />
-<strong>Créateur</strong> : <a target=\"blank\" href=\"https://etudiant.u-pem.fr/~alefor03/Petra/\">Amalaric Le Forestier, Bastien Corgnac, Dylan Chalier</a><br />
+<strong>Créateur</strong> : <a target=\"blank\" href=\"http://perso-etudiant.u-pem.fr/~alefor03\">Amalaric Le Forestier</a>, <a target=\"_blank\" href=\"http://perso-etudiant.u-pem.fr/~bcorgnac/portfolio/\">Bastien Corgnac</a>, Dylan Chalier<br />
 <strong>Responsable publication</strong> : Amalaric Le Forestier – alefor03@etud.u-pem.fr<br />
 Le responsable publication est une personne physique ou une personne morale.<br />
 <strong>Webmaster</strong> : Amalaric Le Forestier – alefor03@etud.u-pem.fr<br />
@@ -483,7 +483,7 @@ Tia Pernici : Logo du Site<br />
 <h3>1. Presentation of the site.</h3>
 <p>Pursuant to Article 6 of Law No. 2004-575 of 21 June 2004 on confidence in the digital economy, users of the site <a href=\"//https://etudiant.u-pem.fr/~alefor03/website//\">https://etudiant.u-pem.fr/~alefor03/website/</a> are informed of the identity of the various parties involved in its creation and follow-up:</p>
 <p><strong>Owner</strong> : Université Gustave Eiffel – Université – 16 Boulevard Newton, 77420 Champs-sur-Marne<br />
-<strong>Creator</strong> : <a target=\"blank\" href=\"https://etudiant.u-pem.fr/~alefor03/Petra/\">Amalaric Le Forestier, Bastien Corgnac, Dylan Chalier</a><br />
+<strong>Creators</strong> : <a target=\"blank\" href=\"http://perso-etudiant.u-pem.fr/~alefor03\">Amalaric Le Forestier</a>, <a target=\"_blank\" href=\"http://perso-etudiant.u-pem.fr/~bcorgnac/portfolio/\">Bastien Corgnac</a>, Dylan Chalier<br />
 <strong>Responsible for publication</strong> : Amalaric Le Forestier – alefor03@etud.u-pem.fr<br />
 The person responsible for publication is a natural or legal person.<br />
 <strong>Webmaster</strong> : Amalaric Le Forestier – alefor03@etud.u-pem.fr<br />
@@ -662,8 +662,28 @@ Tia Pernici : Website logo<br />
 					echo '<li><a href="contact.php?lang='.$langue.'">'.$nav_contact[$langue].'</a></li>';
 				}
 	echo '
-			</ul>
+			</ul>';
+		echo '
+		<div class="logo_plus_langue">
+			<li class="logo-langue2">
+				<div>';
+				if ($langue == 0) {
+					echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag" class="langue-actuelle"></a>';
+				} else {
+					echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag"></a>';
+				}
+				if ($langue == 1) {
+					echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag" class="langue-actuelle"></a>';
+				} else {
+					echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag"></a>';
+				}
+			echo '
+				</div>
+			</li>
+			';
+	echo '
 			<a href="index.php?lang='.$langue.'" class="logo2"><img src="images/logo.png" alt="Logo" id="logo"></img></a>
+		</div>
 		</nav>
 	</header>
 

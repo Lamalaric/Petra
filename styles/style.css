@@ -162,7 +162,7 @@ nav .langue-actuelle {
 nav .page-actuelle::after {
 	transform: scale(1, 1);
 }
-nav .logo2 {
+nav .logo_plus_langue {
 	display: none;
 }
 #logo {
@@ -652,6 +652,24 @@ main h3 {
 	padding: 200px;
 	text-shadow: black 0.1em 0.1em 0.2em
 }
+.container-g .credits-images a {
+	color: white;
+	position: relative;
+}
+.container-g .credits-images a::after {
+	content: "";
+	background: #f7af3e;
+	width: 100%; height: 2px;
+	position: absolute;
+	left: 0; bottom: 0px;
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.3s ease-in;
+}
+.container-g .credits-images a:hover::after {
+	transform: scaleX(0);
+	transform-origin: right;
+}
 .container-g main div:not(.big-picture) {
 	grid-column: 2/3;
 	margin-top: 50px;
@@ -694,11 +712,6 @@ main h3 {
 .container-g .container-images a {
 	width: 100%;
 	height: 100%;
-}
-.container-g .container-images .auteur a {
-	color: white;
-	text-decoration: underline #f7af3e;
-
 }
 .container-g .container-images div img:hover {
 	transform: scale(1.14);
@@ -748,14 +761,13 @@ main h3 {
 	width: 100%;
 	margin: 10px 0;
 }
-.credits-images a {
-	color: white;
-	text-decoration: underline #f7af3e;
-}
 .credits-images .reseaux-auteur {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+.container-g .credits-images .reseaux-auteur a::after {
+	all: unset;
 }
 .credits-images .reseaux-auteur i {
 	font-size: 1.3em;
@@ -845,7 +857,7 @@ main h3 {
 	justify-content: center;
 }
 .container-v .slide-links a {
-	color: white;
+	color: #f7af3e;
 	text-decoration: none;
 	margin: 10px 5px;
 }
@@ -1342,6 +1354,31 @@ form .mini-flex {
 .formulaire .mail-ok {
 	color: lightgreen;
 	text-align: center;
+}
+
+
+/* PAGE MENTIONS LEGALES */
+.container-ml main {
+	margin: 150px 50px 0 50px;
+}
+.container-ml main a {
+	color: white;
+	text-decoration: none;
+	position: relative;
+}
+.container-ml main a::after {
+	content: "";
+	background: #f7af3e;
+	width: 100%; height: 2px;
+	position: absolute;
+	left: 0; bottom: 0px;
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.3s ease-in;
+}
+.container-ml main a:hover::after {
+	transform: scaleX(0);
+	transform-origin: right;
 }
 
 
