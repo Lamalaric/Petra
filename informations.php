@@ -23,7 +23,7 @@
 			<span id="beacon-trad"></span>
 			<?php echo $infos_text1_1[$langue]; ?>
 			<?php echo $infos_text1_2[$langue]; ?>
-			<a href="#" target="_blank"><i class="fas fa-download"></i><?php echo $infos_text_download[$langue]; ?></a>
+			<?php echo $infos_text_download[$langue]; ?>
 		</p>
 		<div class="divers">
 			<div class="diplo">
