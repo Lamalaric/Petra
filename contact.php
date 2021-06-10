@@ -71,12 +71,12 @@
 			<div class="formulaire">
 				<form method="post" action="send_form.php?page=contact" onsubmit="preventDefault()">
 					<p><?php echo $contact_title3_text[$langue]; ?></p>
-					<input type="text" name="prenom" id="prenom" placeholder="Prénom">
-					<input type="text" name="nom" id="nom" placeholder="Nom">
-					<input type="text" name="mail" id="mail" placeholder="Adresse mail">
-					<input type="text" name="sujet" id="sujet" placeholder="Sujet de votre message" required>
-					<textarea name="message" rows="10" cols="100" placeholder="Écrivez votre message ici" required></textarea>
-					<input type="submit" name="Submit">
+					<input type="text" name="prenom" id="prenom" placeholder=<?php echo $contact_prenom[$langue]; ?>>
+					<input type="text" name="nom" id="nom" placeholder=<?php echo $contact_nom[$langue]; ?>>
+					<input type="text" name="mail" id="mail" placeholder=<?php echo $contact_mail[$langue]; ?>>
+					<input type="text" name="sujet" id="sujet" placeholder=<?php echo $contact_sujet[$langue]; ?> required>
+					<textarea name="message" rows="10" cols="100" placeholder=<?php echo $contact_ecrire[$langue]; ?> required></textarea>
+					<input type="submit" name="Submit" value=<?php echo $contact_envoyer[$langue]; ?>>
 				</form>
 				<?php
 					error_reporting(0);

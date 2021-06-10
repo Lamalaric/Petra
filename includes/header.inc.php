@@ -391,13 +391,10 @@
 						<li>CESSY David</li>
 						<li>REBY Yann</li>
 					</ul>
-					<h4>Traductions</h4>
-					<ul>
-						<li>Prof d'arabe ?</li>
-					</ul>
 					<h4>Illustrations</h4>
 					<ul>
 						<li>PERNICI Tia : Logo</li>
+						<li>CARPENTIER Alexandre : Photographe professionnel</li>
 					</ul>",
 					"<h3>Credits</h3>
 					<h4>Project</h4>
@@ -406,17 +403,21 @@
 						<li>CESSY David</li>
 						<li>REBY Yann</li>
 					</ul>
-					<h4>Translations</h4>
-					<ul>
-						<li>Arabic teacher?</li>
-					</ul>
 					<h4>Illustrations</h4>
 					<ul>
 						<li>PERNICI Tia: Logo</li>
+						<li>CARPENTIER Alexandre : Professional photograph</li>
 					</ul>");
 	$contact_title2 = array("Partenaires","Partner");
 	$contact_title3 = array("Nous contacter","Contact us");
 	$contact_title3_text = array("Une question ? Besoin d'aide ? N'hésitez pas à nous écrire, nous serons ravis de vous répondre.","Have a question? Need help ? Do not hesitate to write to us, we will be delighted to answer you.");
+
+	$contact_nom = array("Nom","Name");
+	$contact_prenom = array("Prénom","Firstname");
+	$contact_mail = array("Mail","Mail");
+	$contact_sujet = array("Sujet de votre message","Topic of your message");
+	$contact_ecrire = array("Message","Message");
+	$contact_envoyer = array("Envoyer","Send");
 
 
 	//Mention légale
