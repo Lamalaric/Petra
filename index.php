@@ -165,12 +165,12 @@
 			<section class="a4">					<!-- Images -->
 				<h2><?php echo $a4_h2[$langue]; ?></h2>
 				<div>
-					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/al_kazneh.jpg" alt=""></a>
-					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/image10.png" alt=""></a>
-					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/aqueducs.jpg" alt=""></a>
-					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/image6.jpg" alt=""></a>
-					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/image4.jpg" alt=""></a>
-					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/kazneh.png" alt=""></a>
+					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/alexandre1.jpg" alt="Photographie Alexandre Carpentier"></a>
+					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/alexandre2.jpg" alt="Photographie Alexandre Carpentier"></a>
+					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/alexandre3.jpg" alt="Photographie Alexandre Carpentier"></a>
+					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/al_kazneh.jpg" alt="Image Kazneh"></a>
+					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/image10.png" alt="Image vallée"></a>
+					<a <?php echo "href=\"galerie.php?lang=".$langue."\""; ?>><img src="images/aqueducs.jpg" alt="Image aqueducs"></a>
 				</div>
 				<?php echo '<div class="container-see-more"><a href="galerie.php?lang='.$langue.'" class="see_more">'.$a4_a[$langue].'</a></div>'; ?>
 			</section>

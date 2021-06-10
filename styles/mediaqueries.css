@@ -1,4 +1,21 @@
 /* 	MEDIA QUERIES */
+@media screen and (max-width: 1650px) {
+	.conv-monnaie form {
+		padding: 0 50px;
+	}
+	form .mini-flex {
+		flex-direction: row;
+		margin-bottom: 20px;
+	}
+	.conv-monnaie input[type=text],
+	.conv-monnaie select {
+		width: 100%;
+	}
+	.conv-monnaie span {
+		transform: rotate(90deg);
+		margin: 10px 0;
+	}
+}
 @media screen and (min-width: 1301px) and (max-width: 1700px) {
 	nav > ul > li {
 		width: 190px;

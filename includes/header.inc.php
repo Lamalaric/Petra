@@ -86,7 +86,7 @@
 	 *
 	*/
 	$galerie_h1 = array("Galerie d'image", "Image gallery");
-	$galerie_alex1 = array("<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier - <i class=\"fas fa-globe-americas\"></i> <a href=\"https://www.alexandre-carpentier.com\" target=\"_blank\">Site web</a></p><p class=\"description\">Une magnifique photo d'Ad Deir prise lors d'un couché du soleil, avec un mélange de couleur qui fait plaisir à l'oeuil.</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier - <i class=\"fas fa-globe-americas\"></i> <a href=\"https://www.alexandre-carpentier.com\" target=\"_blank\">Website</a></p><p class=\"description\">A beautiful picture of Ad Deir taken during a sunset, with a mix of colors that pleases the eye.</p>
+	$galerie_alex1 = array("<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">Une magnifique photo d'Ad Deir prise lors d'un couché du soleil, avec un mélange de couleur qui fait plaisir à l'oeuil.</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">A beautiful picture of Ad Deir taken during a sunset, with a mix of colors that pleases the eye.</p>
 		</div>");
 	$galerie_alex2 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
 	$galerie_alex3 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
@@ -378,8 +378,8 @@
 	$contact_title1_subtitle1 = array("Notre groupe","Our group");
 	$contact_title1_subtitle1_text = array("Ce site web a été créé dans le cadre de notre projet tutoré de notre première année de DUT informatique. Il vise avant tout la création d’une médiation culturelle et numérique, et a été réalisé en collaboration avec l’UNESCO.","This website was created as part of our tutored project in our first year of computer science DUT. It aims above all at creating a cultural and digital mediation, and was realized in collaboration with UNESCO.");
 	$contact_chef = array("Chef de projet","Project Manager");
-	$contact_chef_dev = array("Developpeur en chef","Lead developer");
-	$contact_dev = array("Developpeur","Developer");
+	$contact_chef_dev = array("Lead développeur","Lead developer");
+	$contact_dev = array("Développeur","Developer");
 	$contact_chef_recherche = array("Lead recherches","Lead research");
 	$contact_recherche = array("Recherches","Researcher");
 	$contact_concept = array("Concepteur","Concepter");
@@ -399,7 +399,7 @@
 					</ul>
 					<h4>Illustrations</h4>
 					<ul>
-						<li>PERNICINI Tia : Logo</li>
+						<li>PERNICI Tia : Logo</li>
 					</ul>",
 					"<h3>Credits</h3>
 					<h4>Project</h4>
@@ -440,6 +440,9 @@
 		<script src="https://kit.fontawesome.com/79f61c2135.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="styles/style.css" type="text/css" />
 		<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" />
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script type="text/javascript" src="scripts/app.js" ></script>
 		<script type="text/javascript" src="scripts/scroller.js" ></script>
 	</head>
@@ -505,14 +508,16 @@
 					<li><a href=\"visiter.php?lang=".$langue."#beacon-deir\">".$visiter_2_titre[$langue]."</a></li>
 					<li><a href=\"visiter.php?lang=".$langue."#beacon-theatre\">".$visiter_3_titre[$langue]."</a></li>
 					<li><a href=\"visiter.php?lang=".$langue."#beacon-aqueducs\">".$visiter_4_titre[$langue]."</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-columbarium\">Columbarium</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-tombe-soldat\">Tombe du soldat romain</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-al-khubtha\">Al-Khubtha</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-tombes-royales\">Tombes royales</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-al-bint\">Qasr Al-Bint</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-fontaine\">Fontaine au lion</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-nymphaeum\">Nymphaeum</a></li>
-					<li><a href=\"visiter.php?lang=".$langue."#beacon-grand-temple\">Grand temple</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-columbarium\">".$visiter_5_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-tombe-soldat\">".$visiter_6_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-al-khubtha\">".$visiter_7_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-tombes-royales\">".$visiter_8_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-al-bint\">".$visiter_9_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-fontaine\">".$visiter_10_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-nymphaeum\">".$visiter_11_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-grand-temple\">".$visiter_12_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-unayshu\">".$visiter_13_titre[$langue]."</a></li>
+					<li><a href=\"visiter.php?lang=".$langue."#beacon-obelisque\">".$visiter_14_titre[$langue]."</a></li>
 				</ul></li>
 				";
 				if ($page == "informations") {
