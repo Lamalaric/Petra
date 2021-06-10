@@ -72,6 +72,7 @@ function getSelect() {
         case 2 :
             switch (optionContenu) {
                 case 1 :
+                    document.getElementById("form-modif-histoire").style.display = "block";
                     break;
                 case 2 :
                     document.getElementById("form-modif-visiter").style.display = "block";
@@ -84,6 +85,7 @@ function getSelect() {
         case 3 :
             switch (optionContenu) {
                 case 1 :
+                    document.getElementById("form-supp-histoire").style.display = "block";
                     break;
                 case 2 :
                     document.getElementById("form-supp-visiter").style.display = "block";

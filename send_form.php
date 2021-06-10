@@ -127,6 +127,7 @@
 
 
 
+		// Code pour ajouter un paragraphe histoire
 		if ($_GET['action'] == "ajout-histoire") {
 			$filename = $_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
@@ -144,6 +145,41 @@
 				header("Location: admin.php?isAdded=true");
 			}
 			header("Location: admin.php?isAdded=false");
+		}
+
+		// Code pour modifier un paragraphe histoire
+	    if ($_GET['action'] == "modif-histoire") {
+	    	$input_titre = $_POST['modif_titre'];
+	    	$filename = $_FILES['UploadFileName']['name'];
+			$alt = $_POST['alt'];
+			$titre_fr = $_POST['titre_fr'];
+			$titre_en = $_POST['titre_en'];
+			$texte_fr = $_POST['texte_fr'];
+			$texte_en = $_POST['texte_en'];
+
+			// Si tout est rempli et que l'extension est valide, on modifie le contenu dans la BDD
+			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
+				if (!file_exists($filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $filename);
+				}
+				$modif_visiter = $cnx -> exec("UPDATE histoire SET titre_fr = '".$titre_fr."', titre_en = '".$titre_en."', texte_fr = '".$texte_fr."', texte_en = '".$texte_en."', image = '".$filename."', alt = '".$alt."' WHERE titre_fr = '".$input_titre."';");
+				header("Location: admin.php?isModif=true");
+			}
+			header("Location: admin.php?isModif=false");
+		}
+
+		// Code pour supprimer un paragraphe histoire
+		if ($_GET['action'] == "supp-histoire") {
+			$input_titre = $_POST['supp_titre'];
+
+			if ($input_titre != '') {
+				$supprimer_visiter = $cnx -> exec("DELETE FROM histoire WHERE titre_fr = LOWER('".$input_titre."');");
+				// Supprimer l'image des fichiers
+				$image = $cnx -> query("SELECT image FROM histoire WHERE alt = '".$input_titre."';");
+				unlink($image);
+				header("Location: admin.php?isDeleted=true");
+			}
+			header("Location: admin.php?isDeleted=false");
 		}
 	}
 

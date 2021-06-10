@@ -156,9 +156,8 @@
 	$infos_title2 = array("Divers", "Other");
 	$infos_text1_1 = array("Le site de Petra et son office de tourisme est ouverte de 6h00 à 18h00 en été, et de 6h00 à 16h00 en hiver.<br>Nous vous recommandons de réserver une chambre d'hôtel avant de débuter votre voyage.<br><br>", "The Petra site and its tourist office is open from 6:00 am to 6:00 pm in summer, and from 6:00 am to 4:00 pm in winter.<br>We recommend that you book an hotel room before starting your trip.<br><br>");
 	$infos_text1_2 = array("Une fois là-bas, il se peut que vous vous retrouviez à un endroit sans connexion. Ne prennez pas de risque et téléchargez le site web afin d'accéder à toutes les informations dont vous aurez-besoin, hors connexion :<br><br>", "Once there, you may find yourself in a place without connection. Don't take any chances and download the website to access all the information you need, offline:<br><br>");
-	//$infos_text_download = array("Télécharger", "Download");
-	$infos_text_download = array("<a href=\"pdf.zip\" target=\"_blank\"><i class=\"fas fa-download\"></i>Télécharger</a>", 
-		"<a href=\"pdf_eng.zip\" target=\"_blank\"><i class=\"fas fa-download\"></i>Download</a>");
+	$infos_text_download = array("<a href=\"pdf/pdf_fr.zip\" target=\"_blank\"><i class=\"fas fa-download\"></i>Télécharger</a>", 
+		"<a href=\"pdf/pdf_eng.zip\" target=\"_blank\"><i class=\"fas fa-download\"></i>Download</a>");
 
 
 

@@ -200,7 +200,7 @@
 			<form id="form-ajout-histoire" enctype="multipart/form-data" class="form-admin" action="send_form.php?page=admin&action=ajout-histoire" method="post">
 				<h2>Ajouter un paragraphe</h2>
 				<label>Choisissez une image à afficher (optionnel) :</label>
-				<input type="file" name="UploadFileName">
+				<input type="file" accept="image/*" name="UploadFileName">
 				<input type="text" name="alt" placeholder="Alt de l'image">
 				<div class="content-fr-en">
 					<div class="content-fr">
@@ -215,6 +215,38 @@
 					</div>
 				</div>
 				<input type="submit" name="submit" value="Ajouter">
+			</form>
+
+			<!-- MODIFIER DANS HISTOIRE -->
+			<form id="form-modif-histoire" enctype="multipart/form-data" class="form-admin" action="send_form.php?page=admin&action=modif-histoire" method="post">
+				<h2>Modifier un paragraphe</h2>
+				<label>Modifier un paragraphe dans la page "Histoire" ayant pour titre :</label>
+				<input type="text" name="modif_titre" id="modif-titre" placeholder="Titre" required>
+				<p class="warning">Le titre doit être exactement celui affiché en version française. Les majuscules ne sont pas importantes.</p>
+				<label>Remplacer l'image :</label>
+				<input type="file" accept="image/*" name="UploadFileName" onchange="loadFile(event)">
+				<div class="content-fr-en">
+					<div class="content-fr">
+						<h3>Partie française</h3>
+						<input type="text" name="titre_fr" id="titre-fr" placeholder="Titre">
+						<textarea placeholder="Texte" name="texte_fr" id="texte-fr"></textarea>
+					</div>
+					<div class="content-en">
+						<h3>Partie anglaise</h3>
+						<input type="text" name="titre_en" id="titre-en" placeholder="Titre">
+						<textarea placeholder="Texte" name="texte_en" id="texte-en"></textarea>
+					</div>
+				</div>
+				<input type="submit" name="submit" value="Modifier">
+			</form>
+
+			<!-- SUPPRIMER DANS HISTOIRE -->
+			<form id="form-supp-histoire" class="form-admin" action="send_form.php?page=admin&action=supp-histoire" method="post">
+				<h2>Supprimer un paragraphe</h2>
+				<label>Supprimer un paragraphe dans la page "Histoire" ayant pour titre :</label>
+				<input type="text" name="supp_titre" id="supp-titre" placeholder="Titre" required>
+				<p class="warning">Le titre doit être exactement celui affiché sur la page "Histoire", en français.</p>
+				<input type="submit" name="submit" value="Supprimer">
 			</form>
 		
 
