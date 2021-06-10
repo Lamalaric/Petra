@@ -112,6 +112,12 @@
 	
 	$galerie_credits_info = array("Si vous aussi vous souhaitez publier vos photographies de Pétra sur notre site, n'hésitez pas à nous contacter ", "If you also wish to publish your photographs of Petra on our site, do not hesitate to contact us ");
 	$galerie_credits_info_ici = array("ici", "here");
+	$galerie_credits = array("Crédits", "Credits");
+	$galerie_credits_photo = array("Photographe professionnel", "Professional photograph");
+	$galerie_credits_site = array("Site Web", "Web Site");
+	$galerie_credits_net = array("Réseaux", "Social network");
+
+
 
 	/* A VISITER */
 	$visiter_h1 = array("Principaux monuments", "Main monuments");
