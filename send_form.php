@@ -74,14 +74,15 @@
 			$desc_en = $_POST['desc_en'];
 			$nom_auteur = $_POST['nom_auteur'];
 			$site_auteur = $_POST['site_auteur'];
-
-		    move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $dest_path.$_FILES['UploadFileName']['name']);
-		    echo $filename."<br>".$alt."<br>".$desc_fr."<br>".$desc_en;
-
+			if (move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $_FILES['UploadFileName']['name'])) {
+				echo "ui";
+			} else {
+				echo "no";
+			}
 
 			if ($filename != '' && $alt != '' && $desc_fr != '' && $desc_en != '') {
 				// Si le fichier n'existe pas déjà, alors on l'ajoute dans le dossier image.
-				$ajouter_galerie = $cnx -> exec("INSERT INTO galerie (image, desc_fr, desc_en, nom_auteur, site_auteur, alt) VALUES ('".$filename."', '".$desc_fr."', '".$desc_en."', '".$nom_auteur."', '".$site_auteur."', '".$alt."');");
+				$ajouter_galerie = $cnx -> exec("INSERT INTO galerie (image, desc_fr, desc_en, nom_auteur, site_auteur, alt) VALUES ('"$filename."', '".$desc_fr."', '".$desc_en."', '".$nom_auteur."', '".$site_auteur."', '".$alt."');");
 				// header("Location: admin.php?isAdded=true");
 			}
 			// header("Location: admin.php?isAdded=false");
