@@ -1,40 +1,5 @@
-<?php
-	
-
-	/*
-	 * Pour tout ce qui est image, il faut gérer l'upload de l'image au bon endroit etc..
-	 * Pour cela, il faudra implémenter partout le bout de code suivant (seulement quand on a besoin de gérer une image) :
-	 * Le code suivant est à modifier il ne marche pas. Mais c'est une piste
-	 * Il faudra aussi décommenter les 3 lignes dans la condition de chaque partie, elle va avec le bout de code qui suit.
-	 *
-	 */
-
-
-
-		
-		echo "Filename: " . $_FILES['UploadFileName']['name']."<br>";
-		echo "Type : " . $_FILES['UploadFileName']['type'] ."<br>";
-		echo "Size : " . $_FILES['UploadFileName']['size'] ."<br>";
-		echo "Temp name: " . $_FILES['UploadFileName']['tmp_name'] ."<br>";
-		echo "Error : " . $_FILES['UploadFileName']['error'] . "<br>";
-		
-
-	
-
-		// Vérification si le fichier est une image
-
-		$dest_path = "images/";
-		if(move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $dest_path.$_FILES['UploadFileName']['name'])) {
-			echo 'File is successfully uploaded.';
-		} else {
-			echo 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.<br>';
-		}
-
-		echo $dest_path.$_FILES["UploadFileName"]["name"];
-		
-	 
-	
-	
+<?php		
+	 $dest_path = "images/";
 
 	/*
 	 * TODO :
@@ -42,14 +7,6 @@
 	 *    Il faut que seul les champs renseignés se modifient.
 	 *  - Faire marcher les images
 	*/
-
-
-
-	
-
-
-
-
 
 
 	// Si on vient de la page admin
@@ -110,18 +67,24 @@
 
 		// Code pour ajouter une image
 		if ($_GET['action'] == "ajout-galerie") {
-			$filename = $_POST['UploadFileName'];
+
+			$filename = $_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
 			$desc_fr = $_POST['desc_fr'];
 			$desc_en = $_POST['desc_en'];
 			$nom_auteur = $_POST['nom_auteur'];
 			$site_auteur = $_POST['site_auteur'];
 
+		    move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $dest_path.$_FILES['UploadFileName']['name']);
+		    echo $filename."<br>".$alt."<br>".$desc_fr."<br>".$desc_en;
+
+
 			if ($filename != '' && $alt != '' && $desc_fr != '' && $desc_en != '') {
+				// Si le fichier n'existe pas déjà, alors on l'ajoute dans le dossier image.
 				$ajouter_galerie = $cnx -> exec("INSERT INTO galerie (image, desc_fr, desc_en, nom_auteur, site_auteur, alt) VALUES ('".$filename."', '".$desc_fr."', '".$desc_en."', '".$nom_auteur."', '".$site_auteur."', '".$alt."');");
-				//header("Location: admin.php?isAdded=true");
+				// header("Location: admin.php?isAdded=true");
 			}
-			//header("Location: admin.php?isAdded=false");
+			// header("Location: admin.php?isAdded=false");
 		}
 
 		// Code pour modifier une image
