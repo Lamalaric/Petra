@@ -276,7 +276,7 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4210.883828537808!2d35.461136451027585!3d30.321221912309124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016ec151cbb82d%3A0x8b35ed81160d00c!2sTombe%20aux%20ob%C3%A9lisques!5e1!3m2!1sfr!2sfr!4v1623287364995!5m2!1sfr!2sfr" width="364" height="301" id="slide14_2" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 				<div class="slide-links">
-					<a href="#slide14_1" class="slide-link"><i class="far fa-dot-circle"></i></a>
+					<a href="#slide14_1" class="slide-link" style="background-image: url('');"><i class="far fa-dot-circle"></i></a>
 					<a href="#slide14_2" class="slide-link"><i class="far fa-dot-circle"></i></a>
 				</div>
 			</div>
@@ -313,7 +313,14 @@
             	$texte = [$texte_fr, $texte_en];
 			    echo '
 			    <div>
-					<div class="image"></div>		
+					<div class="slider">
+						<div class="slides">
+							<div class="image" style="background-image: url(\''.$image.'\');"></div>
+						</div>
+						<div class="slide-links">
+							<a href="" class="slide-link"><i class="far fa-dot-circle"></i></a>
+						</div>
+					</div>
 					<div class="text-plus-title">
 						<h3>'.$titre[$langue].'</h3>
 						<p>

@@ -1,5 +1,4 @@
-<?php		
-	 $dest_path = "images/";
+<?php
 
 	/*
 	 * TODO :
@@ -18,7 +17,7 @@
 
 	    // Code pour ajouter un monument
 	    if ($_GET['action'] == "ajout-visiter") {
-			$filename = $_POST['UploadFileName'];
+			$filename = "images/".$_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
 			$titre_fr = $_POST['titre_fr'];
 			$titre_en = $_POST['titre_en'];
@@ -27,29 +26,33 @@
 
 			// Si tout est rempli et que l'extension est valide, on insère le contenu dans la BDD
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
-			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
-				$ajout_visiter = $cnx -> exec("INSERT INTO visiter (titre_fr, titre_en, texte_fr, texte_en, image) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."', '".$alt."');");
-				//header("Location: admin.php?isAdded=true");
+				if (!file_exists($filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $filename);
+				}
+				$ajout_visiter = $cnx -> exec("INSERT INTO visiter (titre_fr, titre_en, texte_fr, texte_en, image, alt) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."', '".$alt."');");
+				header("Location: admin.php?isAdded=true");
 			}
-			//header("Location: admin.php?isAdded=false");
+			header("Location: admin.php?isAdded=false");
 		}
 
 		// Code pour modifier un monument
 	    if ($_GET['action'] == "modif-visiter") {
 	    	$input_titre = $_POST['modif_titre'];
-			$filename = $_POST['UploadFileName'];
+			$filename = "images/".$_FILES['UploadFileName']['name'];
 			$titre_fr = $_POST['titre_fr'];
 			$titre_en = $_POST['titre_en'];
 			$texte_fr = $_POST['texte_fr'];
 			$texte_en = $_POST['texte_en'];
 
-			// Si tout est rempli et que l'extension est valide, on insère le contenu dans la BDD
+			// Si tout est rempli et que l'extension est valide, on modifie le contenu dans la BDD
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
-			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
+				if (!file_exists($filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $filename);
+				}
 				$modif_visiter = $cnx -> exec("UPDATE visiter SET titre_fr = '".$titre_fr."', titre_en = '".$titre_en."', texte_fr = '".$texte_fr."', texte_en = '".$texte_en."', image = '".$filename."' WHERE titre_fr = '".$input_titre."';");
-				//header("Location: admin.php?isModif=true");
+				header("Location: admin.php?isModif=true");
 			}
-			//header("Location: admin.php?isModif=false");
+			header("Location: admin.php?isModif=false");
 		}
 
 		// Code pour supprimer un monument
@@ -58,42 +61,39 @@
 
 			if ($input_titre != '') {
 				$supprimer_visiter = $cnx -> exec("DELETE FROM visiter WHERE titre_fr = LOWER('".$input_titre."');");
-				//header("Location: admin.php?isDeleted=true");
+				header("Location: admin.php?isDeleted=true");
 			}
-			//header("Location: admin.php?isDeleted=false");
+			header("Location: admin.php?isDeleted=false");
 		}
 
 
 
 		// Code pour ajouter une image
 		if ($_GET['action'] == "ajout-galerie") {
-
-			$filename = $_FILES['UploadFileName']['name'];
+			$filename = "images/".$_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
+			$titre_fr = $_POST['titre_fr'];
+			$titre_en = $_POST['titre_en'];
 			$desc_fr = $_POST['desc_fr'];
 			$desc_en = $_POST['desc_en'];
 			$nom_auteur = $_POST['nom_auteur'];
 			$site_auteur = $_POST['site_auteur'];
-			if (move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $_FILES['UploadFileName']['name'])) {
-				echo "ui";
-			} else {
-				echo "no";
-			}
 
 			if ($filename != '' && $alt != '' && $desc_fr != '' && $desc_en != '') {
 				// Si le fichier n'existe pas déjà, alors on l'ajoute dans le dossier image.
-				$ajouter_galerie = $cnx -> exec("INSERT INTO galerie (image, desc_fr, desc_en, nom_auteur, site_auteur, alt) VALUES ('"$filename."', '".$desc_fr."', '".$desc_en."', '".$nom_auteur."', '".$site_auteur."', '".$alt."');");
-				// header("Location: admin.php?isAdded=true");
+				if (!file_exists($filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $filename);
+				}
+				$ajouter_galerie = $cnx -> exec("INSERT INTO galerie (image, desc_fr, desc_en, nom_auteur, site_auteur, alt, titre_fr, titre_en) VALUES ('".$filename."', '".$desc_fr."', '".$desc_en."', '".$nom_auteur."', '".$site_auteur."', '".$alt."', '".$titre_fr."', '".$titre_en."');");
+				header("Location: admin.php?isAdded=true");
 			}
-			// header("Location: admin.php?isAdded=false");
+			header("Location: admin.php?isAdded=false");
 		}
 
 		// Code pour modifier une image
 	    if ($_GET['action'] == "modif-galerie") {
 	    	$input_alt = $_POST['modif_alt'];
-	    	if (!empty($_POST['UploadFileName'])) {
-		    	$filename = $_POST['UploadFileName'];
-	    	}
+	    	$filename = "images/".$_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
 			$desc_fr = $_POST['desc_fr'];
 			$desc_en = $_POST['desc_en'];
@@ -102,11 +102,13 @@
 
 			// Si tout est rempli et que l'extension est valide, on insère le contenu dans la BDD
 			if ($input_alt != '') {
-			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
+				if (!file_exists($filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], "images/".$filename);
+				}
 				$modif_galerie = $cnx -> exec("UPDATE galerie SET image = '".$filename."', desc_fr = '".$desc_fr."', desc_en = '".$desc_en."', nom_auteur = '".$nom_auteur."', site_auteur = '".$site_auteur."', alt = '".$alt."' WHERE alt = '".$input_alt."';");
-				//header("Location: admin.php?isModif=true");
+				header("Location: admin.php?isModif=true");
 			}
-			//header("Location: admin.php?isModif=false");
+			header("Location: admin.php?isModif=false");
 		}
 
 		// Code pour supprimer une image
@@ -115,15 +117,18 @@
 
 			if ($input_alt != '') {
 				$supprimer_visiter = $cnx -> exec("DELETE FROM galerie WHERE alt = LOWER('".$input_alt."');");
-				//header("Location: admin.php?isDeleted=true");
+				// Supprimer l'image des fichiers
+				$image = $cnx -> query("SELECT image FROM galerie WHERE alt = '".$input_alt."';");
+				unlink($image);
+				header("Location: admin.php?isDeleted=true");
 			}
-			//header("Location: admin.php?isDeleted=false");
+			header("Location: admin.php?isDeleted=false");
 		}
 
 
 
 		if ($_GET['action'] == "ajout-histoire") {
-			$filename = $_POST['UploadFileName'];
+			$filename = $_FILES['UploadFileName']['name'];
 			$alt = $_POST['alt'];
 			$titre_fr = $_POST['titre_fr'];
 			$titre_en = $_POST['titre_en'];
@@ -132,10 +137,13 @@
 
 			// Si tout est rempli, on insère le contenu dans la BDD
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
+				if (!file_exists("images/".$filename)) {
+					move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], "images/".$filename);
+				}
 				$ajout_histoire = $cnx -> exec("INSERT INTO histoire (titre_fr, titre_en, texte_fr, texte_en, image, alt) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."', '".$alt."');");
-				//header("Location: admin.php?isAdded=true");
+				header("Location: admin.php?isAdded=true");
 			}
-			//header("Location: admin.php?isAdded=false");
+			header("Location: admin.php?isAdded=false");
 		}
 	}
 

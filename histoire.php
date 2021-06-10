@@ -85,6 +85,40 @@
 					<?php echo $h8_p[$langue]; ?>
 				</p>
 			</article>
+
+			<?php 
+			/*
+			 * Ajout des paragraphes ajoutés depuis la base de donnée
+			 */
+
+			// Connexion à la BDD
+			include("includes/connexion.inc.php");
+		    $cnx->exec("SET SEARCH_PATH TO petra");
+
+		    // On lit toutes les entrées de la table HISTOIRE
+		    error_reporting(0);
+		    $requete = "SELECT titre_fr FROM histoire;";
+            $result = $cnx->query($requete);
+            while($ligne = $result->fetch()){
+            	// Pour chaque entrée, on récupère le champs que l'on veut
+            	$titre_fr = $cnx -> query("SELECT titre_fr FROM histoire WHERE titre_fr = '".$ligne[0]."';") -> fetch()[0];
+            	$titre_en = $cnx -> query("SELECT titre_en FROM histoire WHERE titre_fr = '".$ligne[0]."';") -> fetch()[0];
+            	$texte_fr = $cnx -> query("SELECT texte_fr FROM histoire WHERE titre_fr = '".$ligne[0]."';") -> fetch()[0];
+            	$texte_en = $cnx -> query("SELECT texte_en FROM histoire WHERE titre_fr = '".$ligne[0]."';") -> fetch()[0];
+            	$image = $cnx -> query("SELECT image FROM histoire WHERE titre_fr = '".$ligne[0]."';") -> fetch()[0];
+            	$alt = $cnx -> query("SELECT alt FROM histoire WHERE titre_fr = '".$ligne[0]."';") -> fetch()[0];
+
+            	// On prend un texte différent selon la langue puis on affiche l'élément
+            	$titre = [$titre_fr, $titre_en];
+            	$texte = [$texte_fr, $texte_en];
+			    echo '
+			    <article>
+					<h2>'.$titre[$langue].'</h2>
+					<img src="'.$image[$langue].'" alt="'.$alt[$langue].'">
+					<p>'.$texte[$langue].'</p>
+				</article>';
+		    }
+		 ?>
 		</section>		
 	</main>
 

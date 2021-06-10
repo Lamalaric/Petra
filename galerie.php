@@ -108,22 +108,28 @@
 	            	// Pour chaque entrée, on récupère le champs que l'on veut
 	            	$image = $cnx -> query("SELECT image FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
 	            	$alt = $cnx -> query("SELECT alt FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$titre_fr = $cnx -> query("SELECT titre_fr FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
+	            	$titre_en = $cnx -> query("SELECT titre_en FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
 	            	$desc_fr = $cnx -> query("SELECT desc_fr FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
 	            	$desc_en = $cnx -> query("SELECT desc_en FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
 	            	$nom_auteur = $cnx -> query("SELECT nom_auteur FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
 	            	$site_auteur = $cnx -> query("SELECT site_auteur FROM galerie WHERE image = '".$ligne[0]."';") -> fetch()[0];
 
 	            	// On prend un texte différent selon la langue puis on affiche l'élément
+	            	$titre = [$titre_fr, $titre_en];
 	            	$description = [$desc_fr, $desc_en];
 				    echo '
 				    <div>
 						<a href="'.$image.'" data-fancybox="gallery"><img src="'.$image.'" alt="'.$alt.'"></img></a>
-						<p>'.$description[$langue].'</p>
+						<div>
+							<h4 class="titre">'.$titre[$langue].'</h4>
+							<p class=\"auteur\">'.$nom_auteur.'</p>
+							<p class="description">'.$description[$langue].'</p>
+						</div>
 					</div>';
-					// Ajouter la partie auteur
-					// Nécéssite un bon chemin d'image (voir send_form.php)
 			    }
 			 ?>
+			 
 
 		</div>
 		<div class="credits-images">

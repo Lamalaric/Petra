@@ -18,7 +18,7 @@
 
 	        <div class="reseaux-site">
 	            <a href="mentions_legales.php"><i class="fas fa-file-contract"></i></a>
-	        	<a href="admin.php"><i class="fas fa-user-cog"></i></a>
+	        	<a href="admin_connexion.php"><i class="fas fa-user-cog"></i></a>
 	        	<a href="https://twitter.com/PetraExplo" target="_blank"><i class="fab fa-twitter"></i></a>
 	        	<a href="https://www.facebook.com/petra.explo/" target="_blank"><i class="fab fa-facebook"></i></span></a>
 	        	<a href="https://www.instagram.com/petra_explo/" target="_blank"><i class="fab fa-instagram"></i></span></a>

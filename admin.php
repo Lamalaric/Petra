@@ -38,10 +38,10 @@
 			<br>
 
 			<!-- AJOUTER DANS VISITER -->
-			<form id="form-ajout-visiter" class="form-admin" action="send_form.php?page=admin&action=ajout-visiter" method="post">
+			<form id="form-ajout-visiter" enctype="multipart/form-data" class="form-admin" action="send_form.php?page=admin&action=ajout-visiter" method="post">
 				<h2>Ajouter un monument</h2>
 				<label>Choisissez une image à afficher :</label>
-				<input type="file" accept="image/*" name="UploadFileName" required>
+				<input type="file" accept="image/*" name="UploadFileName" onchange="loadFile(event)" required>
 				<input type="text" name="alt" placeholder="Alt de l'image" required>
 				<div class="content-fr-en">
 					<div class="content-fr">
@@ -59,13 +59,13 @@
 			</form>
 
 			<!-- MODIFIER DANS VISITER -->
-			<form id="form-modif-visiter" class="form-admin" action="send_form.php?page=admin&action=modif-visiter" method="post">
+			<form id="form-modif-visiter" enctype="multipart/form-data" class="form-admin" action="send_form.php?page=admin&action=modif-visiter" method="post">
 				<h2>Modifier un monument</h2>
 				<label>Modifier le monument dans la page "À visiter" ayant pour titre :</label>
 				<input type="text" name="modif_titre" id="modif-titre" placeholder="Titre" required>
 				<p class="warning">Le titre doit être exactement celui affiché en version française. Les majuscules ne sont pas importantes.</p>
 				<label>Remplacer l'image :</label>
-				<input type="file" accept="image/*" name="UploadFileName">
+				<input type="file" accept="image/*" name="UploadFileName" onchange="loadFile(event)">
 				<div class="content-fr-en">
 					<div class="content-fr">
 						<h3>Partie française</h3>
@@ -98,7 +98,14 @@
 				<div class="container-v">
 					<main>
 						<div>
-							<div class="image"></div>		
+							<div class="slider">
+								<div class="slides">
+									<div class="image" id="preview-image"></div>
+								</div>
+								<div class="slide-links">
+									<a href="" class="slide-link"><i class="far fa-dot-circle"></i></a>
+								</div>
+							</div>
 							<div class="text-plus-title">
 								<h3 id="preview-titre-fr"></h3>
 								<p id="preview-texte-fr"></p>
@@ -118,12 +125,14 @@
 				<input type="text" name="alt" placeholder="Alt de l'image" required>
 				<div class="content-fr-en">
 					<div class="content-fr">
-						<h3>Description française</h3>
-						<textarea placeholder="Description" name="desc_fr" id="desc-fr" required></textarea>
+						<h3>Partie française</h3>
+						<input type="text" name="titre_fr" id="titre-fr" placeholder="Titre">
+						<textarea placeholder="Description" name="desc_fr" id="desc-fr"></textarea>
 					</div>
 					<div class="content-en">
-						<h3>Description anglaise</h3>
-						<textarea placeholder="Description" name="desc_en" id="desc-en" required></textarea>
+						<h3>Partie anglaise</h3>
+						<input type="text" name="titre_en" id="titre-en" placeholder="Titre">
+						<textarea placeholder="Description" name="desc_en" id="desc-en"></textarea>
 					</div>
 				</div>
 
@@ -135,13 +144,13 @@
 			</form>
 
 			<!-- MODIFIER DANS GALERIE D'IMAGE -->
-			<form id="form-modif-galerie" class="form-admin" action="send_form.php?page=admin&action=modif-galerie" method="post">
+			<form id="form-modif-galerie" enctype="multipart/form-data" class="form-admin" action="send_form.php?page=admin&action=modif-galerie" method="post">
 				<h2>Modifier une image</h2>
 				<label>Modifier l'image dans la page "Galerie d'image" ayant pour alt :</label>
-				<input type="text" accept="image/*" name="modif_alt" id="modif-alt" placeholder="Alt de l'image" required>
+				<input type="text" name="modif_alt" id="modif-alt" placeholder="Alt de l'image" required>
 				<p class="warning">L'alt doit être exactement celui présent dans la base de donnée. Si vous ne vous en rappellez plus, ouvrez l'inspecteur d'élément (clic droit dans la page Galerie d'image), séléctionnez l'image, et regardez son alt dans la partie HTML. Les majuscules ne sont pas importantes.</p>
 				<label>Remplacer l'image :</label>
-				<input type="file" accept="image/*" name="UploadFileName">
+				<input type="file" accept="image/*" name="UploadFileName" onchange="loadFile(event)">
 				<input type="text" name="alt" placeholder="Alt de l'image">
 				<div class="content-fr-en">
 					<div class="content-fr">
@@ -188,7 +197,7 @@
 
 
 			<!-- AJOUTER DANS HISTOIRE -->
-			<form id="form-ajout-histoire" class="form-admin" action="send_form.php?page=admin&action=ajout-histoire" method="post">
+			<form id="form-ajout-histoire" enctype="multipart/form-data" class="form-admin" action="send_form.php?page=admin&action=ajout-histoire" method="post">
 				<h2>Ajouter un paragraphe</h2>
 				<label>Choisissez une image à afficher (optionnel) :</label>
 				<input type="file" name="UploadFileName">
@@ -227,7 +236,7 @@
 				let info = document.getElementById('info');
 				setTimeout('info.style.display = "none"', 7500);
 
-				// Affiche l'image actuelle en live // MARCHE PAS
+				// Affiche l'image actuelle en live
 				var loadFile = function(event) {
 				    var output = document.getElementById('preview-image');
 				    output.src = URL.createObjectURL(event.target.files[0]);
