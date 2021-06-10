@@ -661,29 +661,27 @@ Tia Pernici : Website logo<br />
 				} else {
 					echo '<li><a href="contact.php?lang='.$langue.'">'.$nav_contact[$langue].'</a></li>';
 				}
-	echo '
-			</ul>';
+			
 		echo '
-		<div class="logo_plus_langue">
-			<li class="logo-langue2">
-				<div>';
-				if ($langue == 0) {
-					echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag" class="langue-actuelle"></a>';
-				} else {
-					echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag"></a>';
-				}
-				if ($langue == 1) {
-					echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag" class="langue-actuelle"></a>';
-				} else {
-					echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag"></a>';
-				}
-			echo '
-				</div>
-			</li>
-			';
-	echo '
-			<a href="index.php?lang='.$langue.'" class="logo2"><img src="images/logo.png" alt="Logo" id="logo"></img></a>
-		</div>
+		</ul>
+			<div class="logo_plus_langue">
+				<li class="logo-langue2">
+					<div>';
+					if ($langue == 0) {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag" class="langue-actuelle"></a>';
+					} else {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'" target="_self"><img src="images/flag_fr.png" alt="Langue FR" id="flag"></a>';
+					}
+					if ($langue == 1) {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag" class="langue-actuelle"></a>';
+					} else {
+						echo '<a href="'.$_SERVER["PHP_SELF"].'?lang=1" target="_self"><img src="images/flag_en.png" alt="Langue EN" id="flag"></a>';
+					}
+				echo '
+					</div>
+				</li>
+				<a href="index.php?lang='.$langue.'" class="logo2"><img src="images/logo.png" alt="Logo" id="logo"></img></a>
+			</div>
 		</nav>
 	</header>
 

@@ -22,17 +22,15 @@
 	
 
 		// Vérification si le fichier est une image
-		$fileTmpPath = fopen($_FILES["UploadFileName"]["tmp_name"], 'r'); 		// Chemin image par défaut
 
-		$dest_path = 'bcorgnac/WWW/Petra/images/';
-		if(move_uploaded_file($fileTmpPath, $dest_path)) {
+		$dest_path = "images/";
+		if(move_uploaded_file($_FILES["UploadFileName"]["tmp_name"], $dest_path.$_FILES['UploadFileName']['name'])) {
 			echo 'File is successfully uploaded.';
 		} else {
-			echo 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.';
+			echo 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.<br>';
 		}
 
-		echo '<br>'.$fileTmpPath.'<br>';
-		echo $dest_path;
+		echo $dest_path.$_FILES["UploadFileName"]["name"];
 		
 	 
 	
@@ -64,18 +62,16 @@
 	    // Code pour ajouter un monument
 	    if ($_GET['action'] == "ajout-visiter") {
 			$filename = $_POST['UploadFileName'];
+			$alt = $_POST['alt'];
 			$titre_fr = $_POST['titre_fr'];
 			$titre_en = $_POST['titre_en'];
 			$texte_fr = $_POST['texte_fr'];
 			$texte_en = $_POST['texte_en'];
 
-
-
-
 			// Si tout est rempli et que l'extension est valide, on insère le contenu dans la BDD
 			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
 			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
-				$ajout_visiter = $cnx -> exec("INSERT INTO visiter (titre_fr, titre_en, texte_fr, texte_en, image) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."');");
+				$ajout_visiter = $cnx -> exec("INSERT INTO visiter (titre_fr, titre_en, texte_fr, texte_en, image) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."', '".$alt."');");
 				//header("Location: admin.php?isAdded=true");
 			}
 			//header("Location: admin.php?isAdded=false");
@@ -143,7 +139,6 @@
 			// Si tout est rempli et que l'extension est valide, on insère le contenu dans la BDD
 			if ($input_alt != '') {
 			    // move_uploaded_file($tmpName, './upload/'.$name);  DEPLACER LE FICHIER
-				echo 'vu bg';
 				$modif_galerie = $cnx -> exec("UPDATE galerie SET image = '".$filename."', desc_fr = '".$desc_fr."', desc_en = '".$desc_en."', nom_auteur = '".$nom_auteur."', site_auteur = '".$site_auteur."', alt = '".$alt."' WHERE alt = '".$input_alt."';");
 				//header("Location: admin.php?isModif=true");
 			}
@@ -160,7 +155,27 @@
 			}
 			//header("Location: admin.php?isDeleted=false");
 		}
+
+
+
+		if ($_GET['action'] == "ajout-histoire") {
+			$filename = $_POST['UploadFileName'];
+			$alt = $_POST['alt'];
+			$titre_fr = $_POST['titre_fr'];
+			$titre_en = $_POST['titre_en'];
+			$texte_fr = $_POST['texte_fr'];
+			$texte_en = $_POST['texte_en'];
+
+			// Si tout est rempli, on insère le contenu dans la BDD
+			if ($titre_fr != '' && $titre_en != '' && $texte_fr != '' && $texte_en != '') {
+				$ajout_histoire = $cnx -> exec("INSERT INTO histoire (titre_fr, titre_en, texte_fr, texte_en, image, alt) VALUES ('".$titre_fr."', '".$titre_en."', '".$texte_fr."', '".$texte_en."', '".$filename."', '".$alt."');");
+				//header("Location: admin.php?isAdded=true");
+			}
+			//header("Location: admin.php?isAdded=false");
+		}
 	}
+
+
 
 	// Si on vient de la page Contact (envoi du mail)
 	if ($_GET['page'] == "contact") {

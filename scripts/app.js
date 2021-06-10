@@ -57,6 +57,7 @@ function getSelect() {
             console.log("vu select 1");
             switch (optionContenu) {
                 case 1 :
+                    document.getElementById("form-ajout-histoire").style.display = "block"
                     break;
                 case 2 :
                     document.getElementById("form-ajout-visiter").style.display = "block";
