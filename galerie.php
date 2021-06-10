@@ -25,79 +25,71 @@
 			</div>
 			<div>
 				<a href="images/kazneh.png" data-fancybox="gallery"><img src="images/kazneh.png" alt="Al-Kazneh"></img></a>
-				<p><?php echo $galerie_img1[$langue]; ?></p>
+				<?php echo $galerie_img1[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/accueil.jpeg" data-fancybox="gallery"><img src="images/accueil.jpeg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img2[$langue]; ?></p>
+				<?php echo $galerie_img2[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/al_kazneh.jpg" data-fancybox="gallery"><img src="images/al_kazneh.jpg" alt="Al-Kazneh_2"></img></a>
-				<p><?php echo $galerie_img3[$langue]; ?></p>
+				<?php echo $galerie_img3[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/aqueducs.jpg" data-fancybox="gallery"><img src="images/aqueducs.jpg" alt="Aqueducs"></img></a>
-				<p><?php echo $galerie_img4[$langue]; ?></p>
+				<?php echo $galerie_img4[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/caravane_chameaux.jpg" data-fancybox="gallery"><img src="images/caravane_chameaux.jpg" alt="Caravane de chameaux"></img></a>
-				<p><?php echo $galerie_img5[$langue]; ?></p>
+				<?php echo $galerie_img5[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image1.jpg" data-fancybox="gallery"><img src="images/image1.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img6[$langue]; ?></p>
+				<?php echo $galerie_img6[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image2.jpg" data-fancybox="gallery"><img src="images/image2.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img7[$langue]; ?></p>
+				<?php echo $galerie_img7[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image3.jpg" data-fancybox="gallery"><img src="images/image3.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img8[$langue]; ?></p>
-			</div>
-			<div>
-				<a href="images/image5.jpg" data-fancybox="gallery"><img src="images/image5.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img10[$langue]; ?></p>
+				<?php echo $galerie_img8[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image6.jpg" data-fancybox="gallery"><img src="images/image6.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img11[$langue]; ?></p>
+				<?php echo $galerie_img10[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image8.jpg" data-fancybox="gallery"><img src="images/image8.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img13[$langue]; ?></p>
+				<?php echo $galerie_img11[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image9.png" data-fancybox="gallery"><img src="images/image9.png" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img14[$langue]; ?></p>
+				<?php echo $galerie_img12[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image10.png" data-fancybox="gallery"><img src="images/image10.png" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img15[$langue]; ?></p>
-			</div>
-			<div>
-				<a href="images/image11.jpg" data-fancybox="gallery"><img src="images/image11.jpg" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img16[$langue]; ?></p>
+				<?php echo $galerie_img13[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image12.png" data-fancybox="gallery"><img src="images/image12.png" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img17[$langue]; ?></p>
+				<?php echo $galerie_img15[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image13.png" data-fancybox="gallery"><img src="images/image13.png" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img18[$langue]; ?></p>
+				<?php echo $galerie_img16[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/image15.png" data-fancybox="gallery"><img src="images/image15.png" alt="Ad-Deir"></img></a>
-				<p><?php echo $galerie_img20[$langue]; ?></p>
+				<?php echo $galerie_img17[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/tombeau_obelisque.jpg" data-fancybox="gallery"><img src="images/tombeau_obelisque.jpg" alt="Tombeau aux obelisques"></img></a>
-				<p><?php echo $galerie_img21[$langue]; ?></p>
+				<?php echo $galerie_img18[$langue]; ?>
 			</div>
 			<div>
 				<a href="images/unayshu.jpg" data-fancybox="gallery"><img src="images/unayshu.jpg" alt="Unayshu"></img></a>
-				<p><?php echo $galerie_img22[$langue]; ?></p>
+				<?php echo $galerie_img19[$langue]; ?>
 			</div>
 
 			<?php 
