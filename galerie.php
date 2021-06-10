@@ -127,17 +127,17 @@
 
 		</div>
 		<div class="credits-images">
-			<h2>Crédits</h2>
+			<h2><?php echo $galerie_credits[$langue]; ?></h2>
 			<p>
 				<?php echo $galerie_credits_info[$langue]; ?>
 				<?php echo "<a href=\"contact.php?lang=".$langue."#beacon-formulaire\">".$galerie_credits_info_ici[$langue]."</a>"; ?>
 			</p>
 			<div>
 				<h3>Alexandre Carpentier</h3>
-				<p>Photographe professionnel</p>
-				<p>Site web : <i class="fas fa-globe-americas"></i> <a href="https://www.alexandre-carpentier.com" target="_blank">www.alexandre-carpentier.com</a></p>
+				<p><?php echo $galerie_credits_photo[$langue]; ?></p>
+				<p><?php echo $galerie_credits_site[$langue]; ?> : <i class="fas fa-globe-americas"></i> <a href="https://www.alexandre-carpentier.com" target="_blank">www.alexandre-carpentier.com</a></p>
 				<p class="reseaux-auteur">
-					Réseaux :
+					<?php echo $galerie_credits_net[$langue]; ?> :
 					<a href="https://www.facebook.com/alexandrecarpentierphotography/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
 					<a href="https://www.flickr.com/photos/alex_carpentier/" target="_blank"><i class="fab fa-flickr"></i></a>
 					<a href="https://www.instagram.com/alexandre.carpentier/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
