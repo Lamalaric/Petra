@@ -2,10 +2,6 @@
 	session_start();
 	$page = "admin";
 	include("includes/header.inc.php");
-
-	if (isset($_SESSION['login']) && isset($_SESSION['password'])) {
-		header("Location: admin.php");
-	}
 		
 ?>
 
