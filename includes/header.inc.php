@@ -88,30 +88,28 @@
 	$galerie_h1 = array("Galerie d'image", "Image gallery");
 	$galerie_alex1 = array("<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">Une magnifique photo d'Ad Deir prise lors d'un couché du soleil, avec un mélange de couleur qui fait plaisir à l'oeuil.</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">A beautiful picture of Ad Deir taken during a sunset, with a mix of colors that pleases the eye.</p>
 		</div>");
-	$galerie_alex2 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_alex3 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img1 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img2 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img3 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img4 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img5 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img6 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img7 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img8 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img9 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img10 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img11 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img12 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img13 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img14 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img15 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img16 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img17 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img18 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img19 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img20 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img21 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
-	$galerie_img22 = array("<div><h4>Titre</h4><br><p>Description</p></div>", "<div><h4>Titre</h4><p>Description</p><br></div>");
+	$galerie_alex2 = array("<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">Photo d'Ad Deir de nuit surplombé par la voie lactée.</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">Photo of Ad Deir at night overlooked by the Milky Way.</p></div>");
+	$galerie_alex3 = array("<div><h4 class=\"titre\">Le Kazneh</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">Le Kazneh surveillant les chameaux</p></div>", "<div><h4 class=\"titre\">Al Kazneh</h4><p class=\"auteur\">Alexandre Carpentier</p><p class=\"description\">The Kazneh watching the camels</p></div>");
+	$galerie_img1 = array("<div><h4 class=\"titre\">Ad Deir</h4><p class=\"description\">Ad Deir au soleil</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"description\">Ad Deir in the sun</p><br></div>");
+	$galerie_img2 = array("<div><h4 class=\"titre\">Ad Deir</h4><br><p class=\"description\">Ad Deir encore au soleil</p></div>", "<div><h4 class=\"titre\">Ad Deir</h4><p class=\"description\">Ad Deir still in the sun</p><br></div>");
+	$galerie_img3 = array("<div><h4 class=\"titre\">Le Kazneh</h4><br><p class=\"description\">Le Kazneh le soir</p></div>", "<div><h4 class=\"titre\">Kazneh</h4><p class=\"description\">Kazneh in the evening</p><br></div>");
+	$galerie_img4 = array("<div><h4 class=\"titre\">Le Sîq</h4><br><p class=\"description\">Ici les aqueducs creusés dans les parois du Sîq</p></div>", "<div><h4 class=\"titre\">Siq</h4><p class=\"description\">Here the aqueducts dug into the walls of the Sîq</p><br></div>");
+	$galerie_img5 = array("<div><h4 class=\"titre\">Une caravane de chameaux</h4></div>", "<div><h4 class=\"titre\">A caravan of camels</h4><br></div>");
+	$galerie_img6 = array("<div><h4 class=\"titre\">Les tombes royales</h4><br><p class=\"description\">Les tombes royale creusées dans la montagne</p></div>", "<div><h4 class=\"titre\">Royal Tombs</h4><p class=\"description\">Royal graves dug into the mountain</p><br></div>");
+	$galerie_img7 = array("<div><h4 class=\"titre\">Anciens habitats</h4></div>", "<div><h4 class=\"titre\">Ancient habitats</h4></div>");
+	$galerie_img8 = array("<div><h4 class=\"titre\">Théâtre romain</h4><br><p class=\"description\">Ce théâtre a été construit lors de l'occupation romaine</p></div>", "<div><h4 class=\"titre\">Roman theater</h4><p class=\"description\">This theatre was built during the Roman occupation</p><br></div>");
+	$galerie_img9 = array("<div><h4 class=\"titre\">Théâtre romain</h4><br><p class=\"description\">Ce théâtre a été construit lors de l'occupation romaine</p></div>", "<div><h4 class=\"titre\">Roman theater</h4><p class=\"description\">This theatre was built during the Roman occupation</p><br></div>");
+	$galerie_img10 = array("<div><h4 class=\"titre\">Tombeau Palais</h4><br><p class=\"description\">Ce tombeau fait parti des tombes royales</p></div>", "<div><h4 class=\"titre\">Palace Tomb</h4><p class=\"description\">This tomb is one of the royal tombs</p><br></div>");
+	$galerie_img11 = array("<div><h4 class=\"titre\">Urne du Deir</h4><br><p class=\"description\">Ce type d'urne est présent sur de nombreux monuments</p></div>", "<div><h4 class=\"titre\">Urn of Deir</h4><p class=\"description\">This type of urn is present on many monuments</p><br></div>");
+	$galerie_img12 = array("<div><h4 class=\"titre\">Le Kazneh</h4><br><p class=\"description\">Le Kazneh vue depuis les hauteurs du Sîq</p></div>", "<div><h4 class=\"titre\">Kazneh</h4><p class=\"description\">Kazneh seen from the heights of the Siq</p><br></div>");
+	$galerie_img13 = array("<div><h4 class=\"titre\">Vue sur la vallée</h4></div>", "<div><h4 class=\"titre\">View of the valley</h4></div>");
+	
+	$galerie_img15 = array("<div><h4 class=\"titre\">Des chameaux dans le théâtre romain</h4></div>", "<div><h4 class=\"titre\">Camels in the roman theatre</h4></div>");
+	$galerie_img16 = array("<div><h4 class=\"titre\">Vue sur la vallée</h4></div>", "<div><h4 class=\"titre\">View of the valley</h4></div>");
+	$galerie_img17 = array("<div><h4 class=\"titre\">Le Kazneh</h4><p class=\"description\">Le Kazneh surveillant les chameaux</p></div>", "<div><h4 class=\"titre\">Kazneh</h4><p class=\"description\">The Kazneh watching the camels</p></div>");
+	$galerie_img18 = array("<div><h4 class=\"titre\">Tombe aux obélisques</h4><p class=\"description\">Il s'agit du premier monument que l'on croise en venant à Pétra</p></div>", "<div><h4 class=\"titre\">Tomb of the obelisks</h4><p class=\"description\">It is the first monument you come across when you come to Petra</p></div>");
+	$galerie_img19 = array("<div><h4 class=\"titre\">Anciens habitats</h4></div>", "<div><h4 class=\"titre\">Ancient habitats</h4></div>");
+	
 	$galerie_credits_info = array("Si vous aussi vous souhaitez publier vos photographies de Pétra sur notre site, n'hésitez pas à nous contacter ", "If you also wish to publish your photographs of Petra on our site, do not hesitate to contact us ");
 	$galerie_credits_info_ici = array("ici", "here");
 
