@@ -4,9 +4,9 @@
 	include("includes/header.inc.php");
  
 
-	// if (!isset($_SESSION['login']) && !isset($_SESSION['password'])) {	
-	// 	header('Location: index.php');
-	// }
+	if (!isset($_SESSION['login']) && !isset($_SESSION['password'])) {	
+		header('Location: index.php');
+	}
 ?>
 <body class="container-admin">
 	
